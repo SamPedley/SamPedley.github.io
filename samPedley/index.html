@@ -1,23 +1,55 @@
 ---
 layout: default
+title: Sam's Website
 ---
 
-<div class="home">
+<div class="max">
+  <div class="hero">
+    <div class="heroEye"></div>
+    <div class="heroText">
+      {% for post in site.posts limit:1 %}
+      <h1><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h1>
+      <p>{{ post.excerpt }}<a href="{{ post.url }}">Read more...</a></p>
+      {% endfor %}
+    </div>
+    <div class="clearfix"></div>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+  <aside class="homeAside">
+    <div class="search">
+      <script>
+        (function() {
+          var cx = '001482016165219114480:din6aj9dfu0';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+              '//www.google.com/cse/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:searchbox-only resultsUrl="{{ site.baseurl }}/search/"></gcse:searchbox-only>
+    </div>
+    <div class="asidePosts">
+      <ul>
+      {% for post in site.posts offset: 1 limit: 10 %}
+        <li><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </div>
+  </aside>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% for post in site.posts offset: 1 limit: 5 %}
+  <div class="mainContent">
+    <article>
+      <h2><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}<a href="{{ post.url }}">Read more...</a></p>
+    </article>
+  </div>
+  {% endfor %}
 
 </div>
+
+<div class="clearfix"></div>
+

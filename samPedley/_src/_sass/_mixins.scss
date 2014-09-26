@@ -1,0 +1,22 @@
+
+//--------------------- Breakpoints ---------------------
+
+@mixin breakpoint($point) {
+    @if $point == medium {
+    @media (max-width: 850x) { @content; }
+  }
+    @else if $point == mediumMin {
+    @media (min-width: 1600px) { @content; }
+  }
+    @else if $point == small {
+    @media (max-width: 600px)  { @content; }
+  }
+  @else if $point == smallMin {
+    @media (min-width: 600px)  { @content; }
+  }
+}
+
+
+@mixin mainShadow{
+    box-shadow: 0 0 3px rgba(45, 45, 45, 0.1);
+}

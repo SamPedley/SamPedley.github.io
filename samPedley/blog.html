@@ -1,0 +1,16 @@
+---
+layout: default
+title: Sam's Blog Page
+---
+<div class="max">
+      {% for post in site.posts limit: 20 %}
+      <div class="blogContent">
+      <article>
+          <h2><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt }}<a href="{{ post.url }}">Read more...</a></p>
+      </article>
+
+      </div>
+      {% endfor %}
+
+</div>

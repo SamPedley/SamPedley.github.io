@@ -1,0 +1,47 @@
+//--------------------- Asside ---------------------
+.homeAside{
+	margin-top: 2%;
+	@include mainShadow;
+	.searchAside{
+
+		width: 74%;
+		height: 35px;
+		margin:2%;
+	}//end .searchAside
+	.btn{
+
+		width: 16%;
+		height: 35px;
+		margin:2% 2% 2% 0;
+
+	}
+}//end .homeAsside
+
+//--------------------- Main Asside ---------------------
+
+.homeAside {
+    float: right;
+    margin: 2%;
+    width:320px;
+    height: 400px;
+    background-color: white;
+}
+
+.gsc-input, .gsc-search-button{
+
+	padding: 10px;
+
+}
+
+.asidePosts{
+	ul{
+		list-style-type: none;
+	}
+	a{
+		line-height: 2;
+		font-size: 16px;
+		font-weight: 400;
+		
+
+	}
+}

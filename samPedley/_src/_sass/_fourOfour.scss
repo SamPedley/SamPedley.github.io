@@ -1,0 +1,30 @@
+.fourOfour{
+	width: 96%;
+	margin: 2%;
+	height: 50em;
+	background-image: url('img/notThePage.jpg');
+	background-repeat:no-repeat;
+	//background-attachment:fixed;
+	background-position:right;
+
+	text-align: center;
+	h1{
+		margin:0 auto;
+		max-width: 1000px;
+		font-size: 5em;
+		padding: 2em 2%;
+		color:white;
+		text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	}
+	@media all and (max-width: 600px){
+
+		h1{
+			padding: 2%;
+		}
+
+	}
+}

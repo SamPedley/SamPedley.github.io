@@ -1,0 +1,30 @@
+.blogContent {
+    float: left;
+    margin-top: 2%;
+    margin-left:2%;
+    width:96%;
+    height: auto;
+    background-color: white;
+    @include mainShadow;
+
+    article{
+        margin:30px 2%;
+
+        img{
+            display: inline-block;
+            float: left;
+            margin: 0 2%;
+            transform:rotate(45deg);
+            
+        }
+
+        h2{
+          
+        }
+
+        h3{
+            
+        }
+    }//end article 
+    
+}//end .main content

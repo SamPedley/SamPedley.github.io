@@ -1,0 +1,116 @@
+
+
+//--------------------- hero ---------------------
+
+.hero {
+    margin: 2% 2% 0;
+    width: 96%;
+    height: auto;
+    background-color: white;
+    @include mainShadow;
+
+
+
+	.heroEye{
+
+		height: 350px;
+		width: 60%;
+		background: url('../img/barkingHero.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+		float: left;
+		margin: 25px;
+
+        @media all and (max-width: 825px){ 
+            width: 80%;
+            margin: 25px 10% 15px;
+        }
+
+        @media all and (max-width: 525px){ 
+            width: 96%;
+            margin: 2% 2% 0;
+        }
+
+	}//end heroEye
+
+	.heroText{
+		float: left;
+		margin: 25px;
+        width: calc(40% - 100px);
+
+        @media all and (max-width: 825px){ 
+            width: 80%;
+            margin: 0 10% 15px;
+
+            h1{
+                margin-top: 10px;
+            }
+        }
+
+        @media all and (max-width: 525px){ 
+            width: 96%;
+            margin: 0 2% 15px;
+
+            h1{
+                margin-top: 10px;
+            }
+        }
+
+	}//end heroText
+
+}
+
+
+//--------------------- 3 blocks ---------------------
+
+.threes{
+    float: left;
+    margin-top: 2%;
+    margin-right: 2%;
+    width:32%;
+    height: 250px;
+    background-color: white;
+}
+
+.threes:first-child{
+    margin-left: 2%;
+    width:28%;
+}
+
+//--------------------- main content ---------------------
+
+.mainContent {
+    float: left;
+    margin-top: 2%;
+    margin-left:2%;
+    width:calc(94% - 320px);
+    height: auto;
+    background-color: white;
+    @include mainShadow;
+
+    article{
+        margin:30px 2%;
+
+        img{
+            display: inline-block;
+            float: left;
+            margin: 0 2%;
+            transform:rotate(45deg);
+            
+        }
+
+        h2{
+          
+        }
+
+        h3{
+            
+        }
+    }//end article 
+    
+}//end .main content
+
+
+
+

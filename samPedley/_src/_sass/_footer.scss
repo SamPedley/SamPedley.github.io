@@ -1,0 +1,26 @@
+footer{
+	width: 96%;
+	margin: 2%;
+	height: 50px;
+	background-color: white;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  float: right;
+  margin: 5px;
+}
+
+@media all and (max-width: 600px) {
+
+	footer{
+		height: 40px;
+	}
+  
+	.icon{
+  	width: 30px;
+  	height: 30px;
+  	}
+}

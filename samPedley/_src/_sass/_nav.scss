@@ -1,0 +1,156 @@
+//--------------------- Nav Bar ---------------------
+nav {
+    float: right;
+    display: inline;
+    text-align: right;
+    margin-right: 4%;
+    padding-top:11px;
+
+    .desktopNav{
+        div {
+            margin-right: 20px;
+            display: inline;
+            font-size: 20px;
+            padding:4px 8px;
+            transition: border-radius 200ms linear;
+
+
+            a{color:$titleColor;}
+        }
+        #homeNav:hover{
+            border: 2px solid $homeNavC;
+            border-radius: 8px;
+            margin-right: 16px;
+
+        }
+
+        #aboutNav:hover{
+            border: 2px solid $aboutNavC;
+            border-radius: 10px;
+            margin-right: 16px;
+        }
+
+        #blogNav:hover{
+            border: 2px solid $blogNavC;
+            border-radius: 10px;
+            margin-right: 16px;
+        }
+    }//end desktop nav 
+    .mobileNav{
+        .navIconM {
+            position: relative;
+            display:  inline-block;
+            width: 30px;
+            height: 30px;
+            margin-right: 4%;
+
+            span {
+                margin: 0 auto;
+                position: relative;
+                top: 10px;
+                }
+            span:before, span:after {
+                position: absolute;
+                content: '';
+                transition: .2s ease;
+                }
+            span, span:before, span:after {
+                width: 30px;
+                height: 4px;
+                background-color: $titleColor;
+                display: block;
+                }
+            span:before {
+                margin-top: -12px;
+                }
+            span:after {
+                margin-top: 12px;
+                }
+        }//end nav icon m
+        
+      width:100px; 
+      font-size: 16px;
+      label {
+        display: block;
+        padding: 0 18px;
+        margin:  0;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        color: $titleColor;
+        font-size: 24px;
+      }
+
+      input {
+        display: none;
+        &:checked ~ .drop {
+          transition: height 0.5s ease-in-out;
+          height: 160px;//height of box when clicked
+        }
+
+        &:checked ~  label {.navIconM span:before, .navIconM span:after{margin-top: 0px;}}
+      }
+        .drop {
+        overflow: hidden;
+        height: 0px;
+        position: absolute;
+        z-index:0;
+        transition: height 0.3s ease-in-out;//trainsation
+            ul {
+              height: 100%;
+              margin: 0;
+              padding:0;
+              list-style: none;
+
+              
+              li {
+                padding:10px 30px;
+                border-top: 5px solid white;
+                text-align: center;
+                background-color: $backgroundColor;
+                    &:first-child {
+                      padding-top:15px;
+                      border-top: 0;
+                    }
+                    &:hover {
+                        background: darken($backgroundColor, 14%);
+                        transition: background-color 300ms linear;
+                        }
+                    a {
+                      color: $titleColor;
+                      text-decoration: none;
+                      font-size: 20px;
+                    }
+                }//end li 
+                #homeNavM:hover{
+                    background: $homeNavC;
+                    a{color:white;}
+                }
+                #aboutNavM:hover{
+                    background: $aboutNavC;
+                    a{color:white;}
+                }
+                #blogNavM:hover{
+                    background: $blogNavC;
+                    a{color:white;}
+                }
+            }//end ul 
+        }//end .drop
+    }//end mobile nav 
+
+    .search{
+
+        div{
+            float: right;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(226, 226, 226, 1.0);
+            display: inline;
+                
+                img{
+
+                }
+        }
+    }
+}//end nav 
+

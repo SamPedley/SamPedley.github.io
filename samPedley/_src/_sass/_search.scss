@@ -1,0 +1,70 @@
+.searchResults {
+    float: left;
+    margin-top: 2%;
+    margin-left:2%;
+    width:96%;
+    height: auto;
+    background-color: white;
+    @include mainShadow;
+
+    article{
+        margin:30px 2%;
+
+        img{
+            display: inline-block;
+            float: left;
+            margin: 0 2%;
+            transform:rotate(45deg);
+            
+        }
+
+        h2{
+          
+        }
+
+        h3{
+            
+        }
+    }//end article 
+    
+}//end .main content
+
+
+.backHome{
+
+    float: left;
+    margin-top: 2%;
+    margin-left:2%;
+    width:96%;
+    height: auto;
+    background-color: white;
+    @include mainShadow;
+    a{
+        margin: 10px 10px 10px 2%;
+    }
+
+}
+
+.searchBar {
+    float: left;
+    margin-top: 2%;
+    margin-left:2%;
+    width:96%;
+    height: auto;
+    background-color: white;
+    @include mainShadow;
+}
+
+
+input.gsc-search-button{
+    border-color: white !important;
+    background-color: $backgroundColor !important;
+    transition: background-color 0.4s ease-in-out;
+
+    &:hover{
+        background-color:$aLinkBlue !important;
+        transition: background-color 0.4s ease-in-out;
+    }
+}
+
+

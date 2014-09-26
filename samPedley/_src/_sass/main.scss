@@ -1,0 +1,116 @@
+
+/*
+Theme Name: SamPedley
+Theme URI: http://underscores.me/
+Author: SamPedley
+Author URI: http://sampedley.com
+Description: Just a site for a little blog
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+//test
+//--------------------- Colors ---------------------
+$backgroundColor : rgba(226, 226, 226, 1.0);
+$titleColor :rgba(43, 43, 43, 1.0);
+$homeNavC: rgba(69, 131, 178, 1.0);
+$aboutNavC: rgba(255, 123, 114, 1.0);
+$blogNavC: rgba(77, 204, 130, 1.0);
+$aLinkBlue: rgba(69, 131, 179, 1.0);
+
+
+//--------------------- Global & Primary classes --------------------
+
+body{
+    background-color: $backgroundColor;
+    font-weight: light;
+    font-family: Open Sans, helvetica,  sans-serif;
+    line-height: 1.6;
+    p{
+        font-size: 16px;
+    }
+}
+
+h1{
+    font-weight: 600;
+}
+
+.clearfix{clear:both;}
+
+a {
+    color: $aLinkBlue;
+    transition: color 0.6s ease-in-out;
+
+    &:hover{
+        color: rgba(0, 155, 255, 1.0);
+        transition: color 0.6s ease-in-out;
+    }
+}
+
+table {
+    border-color: rgba(226, 226, 226, 1.0);
+}
+
+.max {
+    max-width: 1600px;
+    margin: auto;
+}
+
+
+//--------------------- imports ---------------------
+@import '_mixins.scss';
+@import '_normalize.scss';
+@import '_nav.scss';
+@import '_home.scss';
+@import '_footer.scss';
+@import '_fourOfour.scss';
+@import '_sidebar.scss';
+@import '_headder.scss';
+@import '_posts.scss';
+@import '_blog.scss';
+@import '_search.scss';
+
+
+//--------------------- Break Points ---------------------
+
+
+@media all and (max-width: 825px) {
+
+    .mainContent {
+        width:96%;
+    }
+    .homeAside {
+        width:96%;
+        margin-top: 2%;
+        height: 60px;
+        margin-bottom: 0;
+    }
+    .threes{
+        display: none;
+    }
+}
+
+@media all and (min-width: 825px){
+
+
+}
+
+
+@media all and (max-width: 600px) {
+    .desktopNav {
+        display:none;
+    }
+    header{
+
+        margin-bottom: 4%;
+
+        h2{
+        padding-top: 5px;
+        font-size: 32px;
+        }
+    }
+}
+@media all and (min-width: 600px) {
+    .mobileNav {display:none;}
+}
