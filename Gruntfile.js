@@ -11,32 +11,39 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
-          "css/main-unprefixed.css": "_sass/main.scss"
+          "dev/F/css/main-unprefixed.css": "dev/_src/_scss/main.scss"
         }
       }
     },
 
     autoprefixer: {
       global: {
-        src: "css/main-unprefixed.css",
-        dest: "css/main.css"
+        src: "dev/F/css/main-unprefixed.css",
+        dest: "dev/F/css/main.css"
       }
     },
 
     uglify: {
       my_target: {
         files: {
-          'js/global.js': ['_js/global.js']
+          'dev/F/js/global.js': ['dev/_src/_js/global.js']
         }
       }
     },
 
     shell: {
-      jekyllServe: {
-        command: "jekyll serve --baseurl="
-      },
+       jekyllServe: {
+        command: [
+                'cd dev',
+                'jekyll serve --baseurl=',
+            ].join('&&')
+       },
       jekyllBuild: {
-        command: "jekyll build --config _config.yml"
+
+         command: [
+                'cd dev',
+                'jekyll build --config _config.yml',
+            ].join('&&')
       }
     },
 
@@ -45,20 +52,20 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["index.html", "_layouts/*.html", "_posts/*.md",'_posts/*.markdown', "_projects/*.md", "_includes/*.html"],
+        files: ["dev/index.html", "dev/_layouts/*.html", "dev/_posts/*.md",'dev/_posts/*.markdown', "dev/_projects/*.md", "dev/_includes/*.html"],
         tasks: ["shell:jekyllBuild"],
         livereload: true
       },
       css: {
-        files: ["_sass/*.scss","_sass/*.sass","_sass/*.css"],
+        files: ["dev/_src/_scss/*.scss","dev/_src/_scss/*.sass","dev/_src/_scss/*.css"],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       },
       svg: {
-        files: ["_svg/*.svg"],
+        files: ["dev/_src/_svg/*.svg"],
         tasks: ["svgstore", "shell:jekyllBuild"]
       },
       js: {
-        files: ["_js/*.js"],
+        files: ["dev/_src/_js/*.js"],
         tasks: ["uglify", "shell:jekyllBuild"]
       }
     },
@@ -73,7 +80,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "_includes/svg-defs.svg": ["_svg/*.svg"]
+          "dev/_includes/svg-defs.svg": ["dev/_src/_svg/*.svg"]
         }
       }
     }
@@ -83,6 +90,6 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch", "svgstore", "uglify"]);
+  grunt.registerTask("default", ["sass", "autoprefixer","uglify", "svgstore", "shell:jekyllBuild","watch"]);
 
 };
