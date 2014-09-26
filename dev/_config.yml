@@ -13,4 +13,5 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 destination: ../site
+permalink: /:categories/:title
 highlighter: pygments
