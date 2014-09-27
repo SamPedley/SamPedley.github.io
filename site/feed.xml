@@ -6,8 +6,8 @@
 </description>
     <link>http://www.sampedley.comhttp://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.comhttp://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 26 Sep 2014 18:53:06 -0500</pubDate>
-    <lastBuildDate>Fri, 26 Sep 2014 18:53:06 -0500</lastBuildDate>
+    <pubDate>Fri, 26 Sep 2014 19:12:15 -0500</pubDate>
+    <lastBuildDate>Fri, 26 Sep 2014 19:12:15 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -92,6 +92,9 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
     &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt; thing &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 </description>
         <pubDate>Sun, 12 Jan 2014 00:00:00 -0600</pubDate>
         <link>http://www.sampedley.comhttp://www.sampedley.com/jekyll/update/testing2</link>

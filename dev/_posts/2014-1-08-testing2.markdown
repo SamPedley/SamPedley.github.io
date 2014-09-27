@@ -42,3 +42,8 @@ def show
   end
 end
 {% endhighlight %}
+
+
+{% highlight HTML %}
+<h1> thing </h1>
+{% endhighlight %}
