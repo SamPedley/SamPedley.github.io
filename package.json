@@ -18,6 +18,7 @@
   "homepage": "https://github.com/SamPedley/samJekyll",
   "devDependencies": {
     "grunt-autoprefixer": "^1.0.1",
+    "grunt-contrib-imagemin": "^0.8.1",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",

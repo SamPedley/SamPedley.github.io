@@ -46,7 +46,6 @@ module.exports = function(grunt) {
             ].join('&&')
       }
     },
-
     watch: {
       options: {
         livereload: true

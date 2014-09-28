@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam Pedley</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Hi, I&#39;m a web developer in Chicago.
 </description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Sep 2014 15:58:35 -0500</pubDate>
-    <lastBuildDate>Sun, 28 Sep 2014 15:58:35 -0500</lastBuildDate>
+    <pubDate>Sun, 28 Sep 2014 16:31:42 -0500</pubDate>
+    <lastBuildDate>Sun, 28 Sep 2014 16:31:42 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -38,7 +38,8 @@
     
       <item>
         <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
+        <description>&lt;p&gt;&lt;img src=&quot;/img/heroImg.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;
+You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
 To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
 
 &lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
