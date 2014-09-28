@@ -85,7 +85,7 @@ nav {
         display: none;
         &:checked ~ .drop {
           transition: height 0.5s ease-in-out;
-          height: 160px;//height of box when clicked
+          height: 180px;//height of box when clicked
         }
 
         &:checked ~  label {.navIconM span:before, .navIconM span:after{margin-top: 0px;}}

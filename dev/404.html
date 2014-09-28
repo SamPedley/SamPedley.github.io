@@ -1,0 +1,31 @@
+---
+layout: default
+title: Page not found
+permalink: /404/
+---
+
+<div class="searchResults">
+<h2>Oh no... the page is missing</h2>
+try searching for the page you're looking for.
+
+</div>
+
+<div class="searchBar">
+    <script>
+  (function() {
+    var cx = '001482016165219114480:din6aj9dfu0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only resultsUrl="{{ site.baseurl }}/search/" enableAutoComplete="true"></gcse:searchbox-only>
+</div>
+
+<div class="backHome">
+<a href="{{ site.baseurl }}/">Back Home</a>
+</div>
