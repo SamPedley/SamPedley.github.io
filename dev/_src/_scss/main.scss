@@ -13,6 +13,7 @@ $homeNavC:              rgba(69, 131, 178, 1.0);
 $aboutNavC:             rgba(255, 123, 114, 1.0);
 $blogNavC:              rgba(77, 204, 130, 1.0);
 $aLinkBlue:             rgba(69, 131, 179, 1.0);
+$aLinkHover:            rgba(0, 155, 255, 1.0);
 
 //Social Icons
 $socialIcons:           rgba(226, 226, 226, 1.0);
@@ -44,18 +45,31 @@ a {
     transition: color 0.6s ease-in-out;
 
     &:hover{
-        color: rgba(0, 155, 255, 1.0);
+        color: $aLinkHover;
         transition: color 0.6s ease-in-out;
     }
 }
 
 table {
-    border-color: rgba(226, 226, 226, 1.0);
+    border-color: $backgroundColor;
 }
 
 .max {
     max-width: 1600px;
     margin: auto;
+}
+
+//--------------------- other -------------------
+.img-center{
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    text-align:center;
+    display: block;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -65,7 +79,6 @@ table {
 @import '_nav.scss';
 @import '_home.scss';
 @import '_footer.scss';
-@import '_fourOfour.scss';
 @import '_sidebar.scss';
 @import '_headder.scss';
 @import '_posts.scss';
@@ -88,16 +101,7 @@ table {
         height: 60px;
         margin-bottom: 0;
     }
-    .threes{
-        display: none;
-    }
 }
-
-@media all and (min-width: 825px){
-
-
-}
-
 
 @media all and (max-width: 600px) {
     .desktopNav {

@@ -3,7 +3,7 @@
 header {
     width: 100%;
     height: auto;
-    background-color: white;
+    background-color: $white;
    
     h2{
         margin: 0 4%;
@@ -16,9 +16,9 @@ header {
         color:$titleColor;
         text-decoration: none;
 
-        &:hover{
-            color: $aLinkBlue;
-        }
+            &:hover{
+                color: $aLinkBlue;
+            }
         }
     }
 }

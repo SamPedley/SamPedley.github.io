@@ -105,7 +105,7 @@ nav {
               
               li {
                 padding:10px 30px;
-                border-top: 5px solid white;
+                border-top: 5px solid $white;
                 text-align: center;
                 background-color: $backgroundColor;
                     &:first-child {
@@ -124,15 +124,15 @@ nav {
                 }//end li 
                 #homeNavM:hover{
                     background: $homeNavC;
-                    a{color:white;}
+                    a{color:$white;}
                 }
                 #aboutNavM:hover{
                     background: $aboutNavC;
-                    a{color:white;}
+                    a{color:$white;}
                 }
                 #blogNavM:hover{
                     background: $blogNavC;
-                    a{color:white;}
+                    a{color:$white;}
                 }
             }//end ul 
         }//end .drop

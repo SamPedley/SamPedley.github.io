@@ -1,21 +1,16 @@
-
-
 //--------------------- hero ---------------------
 
 .hero {
     margin: 2% 2% 0;
     width: 96%;
     height: auto;
-    background-color: white;
+    background-color: $white;
     @include mainShadow;
 
-
-
 	.heroEye{
-
 		height: 350px;
 		width: 60%;
-		background: url('../img/barkingHero.png');
+		background: url('http://www.sampedley.com/F/img/heroImg.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -31,7 +26,6 @@
             width: 96%;
             margin: 2% 2% 0;
         }
-
 	}//end heroEye
 
 	.heroText{
@@ -42,41 +36,16 @@
         @media all and (max-width: 825px){ 
             width: 80%;
             margin: 0 10% 15px;
-
-            h1{
-                margin-top: 10px;
-            }
+            h1{ margin-top: 10px; }
         }
 
         @media all and (max-width: 525px){ 
             width: 96%;
             margin: 0 2% 15px;
-
-            h1{
-                margin-top: 10px;
-            }
         }
-
 	}//end heroText
 
-}
-
-
-//--------------------- 3 blocks ---------------------
-
-.threes{
-    float: left;
-    margin-top: 2%;
-    margin-right: 2%;
-    width:32%;
-    height: 250px;
-    background-color: white;
-}
-
-.threes:first-child{
-    margin-left: 2%;
-    width:28%;
-}
+}// end hero 
 
 //--------------------- main content ---------------------
 
@@ -86,20 +55,14 @@
     margin-left:2%;
     width:calc(94% - 320px);
     height: auto;
-    background-color: white;
+    background-color: $white;
     @include mainShadow;
 
     article{
         margin:30px 2%;
         
-        img{
-            max-width: 100%;
-            padding-bottom: 15px;
-            border-bottom: 3px solid $backgroundColor;
-        }
+        img{ @include imgResult; }
 
-
-    
     }//end article 
     
 }//end .main content

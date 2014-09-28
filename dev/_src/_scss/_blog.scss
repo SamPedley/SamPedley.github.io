@@ -4,25 +4,14 @@
     margin-left:2%;
     width:96%;
     height: auto;
-    background-color: white;
+    background-color: $white;
     @include mainShadow;
 
     article{
         margin:30px 2%;
+        
+        img{ @include imgResult; }
 
-        img{
-            max-width: 100%;
-            padding-bottom: 15px;
-            border-bottom: 3px solid $backgroundColor;
-        }
-
-        h2{
-          
-        }
-
-        h3{
-            
-        }
     }//end article 
     
 }//end .main content

@@ -1,11 +1,6 @@
 .postContainer{
 
-	float: left;
-	margin: 2%;
-    width: 92%;
-    height: auto;
-    padding: 2%;
-    background-color: white;
+	@include tile(2%);
     @include mainShadow;
 
 
@@ -24,7 +19,6 @@
 
 .post-header{
 	    p{
-
     	border-bottom: 3px solid $backgroundColor;
     	margin-top: 0;
     	padding-bottom: 10px;
@@ -33,13 +27,7 @@
 }
 
 .comments {
-
-	float: left;
-    width: 92%;
-    height: auto;
-    padding: 2%;
-    margin-left: 2%;
-    background-color: white;
+    @include tile(0 0 0 2%);
     @include mainShadow;
 
 }

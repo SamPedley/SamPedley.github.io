@@ -1,63 +1,29 @@
 .searchResults {
-    float: left;
-    margin-top: 2%;
-    margin-left:2%;
-    width:96%;
-    height: auto;
-    background-color: white;
+
+    @include tile(2% 0 0 2%);
     @include mainShadow;
 
     article{
         margin:30px 2%;
-
-        img{
-            display: inline-block;
-            float: left;
-            margin: 0 2%;
-            transform:rotate(45deg);
-            
-        }
-
-        h2{
-          
-        }
-
-        h3{
-            
-        }
+        img{ @include imgResult; }
     }//end article 
     
 }//end .main content
 
-
 .backHome{
 
-    float: left;
-    margin-top: 2%;
-    margin-left:2%;
-    width:96%;
-    height: auto;
-    background-color: white;
+    @include tile(2% 0 0 2%);
     @include mainShadow;
-    a{
-        margin: 10px 10px 10px 2%;
-    }
-
+    a{ margin: 10px 10px 10px 2%; }
 }
 
 .searchBar {
-    float: left;
-    margin-top: 2%;
-    margin-left:2%;
-    width:96%;
-    height: auto;
-    background-color: white;
+    @include tile(2% 0 0 2%);
     @include mainShadow;
 }
 
-
 input.gsc-search-button{
-    border-color: white !important;
+    border-color: $white !important;
     background-color: $backgroundColor !important;
     transition: background-color 0.4s ease-in-out;
 
@@ -67,4 +33,8 @@ input.gsc-search-button{
     }
 }
 
-
+#gs_tti50{
+    background: none !important;
+    
+    input{ background: none !important; }
+}
