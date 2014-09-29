@@ -1,7 +1,7 @@
 Jekyll site 
 ===========
 
-##This site is
+###This site is
 
 + built on [jekyll](http://jekyllrb.com/) 
 + run through [Grunt](http://gruntjs.com/) using:
