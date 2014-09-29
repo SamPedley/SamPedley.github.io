@@ -8,6 +8,7 @@ permalink: /blog/
       <div class="blogContent">
       <article>
           <h2><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h2>
+           <p class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
           <p>{{ post.excerpt }}<a href="{{ post.url }}">Read more...</a></p>
       </article>
 

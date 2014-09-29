@@ -2,6 +2,7 @@
 
 	@include tile(2%);
     @include mainShadow;
+    overflow: hidden;
 
 
     h1 {
@@ -13,6 +14,26 @@
 
     img{
         max-width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+        background-color: $backgroundColor;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            transform: scale(1.05,1.05);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    hr{
+        margin-top: 0px;
+        border: 2px solid $backgroundColor;
+        opacity: 0.6;
+    }
+
+    h2{
+        margin-bottom: 5px;
     }
 
 }

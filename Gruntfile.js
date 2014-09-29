@@ -26,7 +26,8 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'dev/F/js/global.js': ['dev/_src/_js/global.js']
+          'dev/F/js/global.js': ['dev/_src/_js/global.js'],
+          'dev/F/js/jQuery_fitVids.js': ['dev/_src/_js/jquery.js','dev/_src/_js/fitVids.js']
         }
       }
     },

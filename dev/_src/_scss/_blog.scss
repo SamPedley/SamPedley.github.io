@@ -12,6 +12,15 @@
         
         img{ @include imgResult; }
 
+        h2{
+            margin-bottom: 0;
+        }
+
+        .meta{
+            margin-top: 0;
+            color: $lightText;
+        }
+
     }//end article 
     
 }//end .main content
