@@ -1,4 +1,1 @@
 ErrorDocument 404 /404/
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^sampedley.com [NC]
-RewriteRule ^(.*)$ http://sampedley.com/$1 [R=301,L]
