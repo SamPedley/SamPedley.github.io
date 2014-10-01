@@ -8,7 +8,8 @@ module.exports = function(grunt) {
     sass: {
       global: {
         options: {
-          style: "compressed"
+          style: "compressed",
+          banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */'
         },
         files: {
           "dev/F/css/main-unprefixed.css": "dev/_src/_scss/main.scss"
@@ -24,6 +25,9 @@ module.exports = function(grunt) {
     },
 
     uglify: {
+      options: {
+        banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */'
+      },
       my_target: {
         files: {
           'dev/F/js/global.js': ['dev/_src/_js/global.js'],

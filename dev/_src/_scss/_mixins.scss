@@ -1,15 +1,10 @@
-
-//--------------------- Breakpoints ---------------------
-
 @mixin tile($point) {
-
     float: left;
     margin: $point;
     width: 92%;
     height: auto;
     padding: 2%;
     background-color: $white;
-
 }
 
 @mixin mainShadow{
