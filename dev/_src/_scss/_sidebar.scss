@@ -2,6 +2,8 @@
 .homeAside{
 	margin-top: 2%;
 	@include mainShadow;
+	border-top: 5px solid $homeNavC;
+
 	.searchAside{
 
 		width: 74%;

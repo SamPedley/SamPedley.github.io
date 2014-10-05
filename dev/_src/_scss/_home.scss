@@ -32,11 +32,12 @@
 		float: left;
 		margin: 25px;
         width: calc(40% - 100px);
+        h1{line-height: 1.2;}
 
         @media all and (max-width: 825px){ 
             width: 80%;
             margin: 0 10% 15px;
-            h1{ margin-top: 10px; }
+            h1{ margin-top: 10px;}
         }
 
         @media all and (max-width: 525px){ 
@@ -55,17 +56,42 @@
     margin-left:2%;
     width:calc(94% - 320px);
     height: auto;
-    background-color: $white;
+            background-color: $lightBackground;
+        transition: background-color 0.1s ease-in-out;
     @include mainShadow;
 
+    &:hover{
+
+            background-color: $white;
+            transition: background-color 0.1s ease-in-out;
+
+        .homeTitle{
+         background-color: $homeNavC;
+         color: $white;
+         transition: color 0.5s ease-in-out;
+        transition: background-color 0.4s ease-in-out;}
+    }
+
+    .homeTitle{
+        background-color: $lightBackground;
+        padding: 1% 2% 1%;
+        margin-top: 0;
+        color: $titleColor;
+        border-bottom: 5px solid $homeNavC;
+        transition: color 0.5s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+    }
+
     article{
-        margin:30px 2%;
+        margin:1% 2% 2%;
+
         
         img{ @include imgResult; }
 
     }//end article 
     
 }//end .main content
+
 
 
 

@@ -16,3 +16,10 @@
     padding-bottom: 15px;
     border-bottom: 3px solid $backgroundColor;
 }
+
+@mixin topColor($color){
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: lighten($color,15%);
+}

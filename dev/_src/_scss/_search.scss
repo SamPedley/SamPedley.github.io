@@ -3,6 +3,7 @@
     @include tile(2% 0 0 2%);
     @include mainShadow;
 
+
     article{
         margin:30px 2%;
         img{ @include imgResult; }
@@ -20,15 +21,18 @@
 .searchBar {
     @include tile(2% 0 0 2%);
     @include mainShadow;
+    padding: 1% 2%;
+
+    border-top: 5px solid $homeNavC;
 }
 
 input.gsc-search-button{
     border-color: $white !important;
-    background-color: $backgroundColor !important;
+    background-color: $aLinkBlue !important;
     transition: background-color 0.4s ease-in-out;
 
     &:hover{
-        background-color:$aLinkBlue !important;
+        background-color:$aLinkHover !important;
         transition: background-color 0.4s ease-in-out;
     }
 }
@@ -38,3 +42,45 @@ input.gsc-search-button{
     
     input{ background: none !important; }
 }
+
+@keyframes crazy {
+  0% {
+   background-color: $white;
+   color:$titleColor;
+  }
+
+  20%{
+    background-color: $aboutNavC;
+    color: $white;
+  }
+
+  40% {
+    background-color: $homeNavC;
+    color: $white;
+  }
+
+    60% {
+    background-color: $blogNavC;
+    color: $white;
+  }
+
+   80% {
+    background-color: $aLinkHover;
+    color: $white;
+  }
+  100% {
+   background-color: $white;
+   color:$titleColor;
+  }
+}
+
+
+.four04{
+
+    @include tile(2% 0 0 2%);
+    @include mainShadow;
+    animation: crazy 25s infinite;
+    animation-delay: 5s;
+    transition: all 0.2s ease-in-out;
+}
+

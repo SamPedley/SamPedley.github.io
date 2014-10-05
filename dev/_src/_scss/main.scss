@@ -4,8 +4,8 @@ $white:                 rgba(255, 255, 255, 1.0);
 $titleColor :           rgba(43, 43, 43, 1.0);
 $lightText :            rgba(129, 129, 129, 1.0);
 $homeNavC:              rgba(69, 131, 178, 1.0);
-$aboutNavC:             rgba(255, 123, 114, 1.0);
-$blogNavC:              rgba(77, 204, 130, 1.0);
+//$aboutNavC:             rgba(255, 123, 114, 1.0);
+//$blogNavC:              rgba(77, 204, 130, 1.0);
 $aLinkBlue:             rgba(69, 131, 179, 1.0);
 $aLinkHover:            rgba(0, 155, 255, 1.0);
 //Social Icons
@@ -14,6 +14,13 @@ $github:                rgba(108, 198, 68, 1.0);
 $behance:               rgba(23, 105, 255, 1.0);
 $linkedin:              rgba(9, 117, 179, 1.0);
 $rss:                   rgba(238, 81, 63, 1.0);
+// light background
+$lightBackground:       rgba(250, 250, 250, 1.0);
+
+//alternat
+$aboutNavC:             rgba(238, 85, 85, 1.0);
+$blogNavC:              rgba(82, 187, 178, 1.0);
+$gray:                  rgba(68, 67, 68, 1.0);
 //--------------------- imports ---------------------
 @import '_mixins.scss';
 @import '_normalize.scss';
@@ -26,6 +33,7 @@ $rss:                   rgba(238, 81, 63, 1.0);
 @import '_blog.scss';
 @import '_search.scss';
 @import '_pygment.scss';
+@import '_about.scss';
 
 //--------------------- Global & Primary classes --------------------
 
@@ -77,6 +85,10 @@ table {
     height: auto;
 }
 
+//-----------top -----------
+.topHome{ @include topColor ($homeNavC); }
+.topAbout{ @include topColor ($aboutNavC); }
+.topBlog{ @include topColor ($blogNavC); }
 
 
 
@@ -94,6 +106,7 @@ table {
         margin-top: 2%;
         height: 60px;
         margin-bottom: 0;
+
     }
 }
 
@@ -103,7 +116,7 @@ table {
     }
     header{
 
-        margin-bottom: 2%;
+        //margin-bottom: 2%;
 
         h2{
         padding-top: 5px;

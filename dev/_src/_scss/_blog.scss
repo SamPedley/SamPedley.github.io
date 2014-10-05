@@ -4,11 +4,36 @@
     margin-left:2%;
     width:96%;
     height: auto;
-    background-color: $white;
+    background-color: $lightBackground;
+    transition: background-color 0.1s ease-in-out;
     @include mainShadow;
 
+    &:hover{
+        background-color: $white;
+        transition: background-color 0.1s ease-in-out;
+
+        .blogTitle{
+             background-color: $blogNavC;
+             color: $white;
+         transition: color 0.5s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+        }
+    }
+
+    .blogTitle{
+    //background-color: $lightBackground;
+    padding: 2% 2% 1%;
+    margin-top: 0;
+    color: $titleColor;
+    border-bottom: 5px solid $blogNavC;
+        transition: color 0.5s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
+
+
+    }
+
     article{
-        margin:30px 2%;
+        margin:1% 2% 2%;
         
         img{ @include imgResult; }
 
@@ -17,10 +42,12 @@
         }
 
         .meta{
-            margin-top: 0;
+            margin-top: -10px;
             color: $lightText;
         }
 
     }//end article 
     
 }//end .main content
+
+

@@ -1,12 +1,19 @@
+
+.mainHeader{
+
+ border-bottom: 10px solid linear-gradient( 45deg, blue, red );
+
+}
 //--------------------- Nav Bar ---------------------
 nav {
     float: right;
     display: inline;
     text-align: right;
     margin-right: 4%;
-    padding-top:11px;
+    padding-top:15px;
 
     .desktopNav{
+
         div {
             margin-right: 20px;
             display: inline;
@@ -18,22 +25,19 @@ nav {
             a{color:$titleColor;}
         }
         #homeNav:hover{
-            border: 2px solid $homeNavC;
-            border-radius: 8px;
-            margin-right: 16px;
+           border-bottom: 2px solid $homeNavC;
+            transition: border-bottom 0.3s ease-in-out;
 
         }
 
         #aboutNav:hover{
-            border: 2px solid $aboutNavC;
-            border-radius: 10px;
-            margin-right: 16px;
+            border-bottom: 2px solid $aboutNavC;
+            transition: border-bottom 0.3s ease-in-out;
         }
 
         #blogNav:hover{
-            border: 2px solid $blogNavC;
-            border-radius: 10px;
-            margin-right: 16px;
+            border-bottom: 2px solid $blogNavC;
+            transition: border-bottom 0.3s ease-in-out;
         }
     }//end desktop nav 
     .mobileNav{
@@ -108,31 +112,30 @@ nav {
                 border-top: 5px solid $white;
                 text-align: center;
                 background-color: $backgroundColor;
+                color: $titleColor;
+                text-decoration: none;
+                font-size: 20px;
+                border-bottom: 5px solid $white;
                     &:first-child {
                       padding-top:15px;
-                      border-top: 0;
+                      border-top: none;
                     }
                     &:hover {
                         background: darken($backgroundColor, 14%);
                         transition: background-color 300ms linear;
                         }
-                    a {
-                      color: $titleColor;
-                      text-decoration: none;
-                      font-size: 20px;
-                    }
                 }//end li 
                 #homeNavM:hover{
                     background: $homeNavC;
-                    a{color:$white;}
+                    color:$white;
                 }
                 #aboutNavM:hover{
                     background: $aboutNavC;
-                    a{color:$white;}
+                    color:$white;
                 }
                 #blogNavM:hover{
                     background: $blogNavC;
-                    a{color:$white;}
+                    color:$white;
                 }
             }//end ul 
         }//end .drop
