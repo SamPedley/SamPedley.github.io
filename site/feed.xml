@@ -6,8 +6,8 @@
 </description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 06 Oct 2014 00:39:11 -0500</pubDate>
-    <lastBuildDate>Mon, 06 Oct 2014 00:39:11 -0500</lastBuildDate>
+    <pubDate>Mon, 06 Oct 2014 00:44:47 -0500</pubDate>
+    <lastBuildDate>Mon, 06 Oct 2014 00:44:47 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -111,22 +111,27 @@ Pulling colors for images or videos can be a huge pain and most people have weir
 
 &lt;h2 id=&quot;evernotehttpsevernotecom&quot;&gt;&lt;a href=&quot;https://evernote.com/&quot;&gt;Evernote&lt;/a&gt;&lt;/h2&gt;
 
+&lt;iframe width=&quot;853&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/1p_7snQhdLI?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 &lt;p&gt;If you’re anything like me trying to keep track of client requests, notes , ideas or that awesome code snipit is almost impossible without a program like Evernote. The free version is probably more than enough for most people but you can purchase a  yearly subscription which unlocks features that make it easy to share notes, fire up a quick presentation and most importantly ups your storage. &lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;google-drivehttpsdrivegooglecom&quot;&gt;&lt;a href=&quot;https://drive.google.com&quot;&gt;Google Drive&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;There’s no reason not to be using a cloud based storage solution these days; and personally I think Google drive is far ahead of the curve.  It’s substantially cheaper than Dropbox, it’s reliable and it has awesome little features built in like version control.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/ultimateTools/googleDrive.png&quot; alt=&quot;google drive&quot; /&gt;
+There’s no reason not to be using a cloud based storage solution these days; and personally I think Google drive is far ahead of the curve.  It’s substantially cheaper than Dropbox, it’s reliable and it has awesome little features built in like version control.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;githubhttpsgithubcom&quot;&gt;&lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Oh github… At first I hated github I thought it was confusing,  complicated and overkill. Now The first thing I do is fire up a github repo.  Here are a few articles that helped me better understand it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/ultimateTools/git.png&quot; alt=&quot;git&quot; /&gt;
+Oh github… At first I hated github I thought it was confusing,  complicated and overkill. Now The first thing I do is fire up a github repo.  Here are a few articles that helped me better understand it.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;transmithttppaniccomtransmit&quot;&gt;&lt;a href=&quot;http://panic.com/transmit/&quot;&gt;Transmit&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;There are a couple free ftp clients for the Mac and I never had a problem using them but once I tried transmit I knew I had spoiled myself and I haven’t looked back. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/ultimateTools/transmit.png&quot; alt=&quot;transmit&quot; /&gt;
+There are a couple free ftp clients for the Mac and I never had a problem using them but once I tried transmit I knew I had spoiled myself and I haven’t looked back. &lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -139,7 +144,8 @@ Pulling colors for images or videos can be a huge pain and most people have weir
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;sublimetext-httpwwwsublimetextcom&quot;&gt;&lt;a href=&quot;Text http://www.sublimetext.com/&quot;&gt;Sublime&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Out of all the text editors out there, from notepad to vim, Sublime has become my hands down favorite editor and I even wrote about a few of my &lt;a href=&quot;&quot;&gt;favorite plugins&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/spacegray-eighties.png&quot; alt=&quot;spacegray theme&quot; /&gt;
+Out of all the text editors out there, from notepad to vim, Sublime has become my hands down favorite editor and I even wrote about a few of my &lt;a href=&quot;&quot;&gt;favorite plugins&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 12 Jan 2014 00:00:00 -0600</pubDate>
         <link>http://www.sampedley.com/jekyll/update/apps-for-front-end-devs</link>

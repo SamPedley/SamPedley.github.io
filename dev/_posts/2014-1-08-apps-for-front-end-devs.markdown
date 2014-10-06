@@ -22,23 +22,26 @@ Pulling colors for images or videos can be a huge pain and most people have weir
 
 ##[Evernote](https://evernote.com/)
 
-
+<iframe width="853" height="480" src="//www.youtube.com/embed/1p_7snQhdLI?rel=0" frameborder="0" allowfullscreen></iframe>
 
 If you're anything like me trying to keep track of client requests, notes , ideas or that awesome code snipit is almost impossible without a program like Evernote. The free version is probably more than enough for most people but you can purchase a  yearly subscription which unlocks features that make it easy to share notes, fire up a quick presentation and most importantly ups your storage. 
 
 ----
 
 ##[Google Drive](https://drive.google.com)
+![google drive](/F/img/ultimateTools/googleDrive.png)
 There's no reason not to be using a cloud based storage solution these days; and personally I think Google drive is far ahead of the curve.  It’s substantially cheaper than Dropbox, it's reliable and it has awesome little features built in like version control.
 
 ----
 
 ##[Github](https://github.com/)
+![git](/F/img/ultimateTools/git.png)
 Oh github... At first I hated github I thought it was confusing,  complicated and overkill. Now The first thing I do is fire up a github repo.  Here are a few articles that helped me better understand it.
 
 ----
 
 ##[Transmit](http://panic.com/transmit/)
+![transmit](/F/img/ultimateTools/transmit.png)
 There are a couple free ftp clients for the Mac and I never had a problem using them but once I tried transmit I knew I had spoiled myself and I haven’t looked back. 
 
 ----
@@ -52,4 +55,5 @@ Code kit is one of the best apps ever made for front end developers.  It allows 
 ----
 
 ##[Sublime](Text http://www.sublimetext.com/)
+![spacegray theme](/F/img/sublime/spacegray-eighties.png)
 Out of all the text editors out there, from notepad to vim, Sublime has become my hands down favorite editor and I even wrote about a few of my [favorite plugins]().
