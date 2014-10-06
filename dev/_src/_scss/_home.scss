@@ -1,98 +1,112 @@
 //--------------------- hero ---------------------
 
-.hero {
-    margin: 2% 2% 0;
+.hero
+{
     width: 96%;
     height: auto;
-    background-color: $white;
-    @include mainShadow;
+    margin: 2% 2% 0;
 
-	.heroEye{
-		height: 350px;
-		width: 60%;
-		background: url('http://www.sampedley.com/F/img/heroImg.png');
-        background-size: cover;
+    background-color: $white;
+
+    @include mainShadow;
+    .heroEye
+    {
+        float: left;
+
+        width: 60%;
+        height: 350px;
+        margin: 25px;
+
+        background: url('http://www.sampedley.com/F/img/heroImg.png');
         background-repeat: no-repeat;
         background-position: center center;
-		float: left;
-		margin: 25px;
-
-        @media all and (max-width: 825px){ 
+        background-size: cover;
+        @media all and (max-width: 825px)
+        {
             width: 80%;
             margin: 25px 10% 15px;
         }
-
-        @media all and (max-width: 525px){ 
+        @media all and (max-width: 525px)
+        {
             width: 96%;
             margin: 2% 2% 0;
         }
-	}//end heroEye
+    }//end heroEye
+    .heroText
+    {
+        float: left;
 
-	.heroText{
-		float: left;
-		margin: 25px;
         width: calc(40% - 100px);
-        h1{line-height: 1.2;}
-
-        @media all and (max-width: 825px){ 
+        margin: 25px;
+        h1
+        {
+            line-height: 1.2;
+        }
+        @media all and (max-width: 825px)
+        {
             width: 80%;
             margin: 0 10% 15px;
-            h1{ margin-top: 10px;}
+            h1
+            {
+                margin-top: 10px;
+            }
         }
-
-        @media all and (max-width: 525px){ 
+        @media all and (max-width: 525px)
+        {
             width: 96%;
             margin: 0 2% 15px;
         }
-	}//end heroText
-
+    }//end heroText
 }// end hero 
 
 //--------------------- main content ---------------------
 
-.mainContent {
+.mainContent
+{
     float: left;
-    margin-top: 2%;
-    margin-left:2%;
-    width:calc(94% - 320px);
+
+    width: calc(94% - 320px);
     height: auto;
-            background-color: $lightBackground;
-        transition: background-color 0.1s ease-in-out;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    transition: background-color .1s ease-in-out;
+
+    background-color: $lightBackground;
+
     @include mainShadow;
+    &:hover
+    {
+        transition: background-color .1s ease-in-out;
 
-    &:hover{
+        background-color: $white;
+        .homeTitle
+        {
+            transition: color .5s ease-in-out;
+            transition: background-color .4s ease-in-out;
 
-            background-color: $white;
-            transition: background-color 0.1s ease-in-out;
-
-        .homeTitle{
-         background-color: $homeNavC;
-         color: $white;
-         transition: color 0.5s ease-in-out;
-        transition: background-color 0.4s ease-in-out;}
+            color: $white;
+            background-color: $homeNavC;
+        }
     }
-
-    .homeTitle{
-        background-color: $lightBackground;
-        padding: 1% 2% 1%;
+    .homeTitle
+    {
         margin-top: 0;
+        padding: 1% 2% 1%;
+
+        transition: color .5s ease-in-out;
+        transition: background-color .4s ease-in-out;
+
         color: $titleColor;
         border-bottom: 5px solid $homeNavC;
-        transition: color 0.5s ease-in-out;
-        transition: background-color 0.4s ease-in-out;
+        background-color: $lightBackground;
     }
-
-    article{
-        margin:1% 2% 2%;
-
-        
-        img{ @include imgResult; }
-
+    article
+    {
+        margin: 1% 2% 2%;
+        img
+        {
+            @include imgResult;
+        }
     }//end article 
-    
 }//end .main content
-
-
-
-
-

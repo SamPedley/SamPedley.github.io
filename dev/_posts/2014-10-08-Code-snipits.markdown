@@ -1,16 +1,14 @@
 ---
 layout: post
-title:  "Css Code Snipits"
+title:  "Code Snipits"
 date:   2014-08-10 20:58:58
-categories: stuff
-published: false
+categories: 
+published: true
 ---
 
-Code snipptis I use all the time:
-
+Just some little pices of code I keep coming back to every project:
 
 ##Responsive image css
-I like to use the same syntax as bootstrap.
 {% highlight css %}
 .img-responsive {
 	max-height:100%
@@ -21,11 +19,31 @@ I like to use the same syntax as bootstrap.
 ----
 
 ##Clearfix
-Using clearfix with after, gives you the ability to be more symantic in your markup since you don't have to keep adding empty divs. 
 {% highlight css %}
 .clearfix:after {
   display: block;
   clear: both;
   content: "";
   }
+{% endhighlight %}
+
+
+----
+
+##Headder Stuff
+{% highlight html %}
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+{% endhighlight %}
+
+----
+
+##Jquery and Bootsrap CDN
+{% highlight html %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 {% endhighlight %}

@@ -1,49 +1,59 @@
 //--------------------- Asside ---------------------
-.homeAside{
-	margin-top: 2%;
-	@include mainShadow;
-	border-top: 5px solid $homeNavC;
+.homeAside
+{
+    margin-top: 2%;
 
-	.searchAside{
+    border-top: 5px solid $homeNavC;
 
-		width: 74%;
-		height: 35px;
-		margin:2%;
-	}//end .searchAside
-	.btn{
+    @include mainShadow;
 
-		width: 16%;
-		height: 35px;
-		margin:2% 2% 2% 0;
+    ul{
+        padding: 12px;
+    }
 
-	}
+    .searchAside
+    {
+        width: 74%;
+        height: 35px;
+        margin: 2%;
+    }//end .searchAside
+    .btn
+    {
+        width: 16%;
+        height: 35px;
+        margin: 2% 2% 2% 0;
+    }
 }//end .homeAsside
 
 //--------------------- Main Asside ---------------------
 
-.homeAside {
+.homeAside
+{
     float: right;
-    margin: 2%;
-    width:320px;
+
+    width: 320px;
     height: 400px;
+    margin: 2%;
+
     background-color: $white;
 }
 
-.gsc-input, .gsc-search-button{
-
-	padding: 10px;
-
+.gsc-input,
+.gsc-search-button
+{
+    padding: 10px;
 }
 
-.asidePosts{
-	ul{
-		list-style-type: none;
-	}
-	a{
-		line-height: 2;
-		font-size: 16px;
-		font-weight: 400;
-		
-
-	}
+.asidePosts
+{
+    ul
+    {
+        list-style-type: none;
+    }
+    a
+    {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2;
+    }
 }

@@ -1,55 +1,55 @@
-.aboutHeader{
+.aboutHeader
+{
     background-color: $aboutNavC;
 }
 
-.list{
+.list
+{
+    &:hover h3
+    {
+        transition: color .5s ease-in-out;
+        transition: background-color .4s ease-in-out;
 
-	&:hover h3{
-		background-color: $aboutNavC;
-		color: $white;
-		transition: color 0.5s ease-in-out;
-        transition: background-color 0.4s ease-in-out;
-	}
+        color: $white;
+        background-color: $aboutNavC;
+    }
+    h3
+    {
+        margin-bottom: -5px;
+        padding-left: 2%;
 
-	h3{
-	margin-bottom: -5px;
-	border-bottom: 5px solid $aboutNavC;
-	transition: color 0.5s ease-in-out;
-    transition: background-color 0.4s ease-in-out;
-    padding-left: 2%;
-	}
+        transition: color .5s ease-in-out;
+        transition: background-color .4s ease-in-out;
 
+        border-bottom: 5px solid $aboutNavC;
+    }
 }
 
 
-// 	.aboutText{
-// 	width: 100%;
 
-// }
-// .profilePic{
-// 	width: 100%;
-// }
+@media screen and (min-width: 1000px)
+{
+    .aboutText
+    {
+        float: left;
 
+        width: 58%;
+        margin-right: 2%;
+    }
+    .profilePic
+    {
+        float: right;
 
-
-@media screen and (min-width: 1000px){
-	.aboutText{
-	float: left;
-	width: 58%;
-	margin-right: 2%;
-
-}
-.profilePic{
-	float: right;
-	width: 40%;
-}
+        width: 40%;
+    }
 }
 
-@media screen and (min-width: 550px){
-	
-	.col{
-	float: left;
-	width: 25%;
-}
+@media screen and (min-width: 550px)
+{
+    .col
+    {
+        float: left;
 
+        width: 25%;
+    }
 }

@@ -1,51 +1,71 @@
-footer{
-	width: 96%;
-	margin: 2%;
-	height: 50px;
-	background-color: $white;
+footer
+{
+    width: 96%;
+    height: 50px;
+    margin: 2%;
+
+    background-color: $white;
 }
 
-.icon { 
-  width: 40px;
-  height: 40px;
-  float: right;
-  margin: 5px;
-  background-color: $white;
+.icon
+{
+    float: right;
 
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+
+    background-color: $white;
 }
 // -------- Social Icons --------
-.github {
-	fill: $socialIcons;
-	transition: fill .2s ease-in-out;
-	&:hover{
-	 fill: $github;
-	 transition: fill .2s ease-in-out;
-	}
+.github
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $github;
+    }
 }
 
-.behance {
-	fill: $socialIcons;
-	transition: fill .2s ease-in-out;
-	&:hover{
-	 fill: $behance;
-	 transition: fill .2s ease-in-out;
-	}
+.behance
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $behance;
+    }
 }
 
-.linkedin {
-	fill: $socialIcons;
-	transition: fill .2s ease-in-out;
-	&:hover{
-	 fill: $linkedin;
-	 transition: fill .2s ease-in-out;
-	}
+.linkedin
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $linkedin;
+    }
 }
 
-.rss {
-	fill: $socialIcons;
-	transition: fill .2s ease-in-out;
-	&:hover{
-	 fill: $rss;
-	 transition: fill .2s ease-in-out;
-	}
+.rss
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $rss;
+    }
 }

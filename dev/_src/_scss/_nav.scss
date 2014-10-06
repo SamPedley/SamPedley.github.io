@@ -1,159 +1,209 @@
 
-.mainHeader{
-
- border-bottom: 10px solid linear-gradient( 45deg, blue, red );
-
+.mainHeader
+{
+    border-bottom: 10px solid linear-gradient( 45deg, blue, red );
 }
 //--------------------- Nav Bar ---------------------
-nav {
-    float: right;
+nav
+{
     display: inline;
-    text-align: right;
+    float: right;
+
     margin-right: 4%;
-    padding-top:15px;
+    padding-top: 15px;
 
-    .desktopNav{
-
-        div {
-            margin-right: 20px;
-            display: inline;
+    text-align: right;
+    .desktopNav
+    {
+        div
+        {
             font-size: 20px;
-            padding:4px 8px;
+
+            display: inline;
+
+            margin-right: 20px;
+            padding: 4px 8px;
+
             transition: border-radius 200ms linear;
-
-
-            a{color:$titleColor;}
+            a
+            {
+                color: $titleColor;
+            }
         }
-        #homeNav:hover{
-           border-bottom: 2px solid $homeNavC;
-            transition: border-bottom 0.3s ease-in-out;
+        #homeNav:hover
+        {
+            transition: border-bottom .3s ease-in-out;
 
+            border-bottom: 2px solid $homeNavC;
         }
+        #aboutNav:hover
+        {
+            transition: border-bottom .3s ease-in-out;
 
-        #aboutNav:hover{
             border-bottom: 2px solid $aboutNavC;
-            transition: border-bottom 0.3s ease-in-out;
         }
+        #blogNav:hover
+        {
+            transition: border-bottom .3s ease-in-out;
 
-        #blogNav:hover{
             border-bottom: 2px solid $blogNavC;
-            transition: border-bottom 0.3s ease-in-out;
         }
     }//end desktop nav 
-    .mobileNav{
-        .navIconM {
+    .mobileNav
+    {
+        font-size: 16px;//end nav icon m
+
+        width: 100px;
+        .navIconM
+        {
             position: relative;
-            display:  inline-block;
+
+            display: inline-block;
+
             width: 30px;
             height: 30px;
             margin-right: 4%;
-
-            span {
-                margin: 0 auto;
+            span
+            {
                 position: relative;
                 top: 10px;
-                }
-            span:before, span:after {
+
+                margin: 0 auto;
+            }
+            span:before,
+            span:after
+            {
                 position: absolute;
+
                 content: '';
                 transition: .2s ease;
-                }
-            span, span:before, span:after {
+            }
+            span,
+            span:before,
+            span:after
+            {
+                display: block;
+
                 width: 30px;
                 height: 4px;
+
                 background-color: $titleColor;
-                display: block;
-                }
-            span:before {
+            }
+            span:before
+            {
                 margin-top: -12px;
-                }
-            span:after {
+            }
+            span:after
+            {
                 margin-top: 12px;
-                }
-        }//end nav icon m
-        
-      width:100px; 
-      font-size: 16px;
-      label {
-        display: block;
-        padding: 0 18px;
-        margin:  0;
-        position: relative;
-        z-index: 2;
-        cursor: pointer;
-        color: $titleColor;
-        font-size: 24px;
-      }
-
-      input {
-        display: none;
-        &:checked ~ .drop {
-          transition: height 0.5s ease-in-out;
-          height: 180px;//height of box when clicked
+            }
         }
+        label
+        {
+            font-size: 24px;
 
-        &:checked ~  label {.navIconM span:before, .navIconM span:after{margin-top: 0px;}}
-      }
-        .drop {
-        overflow: hidden;
-        height: 0px;
-        position: absolute;
-        z-index:0;
-        transition: height 0.3s ease-in-out;//trainsation
-            ul {
-              height: 100%;
-              margin: 0;
-              padding:0;
-              list-style: none;
+            position: relative;
+            z-index: 2;
 
-              
-              li {
-                padding:10px 30px;
-                border-top: 5px solid $white;
-                text-align: center;
-                background-color: $backgroundColor;
-                color: $titleColor;
-                text-decoration: none;
-                font-size: 20px;
-                border-bottom: 5px solid $white;
-                    &:first-child {
-                      padding-top:15px;
-                      border-top: none;
+            display: block;
+
+            margin: 0;
+            padding: 0 18px;
+
+            cursor: pointer;
+
+            color: $titleColor;
+        }
+        input
+        {
+            display: none;
+            &:checked ~ .drop
+            {
+                height: 180px;//height of box when clicked
+
+                transition: height .5s ease-in-out;
+            }
+            &:checked ~ label
+            {
+                .navIconM span:before,
+                .navIconM span:after
+                {
+                    margin-top: 0;
+                }
+            }
+        }
+        .drop
+        {
+            position: absolute;
+            z-index: 0;
+
+            overflow: hidden;
+
+            height: 0;
+
+            transition: height .3s ease-in-out;//trainsation
+            ul
+            {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+                list-style: none;
+                li
+                {
+                    font-size: 20px;
+
+                    padding: 10px 30px;
+
+                    text-align: center;
+                    text-decoration: none;
+
+                    color: $titleColor;
+                    border-top: 5px solid $white;
+                    border-bottom: 5px solid $white;
+                    background-color: $backgroundColor;
+                    &:first-child
+                    {
+                        padding-top: 15px;
+
+                        border-top: none;
                     }
-                    &:hover {
-                        background: darken($backgroundColor, 14%);
+                    &:hover
+                    {
                         transition: background-color 300ms linear;
-                        }
+
+                        background: darken($backgroundColor, 14%);
+                    }
                 }//end li 
-                #homeNavM:hover{
+                #homeNavM:hover
+                {
+                    color: $white;
                     background: $homeNavC;
-                    color:$white;
                 }
-                #aboutNavM:hover{
+                #aboutNavM:hover
+                {
+                    color: $white;
                     background: $aboutNavC;
-                    color:$white;
                 }
-                #blogNavM:hover{
+                #blogNavM:hover
+                {
+                    color: $white;
                     background: $blogNavC;
-                    color:$white;
                 }
             }//end ul 
         }//end .drop
     }//end mobile nav 
-
-    .search{
-
-        div{
-            float: right;
-            height: 50px;
-            width: 50px;
-            background-color: rgba(226, 226, 226, 1.0);
+    .search
+    {
+        div
+        {
             display: inline;
-                
-                img{
+            float: right;
 
-                }
+            width: 50px;
+            height: 50px;
+
+            background-color: rgba(226, 226, 226, 1.0);
         }
     }
 }//end nav 
-

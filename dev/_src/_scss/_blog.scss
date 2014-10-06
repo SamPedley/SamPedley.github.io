@@ -1,53 +1,58 @@
-.blogContent {
+.blogContent
+{
     float: left;
-    margin-top: 2%;
-    margin-left:2%;
-    width:96%;
+
+    width: 96%;
     height: auto;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    transition: background-color .1s ease-in-out;
+
     background-color: $lightBackground;
-    transition: background-color 0.1s ease-in-out;
+
     @include mainShadow;
+    &:hover
+    {
+        transition: background-color .1s ease-in-out;
 
-    &:hover{
         background-color: $white;
-        transition: background-color 0.1s ease-in-out;
+        .blogTitle
+        {
+            transition: color .5s ease-in-out;
+            transition: background-color .4s ease-in-out;
 
-        .blogTitle{
-             background-color: $blogNavC;
-             color: $white;
-         transition: color 0.5s ease-in-out;
-        transition: background-color 0.4s ease-in-out;
+            color: $white;
+            background-color: $blogNavC;
         }
     }
+    .blogTitle
+    {
+        margin-top: 0;
+        padding: 2% 2% 1%;
 
-    .blogTitle{
-    //background-color: $lightBackground;
-    padding: 2% 2% 1%;
-    margin-top: 0;
-    color: $titleColor;
-    border-bottom: 5px solid $blogNavC;
-        transition: color 0.5s ease-in-out;
-        transition: background-color 0.4s ease-in-out;
+        transition: color .5s ease-in-out;
+        transition: background-color .4s ease-in-out;
 
-
+        color: $titleColor;
+        border-bottom: 5px solid $blogNavC;
     }
-
-    article{
-        margin:1% 2% 2%;
-        
-        img{ @include imgResult; }
-
-        h2{
+    article
+    {
+        margin: 1% 2% 2%;
+        img
+        {
+            @include imgResult;
+        }
+        h2
+        {
             margin-bottom: 0;
         }
-
-        .meta{
+        .meta
+        {
             margin-top: -10px;
+
             color: $lightText;
         }
-
     }//end article 
-    
 }//end .main content
-
-

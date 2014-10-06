@@ -6,9 +6,175 @@
 </description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 04 Oct 2014 23:24:40 -0500</pubDate>
-    <lastBuildDate>Sat, 04 Oct 2014 23:24:40 -0500</lastBuildDate>
+    <pubDate>Mon, 06 Oct 2014 00:39:11 -0500</pubDate>
+    <lastBuildDate>Mon, 06 Oct 2014 00:39:11 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>A few Awesome Sublime Text Plugins</title>
+        <description>&lt;p&gt;It’s estimated that there are over &lt;a href=&quot;http://www.internetlivestats.com/total-number-of-websites/&quot;&gt;one billion websites&lt;/a&gt; live, accessible to you, right now. It’s an insane number that human mind &lt;a href=&quot;http://spacecollective.org/TheUndying/5970/Big-numbers-and-the-human-mind&quot;&gt;struggles to really understand&lt;/a&gt;. One of the reasons the internet has evolved into juggernaut it is today simply boils down to the accessibility everyone has to the tools to build a website.  In fact every computer built in the past ten years have had the tools to create a website per-installed.  I’m talking about text editors: Windows has Notepad, OSX has TextEdit and linux has well, Text Editor.  &lt;/p&gt;
+
+&lt;p&gt;Each of those editors will allow you to write code for even the most complex websites out there.  However using those tools is like choosing to a toy hammer instead of a pneumatic belt feed nail gun.  There are some great cross platform text editors out there : &lt;a href=&quot;http://brackets.io/&quot;&gt;Brackets&lt;/a&gt;, &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; and my favorite &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Brackets, Atom and Sublime all have awesome built in features that make working with code much easier but I want to share my favorite plugins that I use everyday. &lt;/p&gt;
+
+&lt;h2 id=&quot;emmethttpemmetio&quot;&gt;&lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/emmet.gif&quot; alt=&quot;Emmet&quot; /&gt;
+Emmet allows you to create elements with half the keystrokes you would normal use.  Typing &lt;code&gt;.div&lt;/code&gt; + [tab] creates&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; I know that doesn’t seem that much quicker than typing but after a few hundred lines that time adds up.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;sidebar-enhancementshttpsgithubcomtitobouzoutsidebarenhancements&quot;&gt;&lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;SideBar Enhancements&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/sidemenu.gif&quot; alt=&quot;Sidemenu&quot; /&gt;
+SideBar Enhancements is a plugin that, in my opinion, should have come with Sublime Text.  SideBar Enhancements allows you to create, edit, duplicate, rename, launch code in browser and more that makes manipulating files so much easier.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;bracket-highlighterhttpsgithubcomfacelessuserbrackethighlighter&quot;&gt;&lt;a href=&quot;https://github.com/facelessuser/BracketHighlighter&quot;&gt;Bracket Highlighter&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/bracket.gif&quot; alt=&quot;Brackets&quot; /&gt;
+I love this plugin not because it does anything crazy but because it gives me little helping hints when I’m looking through a complex sass file or javascript function. &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;spacegray-themehttpssublimewbondnetpackagestheme20-20spacegray&quot;&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Theme%20-%20Spacegray&quot;&gt;Spacegray Theme&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/spacegray-eighties.png&quot; alt=&quot;spacegray theme&quot; /&gt;
+If you spend 8 hours a day staring at a text editor it’s worth spending some time making decent. &lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Sep 2014 15:00:58 -0500</pubDate>
+        <link>http://www.sampedley.com/Sublime-text-plugins</link>
+        <guid isPermaLink="true">http://www.sampedley.com/Sublime-text-plugins</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Code Snipits</title>
+        <description>&lt;p&gt;Just some little pices of code I keep coming back to every project:&lt;/p&gt;
+
+&lt;h2 id=&quot;responsive-image-css&quot;&gt;Responsive image css&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.img-responsive&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;max-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;clearfix&quot;&gt;Clearfix&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;both&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;headder-stuff&quot;&gt;Headder Stuff&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;jquery-and-bootsrap-cdn&quot;&gt;Jquery and Bootsrap CDN&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//code.jquery.com/jquery-1.11.0.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Sun, 10 Aug 2014 15:58:58 -0500</pubDate>
+        <link>http://www.sampedley.com/Code-snipits</link>
+        <guid isPermaLink="true">http://www.sampedley.com/Code-snipits</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Mac Apps for Front-End Devs</title>
+        <description>&lt;h2 id=&quot;passwordhttpsagilebitscomonepassword&quot;&gt;&lt;a href=&quot;https://agilebits.com/onepassword&quot;&gt;1Password&lt;/a&gt;&lt;/h2&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/88901304&quot; class=&quot;video&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Look, passwords matter especially client and server passwords.  Although there are tons of password management apps out in the wild today none that I’ve used have the ease of use and track record that 1password does.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;frank-delopehttpwwwjumpzerocomfrank&quot;&gt;&lt;a href=&quot;http://www.jumpzero.com/frank/&quot;&gt;Frank Delope&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/ultimateTools/frankD.gif&quot; alt=&quot;frankDelope&quot; /&gt;
+Pulling colors for images or videos can be a huge pain and most people have weird roundabout ways of doing it, usually involving photoshop. Frank Delope allows you to pull the exact color your looking at with percussion and then add the hex, rob or rgba value right to your clipboard. Yes, I know it’s a weird name for an app but it’s absolutely worth it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;evernotehttpsevernotecom&quot;&gt;&lt;a href=&quot;https://evernote.com/&quot;&gt;Evernote&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;If you’re anything like me trying to keep track of client requests, notes , ideas or that awesome code snipit is almost impossible without a program like Evernote. The free version is probably more than enough for most people but you can purchase a  yearly subscription which unlocks features that make it easy to share notes, fire up a quick presentation and most importantly ups your storage. &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;google-drivehttpsdrivegooglecom&quot;&gt;&lt;a href=&quot;https://drive.google.com&quot;&gt;Google Drive&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There’s no reason not to be using a cloud based storage solution these days; and personally I think Google drive is far ahead of the curve.  It’s substantially cheaper than Dropbox, it’s reliable and it has awesome little features built in like version control.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;githubhttpsgithubcom&quot;&gt;&lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Oh github… At first I hated github I thought it was confusing,  complicated and overkill. Now The first thing I do is fire up a github repo.  Here are a few articles that helped me better understand it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;transmithttppaniccomtransmit&quot;&gt;&lt;a href=&quot;http://panic.com/transmit/&quot;&gt;Transmit&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There are a couple free ftp clients for the Mac and I never had a problem using them but once I tried transmit I knew I had spoiled myself and I haven’t looked back. &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;code-kithttpsincident57comcodekit&quot;&gt;&lt;a href=&quot;https://incident57.com/codekit/&quot;&gt;Code Kit&lt;/a&gt;&lt;/h2&gt;
+
+&lt;iframe width=&quot;853&quot; height=&quot;480&quot; src=&quot;//www.youtube.com/embed/YUgH0jlYur0?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Code kit is one of the best apps ever made for front end developers.  It allows you to spin up a local server on your network which allows you to test mutual devices with live reload, it compresses .jpg .png and .gif files losslessly and  compiles and minify JavaScript sass.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;sublimetext-httpwwwsublimetextcom&quot;&gt;&lt;a href=&quot;Text http://www.sublimetext.com/&quot;&gt;Sublime&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Out of all the text editors out there, from notepad to vim, Sublime has become my hands down favorite editor and I even wrote about a few of my &lt;a href=&quot;&quot;&gt;favorite plugins&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Jan 2014 00:00:00 -0600</pubDate>
+        <link>http://www.sampedley.com/jekyll/update/apps-for-front-end-devs</link>
+        <guid isPermaLink="true">http://www.sampedley.com/jekyll/update/apps-for-front-end-devs</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Front-end Podcasts</title>
+        <description>&lt;h2 id=&quot;shop-talk-showhttpshoptalkshowcom&quot;&gt;1) &lt;a href=&quot;http://shoptalkshow.com/&quot;&gt;Shop Talk Show&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every single episode; that’s how many episodes of Shop Talk Show I’ve listened to.  Chris Coyer and Dave Rupert are some awesome people who happen to also be some very talented Front-end developers. For any front end dev it’s well worth the listen. &lt;/p&gt;
+
+&lt;h2 id=&quot;the-web-aheadhttp5by5tvwebahead&quot;&gt;2) &lt;a href=&quot;http://5by5.tv/webahead&quot;&gt;The Web Ahead&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I’ve only recently started to listen to the Web Ahead and I’m already hooked.  It’s hosted by Jen Simmons who does a great job bringing in guests who specialize in diffrent web related technologies and methods.&lt;/p&gt;
+
+&lt;h2 id=&quot;codepen-radiohttpblogcodepenioradio&quot;&gt;3) &lt;a href=&quot;http://blog.codepen.io/radio/&quot;&gt;Codepen Radio&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Hosted by the three founders of Codepen, Codepen Radio, is an awesome and intelligent look into how a successful startup is built, run and managed.  &lt;/p&gt;
+
+&lt;h2 id=&quot;javascript-jabberhttpjavascriptjabbercom&quot;&gt;4) &lt;a href=&quot;http://javascriptjabber.com/&quot;&gt;Javascript Jabber&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;If you’re interested keeping up with javascript than this is an awesome podcast for that.  Javascript Jabber brings in some awesome guests from current google developer evangelists to Brendan Eich, the author of javascript.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-big-web-showhttp5by5tvbigwebshow&quot;&gt;5) &lt;a href=&quot;http://5by5.tv/bigwebshow&quot;&gt;The Big Web Show&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The Big Web Show is exactly what the name suggests, it covers just about every aspect of running websites from writing content to source code. &lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Jan 2014 00:00:00 -0600</pubDate>
+        <link>http://www.sampedley.com/Front-end-Podcasts</link>
+        <guid isPermaLink="true">http://www.sampedley.com/Front-end-Podcasts</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>

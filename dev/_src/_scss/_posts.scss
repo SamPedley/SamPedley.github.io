@@ -1,69 +1,76 @@
-.postContainer{
-
-	@include tile(0 2%);
-    @include mainShadow;
+.postContainer
+{
     overflow: hidden;
+
     padding: 1% 2%;
 
+    @include tile(0 2%);
+    @include mainShadow;
+    h1
+    {
+        font-size: 45px;
+        font-weight: 400;
 
-    h1 {
-    	font-size: 45px;
-    	font-weight: 400;
-    	margin: 0;
-    	padding: 0;
+        margin: 0;
+        padding: 0;
     }
+    img
+    {
+        display: block;
 
-    img{
         max-width: 100%;
         margin: 10px auto;
-        text-align: center;
-        display: block;
-        background-color: $backgroundColor;
-        transition: all 0.2s ease-in-out;
 
-        &:hover{
+        transition: all .2s ease-in-out;
+        text-align: center;
+
+        background-color: $backgroundColor;
+        &:hover
+        {
+            transition: all .2s ease-in-out;
             transform: scale(1.05,1.05);
-            transition: all 0.2s ease-in-out;
         }
     }
+    hr
+    {
+        margin-top: 0;
 
-    hr{
-        margin-top: 0px;
+        opacity: .6;
         border: 2px solid $backgroundColor;
-        opacity: 0.6;
     }
-
-    h2{
+    h2
+    {
         margin-bottom: 5px;
     }
-
 }
 
-.post-header{
-        @include tile(2% 2% 0 2%);
-    @include mainShadow;
+.post-header
+{
     padding: 2% 2% 1% 2%;
-    background-color: $blogNavC;
-    color:white;
 
-    h1{
+    @include tile(2% 2% 0 2%);
+    @include mainShadow;
+
+    color: white;
+    background-color: $blogNavC;
+    h1
+    {
         margin: 0;
     }
-	    p{
-    	//border-bottom: 3px solid $backgroundColor;
-    	margin: 0;
-    	//padding-bottom: 10px;
-    	//margin-bottom: 15px;
+    p
+    {
+        margin: 0;
     }
 }
 
-.comments {
+.comments
+{
     @include tile(2% 0 0 2%);
     @include mainShadow;
-
 }
 
-.articlesMax{
+.articlesMax
+{
     max-width: 1400px;
     margin: 0 auto;
 }
