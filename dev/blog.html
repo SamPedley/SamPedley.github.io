@@ -6,11 +6,11 @@ permalink: /blog/
 <div class="topBlog"></div>
 <div class="max">
       {% for post in site.posts limit: 20 %}
-      <div class="blogContent">
-        <a href="{{ site.prefix }}{{ post.url }}"><h2 class="blogTitle">{{ post.title }}</h2></a>
+      <div class="blogContent" itemtype="http://schema.org/Article">
+        <a href="{{ site.prefix }}{{ post.url }}"itemprop="url" ><h2 class="blogTitle" itemprop="name">{{ post.title }}</h2></a>
       <article>
-        <p class="meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
-          <p>{{ post.excerpt }}<a href="{{ post.url }}">Read more...</a></p>
+        <p class="meta" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+          <p itemprop="description">{{ post.excerpt }}<a href="{{ post.url }}">Read more...</a></p>
       </article>
       </div>
       {% endfor %}

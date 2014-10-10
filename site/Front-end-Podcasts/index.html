@@ -4,8 +4,7 @@
 		<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="Hi, I'm a web developer in Chicago.
-">
+<meta name="description" content="Hi, I'm a web developer in Chicago.">
 <title>Front-end Podcasts</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600" rel="stylesheet" type="text/css">
@@ -44,7 +43,7 @@
 	</head>
 	<body>
 	    <header class="mainHeader">
-  <h2><a href="/">Sam Pedley</a></h2>
+  <h2 itemtype="http://schema.org/Person" ><a href="/" itemprop="name">Sam Pedley</a></h2>
   <nav>
       <div class="desktopNav">
           <div id="homeNav"><a href="/">Home</a></div>
@@ -69,15 +68,15 @@
 </header>
 	    <div class="topBlog"></div>
 
-<div class="articlesMax">
+<div class="articlesMax" itemtype="http://schema.org/Article">
 
   <header class="post-header">
-    <h1>Front-end Podcasts</h1>
-    <p class="meta">Jan 12, 2014</p>
+    <h1 itemprop="name">Front-end Podcasts</h1>
+    <p class="meta" itemprop="datePublished">Jan 12, 2014</p>
   </header>
 <div class="postContainer">
 
-  <article class="post-content">
+  <article class="post-content" itemprop="articleBody">
   <h2 id="shop-talk-showhttpshoptalkshowcom">1) <a href="http://shoptalkshow.com/">Shop Talk Show</a></h2>
 <p>Every single episode; that’s how many episodes of Shop Talk Show I’ve listened to.  Chris Coyer and Dave Rupert are some awesome people who happen to also be some very talented Front-end developers. For any front end dev it’s well worth the listen. </p>
 
@@ -95,7 +94,7 @@
 
   </article>
 </div>
-<div class="comments">
+<div class="comments" itemprop="Comment">
 	<div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'sampedleyblog';

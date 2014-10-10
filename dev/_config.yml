@@ -1,13 +1,13 @@
 # Site settings
 title: Sam Pedley
 email: sam@sampedley.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hi, I'm a web developer in Chicago.
+description: "Hi, I'm a web developer in Chicago."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.sampedley.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: mrpeds
+github_username:  sampedley
 include: ['.htaccess']
+keywords: sam pedley chicago web developer
 
 # Build settings
 markdown: kramdown
