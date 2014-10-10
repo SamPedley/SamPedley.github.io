@@ -14,13 +14,14 @@
         float: left;
 
         width: 60%;
-        height: 350px;
+        height: auto;
         margin: 25px;
-
-        background: url('http://www.sampedley.com/F/img/heroImg.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+        img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            margin: 0 auto;
+        }
         @media all and (max-width: 825px)
         {
             width: 80%;

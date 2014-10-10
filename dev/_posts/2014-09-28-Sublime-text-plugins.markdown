@@ -4,6 +4,8 @@ title:  "A few Awesome Sublime Text Plugins"
 date:   2014-09-28 20:00:58
 categories: 
 published: true
+description: Sublime Text is one of the most powerful text editors you can use, but with a little extra work you can make it even better.
+image: /F/img/sublime/spacegray-eighties.png
 ---
 
 It's estimated that there are over [one billion websites](http://www.internetlivestats.com/total-number-of-websites/) live, accessible to you, right now. It's an insane number that human mind [struggles to really understand](http://spacecollective.org/TheUndying/5970/Big-numbers-and-the-human-mind). One of the reasons the internet has evolved into juggernaut it is today simply boils down to the accessibility everyone has to the tools to build a website.  In fact every computer built in the past ten years have had the tools to create a website per-installed.  I'm talking about text editors: Windows has Notepad, OSX has TextEdit and linux has well, Text Editor.  
