@@ -9,9 +9,9 @@ description: Hi, I'm a web developer in the Chicago-land aera.  I've written dow
         {% for post in site.posts limit:1 %}
           {% if post.image %}
     <div class="heroEye">
-
-      <img src="{{site.url}}{{post.image}}" alt="{{post.description}}">
-
+      <a href="{{ post.url }}">
+       <img src="{{site.url}}{{post.image}}" alt="{{post.description}}">
+      </a>
     </div>
           {% endif %}
     <div class="heroText">

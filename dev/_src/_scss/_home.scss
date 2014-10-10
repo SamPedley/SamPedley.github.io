@@ -21,6 +21,13 @@
             height: auto;
             max-width: 100%;
             margin: 0 auto;
+            transition: all .2s ease-in-out;
+
+            &:hover
+        {
+            transition: all .2s ease-in-out;
+            transform: scale(1.05,1.05);
+        }
         }
         @media all and (max-width: 825px)
         {
