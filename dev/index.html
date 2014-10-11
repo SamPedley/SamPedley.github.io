@@ -47,8 +47,8 @@ description: Hi, I'm a web developer in the Chicago-land aera.  I've written dow
     </div>
   </aside>
   {% for post in site.posts offset: 1 limit: 5 %}
-  <div class="mainContent" itemtype="http://schema.org/Article">
-    <a href="{{ site.prefix }}{{ post.url }}" itemprop="url"><h2 class="homeTitle" temprop="name">{{ post.title }}</h2></a>
+  <div class="mainContent" itemscope itemtype="http://schema.org/Article">
+    <a href="{{ site.prefix }}{{ post.url }}" itemprop="url"><h2 class="homeTitle" itemprop="name">{{ post.title }}</h2></a>
     <article>
       <p itemprop="description">{{ post.excerpt }}</p>
       <a href="{{ post.url }}" itemprop="url">Read more...</a>

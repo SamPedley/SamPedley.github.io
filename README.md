@@ -14,5 +14,3 @@ Jekyll site
 + Using [fitVids](http://fitvidsjs.com/) and [jQuery](http://jquery.com/) for responsive video
 + Hosted on [Dreamhost](http://www.dreamhost.com/)
 + Deployed through [Ftpoloy](http://ftploy.com/)
-
-working 
