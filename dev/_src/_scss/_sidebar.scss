@@ -1,41 +1,15 @@
-//--------------------- Asside ---------------------
-.homeAside
-{
-    margin-top: 2%;
-
-    border-top: 5px solid $homeNavC;
-
-    @include mainShadow;
-
-    ul{
-        padding: 12px;
-    }
-
-    .searchAside
-    {
-        width: 74%;
-        height: 35px;
-        margin: 2%;
-    }//end .searchAside
-    .btn
-    {
-        width: 16%;
-        height: 35px;
-        margin: 2% 2% 2% 0;
-    }
-}//end .homeAsside
-
 //--------------------- Main Asside ---------------------
 
 .homeAside
 {
     float: right;
-
+    border-top: 5px solid $homeNavC;
     width: 320px;
     height: 400px;
     margin: 2%;
 
     background-color: $white;
+     @include mainShadow;
 }
 
 .gsc-input,
@@ -49,6 +23,7 @@
     ul
     {
         list-style-type: none;
+        padding: 12px;
     }
     a
     {

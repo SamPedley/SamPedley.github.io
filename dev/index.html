@@ -39,9 +39,9 @@ description: Hi, I'm a web developer in the Chicago-land aera.  I've written dow
       <gcse:searchbox-only resultsUrl="{{ site.baseurl }}/search/"></gcse:searchbox-only>
     </div>
     <div class="asidePosts">
-      <ul> Other Posts:
+      <ul> More Stuff:
       {% for post in site.posts limit: 10 %}
-        <li><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></li>
+       <a href="{{ site.prefix }}{{ post.url }}"> <li>{{ post.title }}</li></a>
       {% endfor %}
       </ul>
     </div>
