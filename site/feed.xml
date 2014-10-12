@@ -5,9 +5,88 @@
     <description>Hi, I&#39;m a web developer in Chicago.</description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 11 Oct 2014 17:26:05 -0500</pubDate>
-    <lastBuildDate>Sat, 11 Oct 2014 17:26:05 -0500</lastBuildDate>
+    <pubDate>Sat, 11 Oct 2014 22:26:49 -0500</pubDate>
+    <lastBuildDate>Sat, 11 Oct 2014 22:26:49 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Jekyll Tricks</title>
+        <description>&lt;p&gt;Jekyll uses &lt;/p&gt;
+
+&lt;h2 id=&quot;here-is-a-basic-yml-front-matter-block&quot;&gt;Here is a basic YML front matter block&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: post
+permilink: /jekyll_much_cool/
+title:  &amp;quot;Jekyll Post&amp;quot;
+date:   2090-11-10 12:00:00
+categories: cool stuff
+published: true
+tags: cool, awesome, neat
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Therese are great and are global varriables. However you can add your own varriables to help make your static pages dynamic-ish.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-a-dynamic-discription&quot;&gt;Adding a dynamic discription&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: post
+title:  &amp;quot;Jekyll Post&amp;quot;
+date:   2090-11-10 12:00:00
+discription: This is a really great discription for SEO and stuff. 
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So I’ve created a  varriable called disciption and i’ve assigned it a string.  now I can access this with the following code.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{ % if page.description %}
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.description }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+{% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is an very useful example of how we can use YML and Liquid to create a dynamic static sight generator.  Of course we can improve on it with this code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;
+   &amp;quot;{ % if page.description %}{{ page.description }}
+	{% else %}{{ site.description}}{% endif %}&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I’ve broken it up into three lines but essentally all the liquid code is incased in the &lt;code&gt;&amp;lt;meta content=&quot; &quot;&amp;gt;&lt;/code&gt;; it just adds a fallback incase you forget to add a discriptionn.  &lt;/p&gt;
+
+&lt;h2 id=&quot;adding-a-dynamic-image&quot;&gt;Adding a dynamic Image&lt;/h2&gt;
+&lt;p&gt;At this point im sure you’re cattching on,  you can create any kind of yml tag and call it with liquid.  This is awesome because I come from the world of wordpress and I’m use to being able to call data from pages and posts however I like and the YML and Liquid tags allow me to do somethign similar. &lt;br /&gt;
+With Jekyll an Liquid you can quickly cycle thorugh all of your posts and display them however you like but one thing I like to do is add an image to my list of posts and now I can.  &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: post
+title:  &amp;quot;Jekyll Post&amp;quot;
+image: /images/collCat.jpg 
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So this is fairly straight forward I add a tag named image and I assign it the path to what ever image you would like to reffrence later. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% for post in site.posts limit:5 %}
+       {% if post.image %}
+       &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{post.image}}&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+       {% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So in this code block I’m calling five posts and from each post i’m checking to see if it has an image and if it does I give the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag the path to the image. Of course we can improve on this as well.  I like to add backups and redundecys to anythign that’s dynamic so I’ve also added a image to my &lt;code&gt;config.yml&lt;/code&gt; file the same exact way I would to the top of a post file. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% for post in site.posts limit:5 %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{site.url}}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	{% if post.image %}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;		{{post.image}}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	{% else %}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;		{{ site.image}}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	{% endif %}   &lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	&amp;quot;&lt;/span&gt; 
+	&lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{post.description}}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A great place to learn more about liquid is their &lt;a href=&quot;https://github.com/Shopify/liquid/wiki&quot;&gt;github wiki page&lt;/a&gt; and &lt;a href=&quot;http://docs.shopify.com/themes/liquid-documentation/basics&quot;&gt;shopofys docs page&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Nov 2014 14:58:58 -0600</pubDate>
+        <link>http://www.sampedley.com/jekyll-tricks</link>
+        <guid isPermaLink="true">http://www.sampedley.com/jekyll-tricks</guid>
+        
+        
+      </item>
     
       <item>
         <title>A few Awesome Sublime Text Plugins</title>
@@ -84,6 +163,13 @@ If you spend 8 hours a day staring at a text editor it’s worth spending some t
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//code.jquery.com/jquery-1.11.0.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;robots-no-follow&quot;&gt;Robots No follow&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ROBOTS&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;NOINDEX, NOFOLLOW&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
 </description>
         <pubDate>Sun, 10 Aug 2014 15:58:58 -0500</pubDate>
         <link>http://www.sampedley.com/Code-snipits</link>

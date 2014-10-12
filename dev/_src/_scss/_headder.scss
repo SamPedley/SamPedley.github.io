@@ -11,12 +11,12 @@ header
         font-size: 45px;
         font-weight: normal;
 
-        margin: 0 4%;
+        margin: 0 2%;
         padding: 5px 0 2px 0;
         a
         {
             float: left;
-
+            margin-left: -18px;
             text-decoration: none;
 
             color: $titleColor;
@@ -26,4 +26,16 @@ header
             }
         }
     }
+}
+
+.s{
+    float: left;
+    width: 100px;
+    max-height: 70px;
+    padding: 5px 0;
+
+    @media all and (max-width: 600px){
+        max-height: 50px;
+    }
+
 }

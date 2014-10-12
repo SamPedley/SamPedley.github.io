@@ -4,6 +4,7 @@ title: Sam's Blog Page
 permalink: /blog/
 description: My setup, thougts, code snipits, themes and anything else development related all right here. 
 ---
+<style>.sLogoMain{ fill: rgba(82, 187, 178, 1.0);}.sLogoSecondary{ fill: rgba(137, 209, 202, 1.0);}</style>
 <div class="topBlog"></div>
 <div class="max">
       {% for post in site.posts limit: 20 %}
@@ -11,7 +12,7 @@ description: My setup, thougts, code snipits, themes and anything else developme
         <a href="{{ site.prefix }}{{ post.url }}"itemprop="url" ><h2 class="blogTitle" itemprop="name">{{ post.title }}</h2></a>
       <article>
         <p class="meta" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
-          <p itemprop="description">{{ post.excerpt }}<a href="{{ post.url }}">Read more...</a></p>
+          <p itemprop="description">{{ post.description }}<a href="{{ post.url }}">Read more...</a></p>
       </article>
       </div>
       {% endfor %}

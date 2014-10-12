@@ -48,3 +48,10 @@ Just some little pices of code I keep coming back to every project:
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 {% endhighlight %}
+
+----
+
+##Robots No follow
+{% highlight html %}
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+{% endhighlight %}

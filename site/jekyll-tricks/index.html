@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width">
-<meta name="description" Hi, I'm a web developer in Chicago.">
-<title>Page not found</title>
+<meta name="description"  content="Jekyll is an awesome static site generator but there are a ton of useful things I found out the hard way.  I'll go over how to pull in images from posts, create dynamic page discriptions and help you set up your grunt or gulp file.
+<title>Jekyll Tricks</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/F/css/main.css">
@@ -77,34 +77,105 @@
   </nav>
   <div class="clearfix"></div>
 </header>
-	    <div class="four04">
-    <img src="/F/img/404.jpg" alt="Nothing to see here." class="img-center">
-    <h3 align="center">"This is not the page you are looking for..."</h3>
-</div>
-<div class="searchBar">
-    <h1 style="margin-bottom:0px;">404 PAGE NOT FOUND...</h1>
-    <p style="margin-top:0px;">Try searching...</p>
-    <script>
-      (function() {
-        var cx = '001482016165219114480:din6aj9dfu0';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <gcse:searchbox-only resultsUrl="/search/" enableAutoComplete="true"></gcse:searchbox-only>
-</div>
+	    <style>.sLogoMain{ fill: rgba(82, 187, 178, 1.0);}.sLogoSecondary{ fill: rgba(137, 209, 202, 1.0);}</style>
+<div class="topBlog"></div>
 
-<script>
-    var faiedSearch = window.location.pathname;
-    console.log(failedSearch);
+<div class="articlesMax" itemscope itemtype="http://schema.org/Article">
+
+  <header class="post-header">
+    <h1 itemprop="name">Jekyll Tricks</h1>
+    <p class="meta" itemprop="datePublished">Nov 10, 2014</p>
+  </header>
+<div class="postContainer">
+
+  <article class="post-content" itemprop="articleBody">
+  <p>Jekyll uses </p>
+
+<h2 id="here-is-a-basic-yml-front-matter-block">Here is a basic YML front matter block</h2>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: post
+permilink: /jekyll_much_cool/
+title:  &quot;Jekyll Post&quot;
+date:   2090-11-10 12:00:00
+categories: cool stuff
+published: true
+tags: cool, awesome, neat
+---</code></pre></div>
+
+<p>Therese are great and are global varriables. However you can add your own varriables to help make your static pages dynamic-ish.</p>
+
+<h2 id="adding-a-dynamic-discription">Adding a dynamic discription</h2>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: post
+title:  &quot;Jekyll Post&quot;
+date:   2090-11-10 12:00:00
+discription: This is a really great discription for SEO and stuff. 
+---</code></pre></div>
+
+<p>So I’ve created a  varriable called disciption and i’ve assigned it a string.  now I can access this with the following code.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{ % if page.description %}
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;{{ page.description }}&quot;</span><span class="nt">&gt;</span>
+{% endif %}</code></pre></div>
+
+<p>This is an very useful example of how we can use YML and Liquid to create a dynamic static sight generator.  Of course we can improve on it with this code:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span>
+   &quot;{ % if page.description %}{{ page.description }}
+	{% else %}{{ site.description}}{% endif %}&quot;&gt;</code></pre></div>
+
+<p>I’ve broken it up into three lines but essentally all the liquid code is incased in the <code>&lt;meta content=" "&gt;</code>; it just adds a fallback incase you forget to add a discriptionn.  </p>
+
+<h2 id="adding-a-dynamic-image">Adding a dynamic Image</h2>
+<p>At this point im sure you’re cattching on,  you can create any kind of yml tag and call it with liquid.  This is awesome because I come from the world of wordpress and I’m use to being able to call data from pages and posts however I like and the YML and Liquid tags allow me to do somethign similar. <br />
+With Jekyll an Liquid you can quickly cycle thorugh all of your posts and display them however you like but one thing I like to do is add an image to my list of posts and now I can.  </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: post
+title:  &quot;Jekyll Post&quot;
+image: /images/collCat.jpg 
+---</code></pre></div>
+
+<p>So this is fairly straight forward I add a tag named image and I assign it the path to what ever image you would like to reffrence later. </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts limit:5 %}
+       {% if post.image %}
+       <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{post.image}}&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+       {% endif %}</code></pre></div>
+
+<p>So in this code block I’m calling five posts and from each post i’m checking to see if it has an image and if it does I give the <code>&lt;img&gt;</code> tag the path to the image. Of course we can improve on this as well.  I like to add backups and redundecys to anythign that’s dynamic so I’ve also added a image to my <code>config.yml</code> file the same exact way I would to the top of a post file. </p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts limit:5 %}
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{site.url}}</span>
+<span class="s">	{% if post.image %}</span>
+<span class="s">		{{post.image}}</span>
+<span class="s">	{% else %}</span>
+<span class="s">		{{ site.image}}</span>
+<span class="s">	{% endif %}   </span>
+<span class="s">	&quot;</span> 
+	<span class="na">alt=</span><span class="s">&quot;{{post.description}}&quot;</span><span class="nt">&gt;</span></code></pre></div>
+
+<p>A great place to learn more about liquid is their <a href="https://github.com/Shopify/liquid/wiki">github wiki page</a> and <a href="http://docs.shopify.com/themes/liquid-documentation/basics">shopofys docs page</a>.</p>
+
+  </article>
+</div>
+<div class="comments" itemprop="Comment">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'sampedleyblog';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
 </script>
+<noscript>Please enable Javascript</noscript>
+</div>
 
-
+</div>
 	    <div class="clearfix"></div>
 <footer>
 	<a href="/feed.xml">

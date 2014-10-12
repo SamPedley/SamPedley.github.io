@@ -2,6 +2,14 @@ pre,.pre{
 	padding: 10px;
 	background-color: $lightBackground;
 	border-left: 10px solid $backgroundColor;
+
+	code, .code {
+		color: rgba(63, 64, 63, 1.0);
+	}
+}
+code, .code { 
+	background-color: $lightBackground;
+	color: rgba(153, 69, 0, 1.0);
 }
 .hll { background-color: #ffffcc }
 .c { color: #999988; font-style: italic } /* Comment */

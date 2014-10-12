@@ -14,3 +14,6 @@ markdown: kramdown
 destination: ../site
 permalink: /:categories/:title
 highlighter: pygments
+
+#Site Variables 
+image: /F/img/booger.jpg
