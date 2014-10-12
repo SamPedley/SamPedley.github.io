@@ -3,7 +3,7 @@ layout: post
 title:  "Jekyll Tricks"
 date:   2014-11-10 20:58:58
 categories: 
-published: true
+published: false
 description: Jekyll is an awesome static site generator but there are a ton of useful things I found out the hard way.  I'll go over how to pull in images from posts, create dynamic page discriptions and help you set up your grunt or gulp file. 
 ---
 
