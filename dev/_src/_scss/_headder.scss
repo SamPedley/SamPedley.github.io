@@ -16,7 +16,7 @@ header
         a
         {
             float: left;
-            margin-left: -18px;
+           // margin-left: -18px;
             text-decoration: none;
 
             color: $titleColor;
@@ -30,12 +30,13 @@ header
 
 .samLogo{
     float: left;
-    width: 100px;
+    width: 60px;
     max-height: 70px;
     padding: 5px 0;
 
     @media all and (max-width: 600px){
         max-height: 50px;
+        width: 90px;
     }
 
 }
