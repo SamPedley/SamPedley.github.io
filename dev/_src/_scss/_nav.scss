@@ -120,6 +120,7 @@ nav
             &:checked ~ .drop
             {
                 height: 180px;//height of box when clicked
+                margin-left: -60px;
 
                 transition: height .5s ease-in-out;
             }
