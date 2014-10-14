@@ -10,7 +10,7 @@ nav
     float: right;
 
     margin-right: 4%;
-    padding-top: 15px;
+    padding-top: 20px;
 
     text-align: right;
     .desktopNav
@@ -48,12 +48,12 @@ nav
 
             border-bottom: 2px solid $blogNavC;
         }
-    }//end desktop nav 
+    }//end desktop nav
     .mobileNav
     {
         font-size: 16px;//end nav icon m
 
-        width: 100px;
+        width: 40px;
         .navIconM
         {
             position: relative;
@@ -174,7 +174,7 @@ nav
 
                         background: darken($backgroundColor, 14%);
                     }
-                }//end li 
+                }//end li
                 #homeNavM:hover
                 {
                     color: $white;
@@ -190,9 +190,9 @@ nav
                     color: $white;
                     background: $blogNavC;
                 }
-            }//end ul 
+            }//end ul
         }//end .drop
-    }//end mobile nav 
+    }//end mobile nav
     .search
     {
         div
@@ -206,4 +206,4 @@ nav
             background-color: rgba(226, 226, 226, 1.0);
         }
     }
-}//end nav 
+}//end nav

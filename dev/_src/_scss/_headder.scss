@@ -40,3 +40,17 @@ header
     }
 
 }
+.svgTitle{
+//  width: 30%;
+  height: 60px;
+//  max-height: 100px;
+  margin-left: 2%;
+  float: left;
+  padding: 5px 0 2px 0;
+  width: 180px;
+
+  @media all and (max-width: 600px){
+      height: 50px;
+      //width: 90px;
+  }
+}
