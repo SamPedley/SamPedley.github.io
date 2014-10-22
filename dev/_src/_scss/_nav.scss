@@ -196,3 +196,6 @@ nav
         }
     }
 }//end nav
+#homeNav:hover ~ .topHome {
+    background-color: red !important;
+}
