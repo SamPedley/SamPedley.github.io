@@ -36,6 +36,18 @@ module.exports = function(grunt) {
       }
     },
 
+  imagemin: { 
+    dynamic: {                         // Another target
+      files: [{
+        expand: true,                  // Enable dynamic expansion
+        cwd: 'dev/_src/_img/',                   // Src matches are relative to this path
+        src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+        dest: 'dev/F/img'                  // Destination path prefix
+      }]
+    }
+  },
+
+
     shell: {
        jekyllServe: {
         command: [
@@ -94,7 +106,9 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   grunt.registerTask("serve", ["shell:jekyllServe"]);
+  grunt.registerTask("img", ["imagemin"]);
   grunt.registerTask("build", ["sass", "autoprefixer","uglify", "svgstore","shell:jekyllBuild"]);
   grunt.registerTask("default", ["sass", "autoprefixer","uglify", "svgstore", "shell:jekyllBuild","watch"]);
+
 
 };
