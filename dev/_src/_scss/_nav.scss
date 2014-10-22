@@ -30,30 +30,19 @@ nav
                 color: $titleColor;
             }
         }
-        #homeNav:hover
-        {
-            transition: border-bottom .3s ease-in-out;
 
-            border-bottom: 2px solid $homeNavC;
-        }
-        #aboutNav:hover
-        {
-            transition: border-bottom .3s ease-in-out;
+        #homeNav, #aboutNav, #blogNav{ transition: border-bottom 0.3s ease-in-out; }
 
-            border-bottom: 2px solid $aboutNavC;
-        }
-        #blogNav:hover
-        {
-            transition: border-bottom .3s ease-in-out;
+        #homeNav:hover { border-bottom: 2px solid $homeNavC; }
+        #aboutNav:hover { border-bottom: 2px solid $aboutNavC; }
+        #blogNav:hover { border-bottom: 2px solid $blogNavC; }
 
-            border-bottom: 2px solid $blogNavC;
-        }
     }//end desktop nav
     .mobileNav
     {
         font-size: 16px;//end nav icon m
 
-        width: 40px;
+        width: 100px;
         .navIconM
         {
             position: relative;
@@ -120,7 +109,6 @@ nav
             &:checked ~ .drop
             {
                 height: 180px;//height of box when clicked
-                margin-left: -60px;
 
                 transition: height .5s ease-in-out;
             }
