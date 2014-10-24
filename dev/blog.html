@@ -12,7 +12,7 @@ description: My setup, thougts, code snipits, themes and anything else developme
         <a href="{{ site.prefix }}{{ post.url }}"itemprop="url" ><h2 class="blogTitle" itemprop="name">{{ post.title }}</h2></a>
       <article>
         <p class="meta" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
-          <p itemprop="description">{{ post.description }} <a href="{{ post.url }}"> Read more...</a></p>
+          <p itemprop="description">{{ post.description }} <br><a href="{{ post.url }}"> Read more...</a></p>
       </article>
       </div>
       {% endfor %}

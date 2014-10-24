@@ -40,7 +40,7 @@ description: Hi, I'm a web developer in the Chicago-land aera.  I've written dow
     </div>
     <div class="asidePosts">
       <ul> More Stuff:
-      {% for post in site.posts limit: 10 %}
+      {% for post in site.posts offset: 6 limit: 10 %}
        <a href="{{ site.prefix }}{{ post.url }}"> <li>{{ post.title }}</li></a>
       {% endfor %}
       </ul>

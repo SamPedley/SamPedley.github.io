@@ -1,7 +1,7 @@
 ---
 layout: postVideo
 title:  "Mac Apps for Front-End Devs"
-date:   2014-1-12 
+date:   2014-6-19
 categories: jekyll update
 published: true
 description: If you're a front-end web developer, I bet you have a Mac; if you do here are some apps that will make your life even better.

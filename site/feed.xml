@@ -5,9 +5,212 @@
     <description>Hi, I&#39;m a web developer in Chicago.</description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 23 Oct 2014 10:19:54 -0500</pubDate>
-    <lastBuildDate>Thu, 23 Oct 2014 10:19:54 -0500</lastBuildDate>
+    <pubDate>Thu, 23 Oct 2014 22:02:13 -0500</pubDate>
+    <lastBuildDate>Thu, 23 Oct 2014 22:02:13 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>A few Awesome Sublime Text Plugins</title>
+        <description>&lt;p&gt;It’s estimated that there are over &lt;a href=&quot;http://www.internetlivestats.com/total-number-of-websites/&quot;&gt;one billion websites&lt;/a&gt; live, accessible to you, right now. It’s an insane number that human mind &lt;a href=&quot;http://spacecollective.org/TheUndying/5970/Big-numbers-and-the-human-mind&quot;&gt;struggles to really understand&lt;/a&gt;. One of the reasons the internet has evolved into juggernaut it is today simply boils down to the accessibility everyone has to the tools to build a website.  In fact every computer built in the past ten years have had the tools to create a website per-installed.  I’m talking about text editors: Windows has Notepad, OSX has TextEdit and linux has well, Text Editor.  &lt;/p&gt;
+
+&lt;p&gt;Each of those editors will allow you to write code for even the most complex websites out there.  However using those tools is like choosing to a toy hammer instead of a pneumatic belt feed nail gun.  There are some great cross platform text editors out there : &lt;a href=&quot;http://brackets.io/&quot;&gt;Brackets&lt;/a&gt;, &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; and my favorite/most popular &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Brackets, Atom and Sublime all have awesome built in features that make working with code much easier but I want to share my favorite plugins and settings that I use everyday. &lt;/p&gt;
+
+&lt;h2 id=&quot;emmethttpemmetio&quot;&gt;&lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/emmet2.gif&quot; alt=&quot;Emmet&quot; /&gt;
+Emmet allows you to create elements with half the keystrokes you would normal use.  Typing &lt;code&gt;.div&lt;/code&gt; + [tab] creates&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; I know that doesn’t seem that much quicker than typing but after a few hundred lines that time adds up. To learn how to use this plugin you can check out the &lt;a href=&quot;http://emmet.io&quot;&gt;emmet.io site&lt;/a&gt; or you can jump right in with the &lt;a href=&quot;http://docs.emmet.io/cheat-sheet/&quot;&gt;emmet cheat sheet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Emmet&quot;&gt;Download Emmet Here&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;color-highlighterhttpssublimewbondnetpackagescolor20highlighter&quot;&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Color%20Highlighter&quot;&gt;Color Highlighter&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/color.gif&quot; alt=&quot;Color&quot; /&gt;
+Did you know rgba(102, 153, 204, 1.0) is a light blue or that #FC0D1B is a bright red? Because I sure as hell didn’t.  Color Highlighter is a super quick way of visualizing any color value, it even works on LESS and SASS varriables. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Color%20Highlighter&quot;&gt;Download Color Highlighter Here&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;git-gutterhttpssublimewbondnetpackagescolor20highlighter&quot;&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Color%20Highlighter&quot;&gt;Git Gutter&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/gitGutter.gif&quot; alt=&quot;GitGutter&quot; /&gt;
+The Atom text edditor has the built in ability ot show you the addtions, deletions and changes to your working document against the head and it was just about the only reson I enjoyed Atom.  Thankfuly, that same feautre is available in of Sublime thanks to Git Gutter.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/GitGutter&quot;&gt;Download Git Gutter Here&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;sidebar-enhancementshttpsgithubcomtitobouzoutsidebarenhancements&quot;&gt;&lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;SideBar Enhancements&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/sidemenu.gif&quot; alt=&quot;Sidemenu&quot; /&gt;
+SideBar Enhancements is the plugin that should have come out of the box with Sublime.  SideBar Enhancements allows you to create, edit, duplicate, rename, launch code in browser and more; which makes manipulating files so much easier.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/GitGutter&quot;&gt;Download SideBar Enhancements Here&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;bracket-highlighterhttpssublimewbondnetpackagesbrackethighlighter&quot;&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/BracketHighlighter&quot;&gt;Bracket Highlighter&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/F/img/sublime/bracket.gif&quot; alt=&quot;Brackets&quot; /&gt;
+I love this plugin not because it does anything crazy but because it gives me little helping hints when I’m looking through a complex sass file or javascript function. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/BracketHighlighter&quot;&gt;Download Bracket Highlighter Here&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;color-and-theme&quot;&gt;Color and Theme&lt;/h2&gt;
+&lt;p&gt;I’m a little picky when it comes to how things look so when I couldn’t quite find a theme I liked I just combined two.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-spacegray-themehttpssublimewbondnetpackagestheme20-20spacegray&quot;&gt;1) The &lt;a href=&quot;https://sublime.wbond.net/packages/Theme%20-%20Spacegray&quot;&gt;Spacegray Theme&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;the-predawn-themehttpssublimewbondnetpackagespredawn&quot;&gt;2) The &lt;a href=&quot;https://sublime.wbond.net/packages/Predawn&quot;&gt;Predawn Theme&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Basically, what I did was &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Downloaded the &lt;a href=&quot;https://sublime.wbond.net/packages/Theme%20-%20Spacegray&quot;&gt;Spacegray Theme&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Downloaded the &lt;a href=&quot;https://sublime.wbond.net/packages/Predawn&quot;&gt;Predawn Theme&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Opend up my user config file by &lt;code&gt;Prefrences &amp;gt; Settings - User&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Added these settings in a json format.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;caret_extra_width&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;caret_style&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;phase&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;color_scheme&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Packages/Theme - Spacegray/base16-eighties.dark.tmTheme&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;font_size&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;highlight_line&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;ignored_packages&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+		&lt;span class=&quot;s2&quot;&gt;&amp;quot;Vintage&amp;quot;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;tabs_small&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;quot;theme&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;predawn-DEV.sublime-theme&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and that’s it. &lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Oct 2014 13:00:58 -0500</pubDate>
+        <link>http://www.sampedley.com/Sublime-text-plugins</link>
+        <guid isPermaLink="true">http://www.sampedley.com/Sublime-text-plugins</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Images You Can Use</title>
+        <description>&lt;h2 id=&quot;searchcreativecommonsorghttpsearchcreativecommonsorg&quot;&gt;&lt;a href=&quot;http://search.creativecommons.org/&quot;&gt;Search.CreativeCommons.org&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://search.creativecommons.org/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/creativeC.png&quot; alt=&quot;CreativeCommons&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;photopincomhttpphotopincom&quot;&gt;&lt;a href=&quot;http://photopin.com/&quot;&gt;PhotoPin.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://photopin.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/photopin.png&quot; alt=&quot;photoin&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;wikimediaorghttpcommonswikimediaorgwikimainpage&quot;&gt;&lt;a href=&quot;http://commons.wikimedia.org/wiki/Main_Page&quot;&gt;WikiMedia.org&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://commons.wikimedia.org/wiki/Main_Page&quot;&gt; &lt;img src=&quot;/F/img/freeImages/wiki.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usagovhttpwwwusagovtopicsgraphicsshtml&quot;&gt;&lt;a href=&quot;http://www.usa.gov/Topics/Graphics.shtml&quot;&gt;USA.gov&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.usa.gov/Topics/Graphics.shtml&quot;&gt; &lt;img src=&quot;/F/img/freeImages/usa.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;morguefilecomhttpwwwmorguefilecom&quot;&gt;&lt;a href=&quot;http://www.morguefile.com/&quot;&gt;MorgueFile.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.morguefile.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/morguefile.png&quot; alt=&quot;photoin&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;freeimagescomhttpwwwfreeimagescom&quot;&gt;&lt;a href=&quot;http://www.freeimages.com/&quot;&gt;FreeImages.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.freeimages.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/freeimages.png&quot; alt=&quot;free images&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;unrestrictedstockcomhttpunrestrictedstockcom&quot;&gt;&lt;a href=&quot;http://unrestrictedstock.com/&quot;&gt;UnRestrictedStock.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://unrestrictedstock.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/unstock.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;anamalphotosinfohttpanimalphotosinfoa&quot;&gt;&lt;a href=&quot;http://animalphotos.info/a/&quot;&gt;AnamalPhotos.info&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://animalphotos.info/a/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/anamal.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 18 Oct 2014 11:00:30 -0500</pubDate>
+        <link>http://www.sampedley.com/free-images</link>
+        <guid isPermaLink="true">http://www.sampedley.com/free-images</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Jekyll Tricks</title>
+        <description>&lt;p&gt;Jekyll uses &lt;a href=&quot;http://docs.shopify.com/themes/liquid-documentation/basics&quot;&gt;Liquid&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/YAML&quot;&gt;YAML&lt;/a&gt; to structure and layout the content in your site. &lt;/p&gt;
+
+&lt;p&gt;Liquid is a tempting language created by &lt;a href=&quot;http://www.shopify.com/&quot;&gt;shopify&lt;/a&gt; which allows you run conditional statements, for loops and pull in data with YAML  - here’s an awesome &lt;a href=&quot;http://cheat.markdunkley.com/&quot;&gt;cheat sheet&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;YML is short for “YAML Ain’t Markup Language”.  Basically, what YAML does is store information that Jekyll needs to build out your site.  You only have to deal with YAML in two different places: the &lt;code&gt;_config.yml&lt;/code&gt; file and in little blocks in the head section of posts.&lt;/p&gt;
+
+&lt;h2 id=&quot;here-is-a-basic-yml-front-matter-block-from-jekyllhttpjekyllrbcomdocsfrontmatter&quot;&gt;Here is a basic YML front matter block from &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;jekyll&lt;/a&gt;.&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: post
+permilink: /jekyll_much_cool/
+title:  &amp;quot;Jekyll Post&amp;quot;
+date:   2090-11-10 12:00:00
+categories: cool stuff
+published: true
+tags: cool, awesome, neat
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Again, these are just the basic settings that Jekyll provides, however you can add your own variables to help make your static pages dynamic-ish.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-a-dynamic-description&quot;&gt;Adding a dynamic description&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: post
+title:  &amp;quot;Jekyll Post&amp;quot;
+date:   2090-11-10 12:00:00
+description: This is a really great description for SEO and stuff. 
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So essentially I’ve a  variable called description and I’ve assigned it a string.  Now I can access this with the following code.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{ % if page.description %}
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ page.description }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+{% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is an very useful example of how we can use YML and Liquid to create a dynamic static sight generator.  Of course we can improve on it with this code:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;
+   &amp;quot;{ % if page.description %}{{ page.description }}
+	{% else %}{{ site.description}}{% endif %}&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I’ve broken it up into three lines but essentially all the liquid code is incased in the &lt;code&gt;&amp;lt;meta content=&quot; &quot;&amp;gt;&lt;/code&gt;; it just adds a fallback incase you forget to add a discriptionn.  &lt;/p&gt;
+
+&lt;h2 id=&quot;adding-a-dynamic-image&quot;&gt;Adding a dynamic Image&lt;/h2&gt;
+&lt;p&gt;At this point I’m sure you’re catching on,  you can create any kind of &lt;code&gt;.yml&lt;/code&gt; tag and call it with liquid.  This is awesome because I come from the world of wordpress and I love being able to call data from pages and posts however I like and the YML and Liquid tags allow me to do something similar. &lt;br /&gt;
+With Jekyll an Liquid you can quickly cycle through all of your posts and display them however you like. Here’s how I structured my YML and Liquid to include and image.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;---
+layout: post
+title:  &amp;quot;Jekyll Post&amp;quot;
+image: /images/collCat.jpg 
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So this is fairly straight forward I just added tag named image and assigned the path to the image file.  Then I call it with this code: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% for post in site.posts limit:5 %}
+       {% if post.image %}
+       &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{post.image}}&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+       {% endif %}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So in this code block I’m calling five posts and from each post i’m checking to see if it has an image and if it does I give the &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag the path to the image. Of course we can improve on this as well.  I like to add backups and redundancies to anything that’s dynamic so I’ve also added a image to my &lt;code&gt;_config.yml&lt;/code&gt; file the same exact way I would to the top of a post file. &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{% for post in site.posts limit:5 %}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{site.url}}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	{% if post.image %}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;		{{post.image}}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	{% else %}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;		{{ site.image}}&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	{% endif %}   &lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;	&amp;quot;&lt;/span&gt; 
+	&lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{post.description}}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;So, yeah, that’s about it.  I hope this helped a little and feel free to ask any questions.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Sep 2014 00:58:58 -0500</pubDate>
+        <link>http://www.sampedley.com/jekyll-tricks</link>
+        <guid isPermaLink="true">http://www.sampedley.com/jekyll-tricks</guid>
+        
+        
+      </item>
     
       <item>
         <title>Terminal Themes</title>
@@ -25,99 +228,9 @@
 &lt;h2 id=&quot;tomorrow-nighthttpsgithubcomchriskempsontomorrow-themeblobmasteros20x20terminaltomorrow20nightterminal&quot;&gt;4) &lt;a href=&quot;https://github.com/chriskempson/tomorrow-theme/blob/master/OS%20X%20Terminal/Tomorrow%20Night.terminal&quot;&gt;Tomorrow Night&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/F/img/terminalThemes/tomorrowNight.png&quot; alt=&quot;TomorrowNightl&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 21 Oct 2014 15:58:58 -0500</pubDate>
+        <pubDate>Wed, 30 Jul 2014 08:58:00 -0500</pubDate>
         <link>http://www.sampedley.com/terminal-themes</link>
         <guid isPermaLink="true">http://www.sampedley.com/terminal-themes</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>A few Awesome Sublime Text Plugins</title>
-        <description>&lt;p&gt;It’s estimated that there are over &lt;a href=&quot;http://www.internetlivestats.com/total-number-of-websites/&quot;&gt;one billion websites&lt;/a&gt; live, accessible to you, right now. It’s an insane number that human mind &lt;a href=&quot;http://spacecollective.org/TheUndying/5970/Big-numbers-and-the-human-mind&quot;&gt;struggles to really understand&lt;/a&gt;. One of the reasons the internet has evolved into juggernaut it is today simply boils down to the accessibility everyone has to the tools to build a website.  In fact every computer built in the past ten years have had the tools to create a website per-installed.  I’m talking about text editors: Windows has Notepad, OSX has TextEdit and linux has well, Text Editor.  &lt;/p&gt;
-
-&lt;p&gt;Each of those editors will allow you to write code for even the most complex websites out there.  However using those tools is like choosing to a toy hammer instead of a pneumatic belt feed nail gun.  There are some great cross platform text editors out there : &lt;a href=&quot;http://brackets.io/&quot;&gt;Brackets&lt;/a&gt;, &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; and my favorite &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Brackets, Atom and Sublime all have awesome built in features that make working with code much easier but I want to share my favorite plugins that I use everyday. &lt;/p&gt;
-
-&lt;h2 id=&quot;emmethttpemmetio&quot;&gt;&lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/F/img/sublime/emmet.gif&quot; alt=&quot;Emmet&quot; /&gt;
-Emmet allows you to create elements with half the keystrokes you would normal use.  Typing &lt;code&gt;.div&lt;/code&gt; + [tab] creates&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; I know that doesn’t seem that much quicker than typing but after a few hundred lines that time adds up.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;sidebar-enhancementshttpsgithubcomtitobouzoutsidebarenhancements&quot;&gt;&lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;SideBar Enhancements&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/F/img/sublime/sidemenu.gif&quot; alt=&quot;Sidemenu&quot; /&gt;
-SideBar Enhancements is a plugin that, in my opinion, should have come with Sublime Text.  SideBar Enhancements allows you to create, edit, duplicate, rename, launch code in browser and more that makes manipulating files so much easier.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;bracket-highlighterhttpsgithubcomfacelessuserbrackethighlighter&quot;&gt;&lt;a href=&quot;https://github.com/facelessuser/BracketHighlighter&quot;&gt;Bracket Highlighter&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/F/img/sublime/bracket.gif&quot; alt=&quot;Brackets&quot; /&gt;
-I love this plugin not because it does anything crazy but because it gives me little helping hints when I’m looking through a complex sass file or javascript function. &lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;spacegray-themehttpssublimewbondnetpackagestheme20-20spacegray&quot;&gt;&lt;a href=&quot;https://sublime.wbond.net/packages/Theme%20-%20Spacegray&quot;&gt;Spacegray Theme&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/F/img/sublime/spacegray-eighties.png&quot; alt=&quot;spacegray theme&quot; /&gt;
-If you spend 8 hours a day staring at a text editor it’s worth spending some time making decent. &lt;/p&gt;
-</description>
-        <pubDate>Sun, 28 Sep 2014 15:00:58 -0500</pubDate>
-        <link>http://www.sampedley.com/Sublime-text-plugins</link>
-        <guid isPermaLink="true">http://www.sampedley.com/Sublime-text-plugins</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Code Snipits</title>
-        <description>&lt;p&gt;Just some little pices of code I keep coming back to every project:&lt;/p&gt;
-
-&lt;h2 id=&quot;responsive-image-css&quot;&gt;Responsive image css&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.img-responsive&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;max-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;clearfix&quot;&gt;Clearfix&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;both&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;headder-stuff&quot;&gt;Headder Stuff&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;jquery-and-bootsrap-cdn&quot;&gt;Jquery and Bootsrap CDN&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//code.jquery.com/jquery-1.11.0.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;robots-no-follow&quot;&gt;Robots No follow&lt;/h2&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ROBOTS&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;NOINDEX, NOFOLLOW&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Sun, 10 Aug 2014 15:58:58 -0500</pubDate>
-        <link>http://www.sampedley.com/Code-snipits</link>
-        <guid isPermaLink="true">http://www.sampedley.com/Code-snipits</guid>
         
         
       </item>
@@ -176,7 +289,7 @@ There are a couple free ftp clients for the Mac and I never had a problem using 
 &lt;p&gt;&lt;img src=&quot;/F/img/sublime/spacegray-eighties.png&quot; alt=&quot;spacegray theme&quot; /&gt;
 Out of all the text editors out there, from notepad to vim, Sublime has become my hands down favorite editor and I even wrote about a few of my &lt;a href=&quot;&quot;&gt;favorite plugins&lt;/a&gt;.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 12 Jan 2014 00:00:00 -0600</pubDate>
+        <pubDate>Thu, 19 Jun 2014 00:00:00 -0500</pubDate>
         <link>http://www.sampedley.com/jekyll/update/apps-for-front-end-devs</link>
         <guid isPermaLink="true">http://www.sampedley.com/jekyll/update/apps-for-front-end-devs</guid>
         
@@ -204,9 +317,62 @@ Out of all the text editors out there, from notepad to vim, Sublime has become m
 &lt;h2 id=&quot;the-big-web-showhttp5by5tvbigwebshow&quot;&gt;5) &lt;a href=&quot;http://5by5.tv/bigwebshow&quot;&gt;The Big Web Show&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The Big Web Show is exactly what the name suggests, it covers just about every aspect of running websites from writing content to source code. &lt;/p&gt;
 </description>
-        <pubDate>Sun, 12 Jan 2014 00:00:00 -0600</pubDate>
+        <pubDate>Sun, 08 Jun 2014 00:00:00 -0500</pubDate>
         <link>http://www.sampedley.com/Front-end-Podcasts</link>
         <guid isPermaLink="true">http://www.sampedley.com/Front-end-Podcasts</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Code Snipits</title>
+        <description>&lt;p&gt;Just some little pices of code I keep coming back to every project:&lt;/p&gt;
+
+&lt;h2 id=&quot;responsive-image-css&quot;&gt;Responsive image css&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.img-responsive&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;max-height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;clearfix&quot;&gt;Clearfix&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clearfix&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:after&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;both&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;headder-stuff&quot;&gt;Headder Stuff&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;viewport&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;width=device-width, initial-scale=1&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;jquery-and-bootsrap-cdn&quot;&gt;Jquery and Bootsrap CDN&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;stylesheet&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//code.jquery.com/jquery-1.11.0.min.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;robots-no-follow&quot;&gt;Robots No follow&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;ROBOTS&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;NOINDEX, NOFOLLOW&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 11 May 2014 15:58:58 -0500</pubDate>
+        <link>http://www.sampedley.com/Code-snipits</link>
+        <guid isPermaLink="true">http://www.sampedley.com/Code-snipits</guid>
         
         
       </item>

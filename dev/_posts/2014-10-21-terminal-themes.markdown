@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Terminal Themes"
-date:   2014-10-21 20:58:58
+date:   2014-7-30 13:58:00
 categories: 
 published: true
 description: For whatever reason a good clean theme on a text editor can make writting code slightly more enjoyable.  So why not bring that same tiny bit of enjoyment to the boring old terminal?  I've found a few awesome themes for iterm and the OSX Terminal that I thought you might like.  
