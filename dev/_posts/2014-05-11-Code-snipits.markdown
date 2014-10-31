@@ -19,6 +19,21 @@ Just some little pices of code I keep coming back to every project:
 
 ----
 
+##Vertically and Horozantally Center Div in Div
+{% highlight css %}
+/*needs to be within containing div*/
+.centerCenter{
+	left: 50%;
+	top: 50%;
+	position: relative;
+	/*needs browser prefix if not using Sass*/
+	transform:translate(-50%, -50%); 
+
+}
+{% endhighlight %}
+
+----
+
 ##Clearfix
 {% highlight css %}
 .clearfix:after {
@@ -36,10 +51,38 @@ Just some little pices of code I keep coming back to every project:
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<meta name="description" content="">
+	<meta name="description" content="This is a description">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 {% endhighlight %}
+
+----
+
+##Serious Headder Stuff
+{% highlight html %}
+<head>  
+	<!--[if lt IE 8]>
+		<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow" />
+	<title></title>
+	<meta name="description" content="">
+	<!-- For Facebook -->
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="">
+	<!-- For Twitter ... obviously -->
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:card" content="">
+</head> 
+{% endhighlight %}    
 
 ----
 

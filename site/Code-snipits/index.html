@@ -98,6 +98,20 @@
 
 <hr />
 
+<h2 id="vertically-and-horozantally-center-div-in-div">Vertically and Horozantally Center Div in Div</h2>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/*needs to be within containing div*/</span>
+<span class="nc">.centerCenter</span><span class="p">{</span>
+	<span class="k">left</span><span class="o">:</span> <span class="m">50%</span><span class="p">;</span>
+	<span class="k">top</span><span class="o">:</span> <span class="m">50%</span><span class="p">;</span>
+	<span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+	<span class="c">/*needs browser prefix if not using Sass*/</span>
+	<span class="n">transform</span><span class="o">:</span><span class="n">translate</span><span class="p">(</span><span class="m">-50%</span><span class="o">,</span> <span class="m">-50%</span><span class="p">);</span> 
+
+<span class="p">}</span></code></pre></div>
+
+<hr />
+
 <h2 id="clearfix">Clearfix</h2>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.clearfix</span><span class="nd">:after</span> <span class="p">{</span>
@@ -113,8 +127,35 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;title&gt;&lt;/title&gt;</span>
-	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;This is a description&quot;</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span></code></pre></div>
+
+<hr />
+
+<h2 id="serious-headder-stuff">Serious Headder Stuff</h2>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>  
+	<span class="c">&lt;!--[if lt IE 8]&gt;</span>
+<span class="c">		&lt;p&gt;You are using an &lt;strong&gt;outdated&lt;/strong&gt; browser. Please &lt;a href=&quot;http://browsehappy.com/&quot;&gt;upgrade your browser&lt;/a&gt; to improve your experience.&lt;/p&gt;</span>
+<span class="c">	&lt;![endif]--&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content=</span><span class="s">&quot;IE=edge,chrome=1&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;robots&quot;</span> <span class="na">content=</span><span class="s">&quot;index, follow&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;title&gt;&lt;/title&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="c">&lt;!-- For Facebook --&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:description&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:site_name&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:title&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:type&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:image&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">&quot;og:url&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="c">&lt;!-- For Twitter ... obviously --&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;twitter:site&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;twitter:image&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;twitter:card&quot;</span> <span class="na">content=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span></code></pre></div>
 
 <hr />
@@ -129,7 +170,6 @@
 <h2 id="robots-no-follow">Robots No follow</h2>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;ROBOTS&quot;</span> <span class="na">content=</span><span class="s">&quot;NOINDEX, NOFOLLOW&quot;</span><span class="nt">&gt;</span></code></pre></div>
-
 
   </article>
 </div>
