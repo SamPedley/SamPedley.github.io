@@ -171,6 +171,40 @@
 
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;ROBOTS&quot;</span> <span class="na">content=</span><span class="s">&quot;NOINDEX, NOFOLLOW&quot;</span><span class="nt">&gt;</span></code></pre></div>
 
+<hr />
+
+<h2 id="defaults-for-sass-modules">Defaults for sass modules</h2>
+
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$default1</span><span class="o">:</span> <span class="mh">#fff</span><span class="p">;</span>
+<span class="nv">$default2</span><span class="o">:</span> <span class="mh">#888</span><span class="p">;</span>
+<span class="c1">//keeps sass from erroring if arguments not filled</span>
+<span class="k">@mixin</span><span class="nf"> button</span><span class="p">(</span><span class="nv">$color1</span><span class="o">:</span> <span class="nv">$default1</span><span class="o">,</span> <span class="nv">$color2</span><span class="o">:</span> <span class="nv">$default2</span><span class="p">){</span>
+	<span class="na">background-color</span><span class="o">:</span> <span class="nv">$color1</span><span class="p">;</span>
+	<span class="na">color</span><span class="o">:</span> <span class="nv">$color2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.button</span><span class="p">{</span>
+	<span class="k">@import</span> <span class="nf">button</span><span class="p">(</span><span class="nb">green</span><span class="p">);</span>
+	<span class="c1">// output will be bgc:green c:#888</span>
+<span class="p">}</span></code></pre></div>
+
+<hr />
+
+<h2 id="use-map-get-for-color-vars">Use map-get for color vars</h2>
+
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$blue</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span> 
+<span class="nv">$green</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+<span class="c1">// - - assignment - -</span>
+<span class="nv">$text</span><span class="o">:</span> <span class="p">(</span>
+	<span class="n">link</span> <span class="nv">$blue</span><span class="o">,</span>
+	<span class="n">main</span> <span class="nv">$green</span>
+<span class="p">);</span>
+
+<span class="c1">// - - use - -</span>
+<span class="nt">p</span><span class="p">{</span> <span class="na">color</span><span class="o">:</span> <span class="nf">map-get</span><span class="p">(</span><span class="nv">$text</span><span class="o">,</span><span class="n">main</span><span class="p">);</span> <span class="p">}</span>
+<span class="nt">a</span><span class="p">{</span> <span class="na">color</span><span class="o">:</span> <span class="nf">map-get</span><span class="p">(</span><span class="nv">$text</span><span class="o">,</span> <span class="n">link</span><span class="p">);</span> <span class="p">}</span></code></pre></div>
+
+
   </article>
 </div>
 <div class="comments" itemprop="Comment">

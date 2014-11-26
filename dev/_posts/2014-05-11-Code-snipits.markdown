@@ -98,3 +98,42 @@ Just some little pices of code I keep coming back to every project:
 {% highlight html %}
 <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 {% endhighlight %}
+
+----
+
+##Defaults for sass modules
+{% highlight scss %}
+$default1: #fff;
+$default2: #888;
+//keeps sass from erroring if arguments not filled
+@mixin button($color1: $default1, $color2: $default2){
+	background-color: $color1;
+	color: $color2;
+}
+
+.button{
+	@import button(green);
+	// output will be bgc:green c:#888
+}
+
+{% endhighlight %}
+
+----
+
+##Use map-get for color vars
+{% highlight scss %}
+$blue: blue; 
+$green: green;
+// - - assignment - -
+$text: (
+	link $blue,
+	main $green
+);
+
+// - - use - -
+p{ color: map-get($text,main); }
+a{ color: map-get($text, link); }
+
+{% endhighlight %}
+
+
