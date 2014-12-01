@@ -1,152 +1,21 @@
-//--------------------- Colors ---------------------
-$backgroundColor: rgba(226, 226, 226, 1.0);
-$lightBackground: rgba(250, 250, 250, 1.0);
-$white: rgba(255, 255, 255, 1.0);
-$titleColor: rgba(43, 43, 43, 1.0);
-$lightText: rgba(129, 129, 129, 1.0);
-$homeNavC: rgba(69, 131, 178, 1.0);
-$aboutNavC: rgba(238, 85, 85, 1.0);
-$blogNavC: rgba(82, 187, 178, 1.0);
-$aLinkBlue: rgba(69, 131, 179, 1.0);
-$aLinkHover: rgba(0, 155, 255, 1.0);
-$gray: rgba(68, 67, 68, 1.0);
-//Social Icons
-$socialIcons: rgba(226, 226, 226, 1.0);
-$github: rgba(108, 198, 68, 1.0);
-$behance: rgba(23, 105, 255, 1.0);
-$linkedin: rgba(9, 117, 179, 1.0);
-$rss: rgba(238, 81, 63, 1.0);
-
 //--------------------- imports ---------------------
-@import '_mixins.scss';
-@import '_normalize.scss';
-@import '_nav.scss';
-@import '_home.scss';
-@import '_footer.scss';
-@import '_sidebar.scss';
-@import '_headder.scss';
-@import '_posts.scss';
-@import '_blog.scss';
-@import '_search.scss';
-@import '_pygment.scss';
-@import '_about.scss';
+@import '_helpers/_mixins.scss';
+@import '_helpers/_variables.scss';
 
-//--------------------- Global & Primary classes --------------------
-body
-{
-    font-family: Open Sans, helvetica,  sans-serif;
-    font-weight: light;
-    line-height: 1.6;
+@import '_libs/_normalize.scss';
+@import '_libs/_pygment.scss';
 
-    background-color: $backgroundColor;
-    p
-    {
-        font-size: 18px;
-    }
-}
+@import '_parts/_nav.scss';
+@import '_parts/_footer.scss';
+@import '_parts/_sidebar.scss';
+@import '_parts/_headder.scss';
+@import '_parts/_posts.scss';
+@import '_parts/_search.scss';
 
-h1
-{
-    font-weight: 600;
-}
 
-a
-{
-    transition: color .6s ease-in-out;
+@import '_pages/_global.scss';
+@import '_pages/_home.scss';
+@import '_pages/_blog.scss';
+@import '_pages/_about.scss';
 
-    color: $aLinkBlue;
-    &:hover
-    {
-        transition: color .6s ease-in-out;
-
-        color: $aLinkHover;
-    }
-}
-
-table
-{
-    border-color: $backgroundColor;
-}
-
-.max
-{
-    max-width: 1600px;
-    margin: auto;
-}
-
-.clearfix
-{
-    clear: both;
-}
-
-//--------------------- other -------------------
-.img-center
-{
-    display: block;
-
-    max-width: 100%;
-    height: auto;
-    margin: 10px auto;
-
-    text-align: center;
-}
-.img-responsive
-{
-    max-width: 100%;
-    height: auto;
-}
-
-//--------------------- Break Points ---------------------
-.topHome
-{
-    @include topColor ($homeNavC);
-}
-.topAbout
-{
-    @include topColor ($aboutNavC);
-}
-.topBlog
-{
-    @include topColor ($blogNavC);
-}
-
-//--------------------- Break Points ---------------------
-@media all and (max-width: 825px)
-{
-    .mainContent
-    {
-        width: 96%;
-    }
-    .homeAside
-    {
-        width: 96%;
-        height: 60px;
-        margin-top: 2%;
-        margin-bottom: 0;
-    }
-}
-
-@media all and (max-width: 600px)
-{
-    .desktopNav
-    {
-        display: none;
-    }
-    header
-    {
-        //margin-bottom: 2%;
-        h2
-        {
-            font-size: 32px;
-            padding-top: 5px;
-           a{ margin-left: -25px; }
-        }
-    }
-}
-@media all and (min-width: 600px)
-{
-    .mobileNav
-    {
-        display: none;
-    }
-}
+@import '_parts/_breakpoints.scss';

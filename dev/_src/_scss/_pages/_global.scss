@@ -1,0 +1,64 @@
+//--------------------- Global & Primary classes --------------------
+body
+{
+    font-family: Open Sans, helvetica,  sans-serif;
+    font-weight: light;
+    line-height: 1.6;
+
+    background-color: $backgroundColor;
+    p
+    {
+        font-size: 18px;
+    }
+}
+
+h1
+{
+    font-weight: 600;
+}
+
+a
+{
+    transition: color .6s ease-in-out;
+
+    color: $aLinkBlue;
+    &:hover
+    {
+        transition: color .6s ease-in-out;
+
+        color: $aLinkHover;
+    }
+}
+
+table
+{
+    border-color: $backgroundColor;
+}
+
+.max
+{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+//--------------------- other -------------------
+.img-center
+{
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+
+    text-align: center;
+}
+.img-responsive
+{
+    max-width: 100%;
+    height: auto;
+}
