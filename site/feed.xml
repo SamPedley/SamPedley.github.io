@@ -5,9 +5,41 @@
     <description>Hi, I&#39;m a web developer in Chicago.</description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 30 Nov 2014 23:29:32 -0600</pubDate>
-    <lastBuildDate>Sun, 30 Nov 2014 23:29:32 -0600</lastBuildDate>
+    <pubDate>Mon, 08 Dec 2014 05:25:24 -0600</pubDate>
+    <lastBuildDate>Mon, 08 Dec 2014 05:25:24 -0600</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
+    
+      <item>
+        <title>My Workflow - 2014</title>
+        <description>&lt;p&gt;I thought it would be cool to jot down what tools I’m using at the end of each year.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-planning&quot;&gt;Project Planning:&lt;/h2&gt;
+&lt;p&gt;Without exception, every project that I work on starts in &lt;a href=&quot;https://evernote.com/&quot;&gt;Evernote&lt;/a&gt; which allows me to work out the details, then those details become tasks and those tasks find their home in &lt;a href=&quot;http://culturedcode.com/things/?r=100&quot;&gt;Things&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;design&quot;&gt;Design:&lt;/h2&gt;
+&lt;p&gt;I haven’t gotten to do as much design work as I would like but I still use &lt;a href=&quot;http://www.adobe.com/products/photoshop.html&quot;&gt;Photoshop&lt;/a&gt; for all of my website mockups and &lt;a href=&quot;http://www.adobe.com/products/illustrator.html&quot;&gt;Illustrator&lt;/a&gt; for any production quality graphics. &lt;/p&gt;
+
+&lt;h2 id=&quot;text-editing&quot;&gt;Text editing:&lt;/h2&gt;
+&lt;p&gt;I primarily use &lt;a href=&quot;http://www.sublimetext.com/3&quot;&gt;Sublime Text 3&lt;/a&gt; for my heavy editing but I’ve quickly grown to love VIM for light work and quick changes. &lt;/p&gt;
+
+&lt;h2 id=&quot;local-development&quot;&gt;Local Development:&lt;/h2&gt;
+&lt;p&gt;I primarily use &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt.js&lt;/a&gt; to handle any repetitive tasks and handle my sass output, although I’m slowly starting to migrate towards &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp.js&lt;/a&gt;.   I also use &lt;a href=&quot;http://www.mamp.info/en/mamp-pro/&quot;&gt;MAMP Pro&lt;/a&gt; for just about all of my local PHP projects. &lt;/p&gt;
+
+&lt;h2 id=&quot;version-controll&quot;&gt;Version Controll:&lt;/h2&gt;
+&lt;p&gt;Like just about every other web developer I’m in love with &lt;a href=&quot;http://git-scm.com/&quot;&gt;Git&lt;/a&gt;.  I currently keep all my personal projects on &lt;a href=&quot;https://github.com/&quot;&gt;Github.com&lt;/a&gt; and my work projects on &lt;a href=&quot;https://bitbucket.org/&quot;&gt;BitBucket.com&lt;/a&gt;. &lt;/p&gt;
+
+&lt;h2 id=&quot;servers&quot;&gt;Servers:&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.dreamhost.com/&quot;&gt;dreamhost.com&lt;/a&gt; has been fantastic to me for small projects and I’ve been using &lt;a href=&quot;https://www.digitalocean.com/&quot;&gt;DigitalOcean.com&lt;/a&gt; for everything else. &lt;/p&gt;
+
+&lt;h2 id=&quot;deployment&quot;&gt;Deployment:&lt;/h2&gt;
+&lt;p&gt;I absolutely love&lt;a href=&quot;http://ftploy.com/&quot;&gt;ftploy.com&lt;/a&gt; and I use it for just about all of my production projects. for small and quick projects I still like use &lt;a href=&quot;http://panic.com/transmit/&quot;&gt;Transmit&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 07 Dec 2014 02:32:12 -0600</pubDate>
+        <link>http://www.sampedley.com/my-workflow-2014</link>
+        <guid isPermaLink="true">http://www.sampedley.com/my-workflow-2014</guid>
+        
+        
+      </item>
     
       <item>
         <title>A few Awesome Sublime Text Plugins</title>
@@ -16,6 +48,9 @@
 &lt;p&gt;Each of those editors will allow you to write code for even the most complex websites out there.  However using those tools is like choosing to a toy hammer instead of a pneumatic belt feed nail gun.  There are some great cross platform text editors out there : &lt;a href=&quot;http://brackets.io/&quot;&gt;Brackets&lt;/a&gt;, &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; and my favorite/most popular &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Brackets, Atom and Sublime all have awesome built in features that make working with code much easier but I want to share my favorite plugins and settings that I use everyday. &lt;/p&gt;
+
+&lt;h2 id=&quot;package-managerhttpssublimewbondnetinstallation&quot;&gt;&lt;a href=&quot;https://sublime.wbond.net/installation&quot;&gt;Package Manager&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Sublime text doesn’t provide a great experince for installing and removing packages right out of the box.  Lucky for us there’s a packagemanager that’ll handle everythign for us.  Just follow the directions &lt;a href=&quot;https://sublime.wbond.net/installation&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;emmethttpemmetio&quot;&gt;&lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/F/img/sublime/emmet2.gif&quot; alt=&quot;Emmet&quot; /&gt;
