@@ -14,6 +14,8 @@ Each of those editors will allow you to write code for even the most complex web
 
 Brackets, Atom and Sublime all have awesome built in features that make working with code much easier but I want to share my favorite plugins and settings that I use everyday. 
 
+##[Package Manager](https://sublime.wbond.net/installation)
+Sublime text doesn't provide a great experince for installing and removing packages right out of the box.  Lucky for us there's a packagemanager that'll handle everythign for us.  Just follow the directions [here.](https://sublime.wbond.net/installation)
 
 ##[Emmet](http://emmet.io/)
 ![Emmet](/F/img/sublime/emmet2.gif)
