@@ -5,9 +5,80 @@
     <description>Hi, I&#39;m a web developer in Chicago.</description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 08 Dec 2014 05:25:24 -0600</pubDate>
-    <lastBuildDate>Mon, 08 Dec 2014 05:25:24 -0600</lastBuildDate>
+    <pubDate>Mon, 22 Dec 2014 01:10:35 -0600</pubDate>
+    <lastBuildDate>Mon, 22 Dec 2014 01:10:35 -0600</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
+    
+      <item>
+        <title>My Reading List for 2015</title>
+        <description>&lt;p&gt;This is my living reading list for 2015.  In theory, my goal is to read though one major programing book each month. Of course, I’ll keep reading little books in-between like &lt;a href=&quot;http://amzn.com/0142000280&quot;&gt;Getting Things Done by David Allen&lt;/a&gt; or whatever &lt;a href=&quot;http://amzn.com/0812511816&quot;&gt;Wheel of Time&lt;/a&gt; book I happen to be on.  The real focus is not to just blow through the books to say that I’ve read them but to go though slowly and take serious notes so I can look back every few months to quickly remember the tiny details that always seem to slip from my mind. I’ll make sure to add my notes every month which will hopefully be useful for other people.  Here’s my list:&lt;/p&gt;
+
+&lt;h2 id=&quot;january&quot;&gt;January&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/020161622X&quot;&gt;The Pragmatic Programmer: From Journeyman to Master&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just Finished! Checkout my notes-review &lt;a href=&quot;/the-pragmatic-programer&quot;&gt;Here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;february&quot;&gt;February&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/1565925092&quot;&gt;HTTP: The Definitive Guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;march&quot;&gt;March&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/1449344763&quot;&gt;High Performance Browser Networking&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;april&quot;&gt;April&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/0735619670&quot;&gt;Code Complete: A Practical Handbook of Software Construction&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;may&quot;&gt;May&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/0132350882&quot;&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;june&quot;&gt;June&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/0596529325&quot;&gt;Programming Collective Intelligence: Building Smart Web 2.0 Applications&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;july&quot;&gt;July&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/1449303714&quot;&gt;Machine Learning for Hackers&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;augest&quot;&gt;Augest&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/1449307116&quot;&gt;Think Stats&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;september&quot;&gt;September&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/0596802358&quot;&gt;Data Analysis with Open Source Tools&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;october&quot;&gt;October&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/1449339735&quot;&gt;Interactive Data Visualization for the Web&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;november&quot;&gt;November&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/1491901632&quot;&gt;Hadoop: The Definitive Guide&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;december&quot;&gt;December&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://amzn.com/1449327176&quot;&gt;MapReduce Design Patterns: Building Effective Algorithms and Analytics for Hadoop and Other Systems&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Dec 2014 03:11:00 -0600</pubDate>
+        <link>http://www.sampedley.com/reading-list-2015</link>
+        <guid isPermaLink="true">http://www.sampedley.com/reading-list-2015</guid>
+        
+        
+      </item>
     
       <item>
         <title>My Workflow - 2014</title>
@@ -325,13 +396,9 @@ There are a couple free ftp clients for the Mac and I never had a problem using 
 Out of all the text editors out there, from notepad to vim, Sublime has become my hands down favorite editor and I even wrote about a few of my &lt;a href=&quot;&quot;&gt;favorite plugins&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Jun 2014 00:00:00 -0500</pubDate>
-        <link>http://www.sampedley.com/jekyll/update/apps-for-front-end-devs</link>
-        <guid isPermaLink="true">http://www.sampedley.com/jekyll/update/apps-for-front-end-devs</guid>
+        <link>http://www.sampedley.com/apps-for-front-end-devs</link>
+        <guid isPermaLink="true">http://www.sampedley.com/apps-for-front-end-devs</guid>
         
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
