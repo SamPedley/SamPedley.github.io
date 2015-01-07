@@ -5,8 +5,8 @@
     <description>Hi, I&#39;m a web developer in Chicago.</description>
     <link>http://www.sampedley.com/</link>
     <atom:link href="http://www.sampedley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 22 Dec 2014 01:10:35 -0600</pubDate>
-    <lastBuildDate>Mon, 22 Dec 2014 01:10:35 -0600</lastBuildDate>
+    <pubDate>Wed, 07 Jan 2015 13:52:28 -0600</pubDate>
+    <lastBuildDate>Wed, 07 Jan 2015 13:52:28 -0600</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
@@ -204,29 +204,44 @@ I love this plugin not because it does anything crazy but because it gives me li
     
       <item>
         <title>Images You Can Use</title>
-        <description>&lt;h2 id=&quot;searchcreativecommonsorghttpsearchcreativecommonsorg&quot;&gt;&lt;a href=&quot;http://search.creativecommons.org/&quot;&gt;Search.CreativeCommons.org&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://search.creativecommons.org/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/creativeC.png&quot; alt=&quot;CreativeCommons&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+        <description>&lt;h2 id=&quot;little-visualshttplittlevisualsco&quot;&gt;&lt;a href=&quot;http://littlevisuals.co/&quot;&gt;Little Visuals&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag--blue&quot;&gt;Searchable&lt;/span&gt; &lt;span class=&quot;post__tag&quot;&gt;Landscape&lt;/span&gt;&lt;span class=&quot;post__tag&quot;&gt;City&lt;/span&gt;
+&lt;a href=&quot;http://littlevisuals.co/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/littlevisuals.co.png&quot; alt=&quot;CreativeCommons&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;photopincomhttpphotopincom&quot;&gt;&lt;a href=&quot;http://photopin.com/&quot;&gt;PhotoPin.com&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://photopin.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/photopin.png&quot; alt=&quot;photoin&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;unsplashhttpunsplashcom&quot;&gt;&lt;a href=&quot;http://unsplash.com/&quot;&gt;UnSplash&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag&quot;&gt;Scenery&lt;/span&gt;
+&lt;a href=&quot;http://unsplash.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/unsplash.png&quot; alt=&quot;photoin&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;wikimediaorghttpcommonswikimediaorgwikimainpage&quot;&gt;&lt;a href=&quot;http://commons.wikimedia.org/wiki/Main_Page&quot;&gt;WikiMedia.org&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://commons.wikimedia.org/wiki/Main_Page&quot;&gt; &lt;img src=&quot;/F/img/freeImages/wiki.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;pixabayhttppixabaycom&quot;&gt;&lt;a href=&quot;http://pixabay.com/&quot;&gt;Pixabay&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag--blue&quot;&gt;Searchable&lt;/span&gt; &lt;span class=&quot;post__tag&quot;&gt;Variety&lt;/span&gt;
+&lt;a href=&quot;http://pixabay.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/pixabay.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;usagovhttpwwwusagovtopicsgraphicsshtml&quot;&gt;&lt;a href=&quot;http://www.usa.gov/Topics/Graphics.shtml&quot;&gt;USA.gov&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.usa.gov/Topics/Graphics.shtml&quot;&gt; &lt;img src=&quot;/F/img/freeImages/usa.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;pic-jumbohttppicjumbocom&quot;&gt;&lt;a href=&quot;http://picjumbo.com/&quot;&gt;Pic Jumbo&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag--blue&quot;&gt;Searchable&lt;/span&gt;
+&lt;a href=&quot;http://picjumbo.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/picjumbo.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;morguefilecomhttpwwwmorguefilecom&quot;&gt;&lt;a href=&quot;http://www.morguefile.com/&quot;&gt;MorgueFile.com&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.morguefile.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/morguefile.png&quot; alt=&quot;photoin&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;gratisographyhttpgratisographycom&quot;&gt;&lt;a href=&quot;http://gratisography.com/&quot;&gt;Gratisography&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag&quot;&gt;Artsy&lt;/span&gt;&lt;span class=&quot;post__tag&quot;&gt;Reactions&lt;/span&gt;&lt;span class=&quot;post__tag&quot;&gt;Expressions&lt;/span&gt;
+&lt;a href=&quot;http://gratisography.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/gratisography.png&quot; alt=&quot;photoin&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;freeimagescomhttpwwwfreeimagescom&quot;&gt;&lt;a href=&quot;http://www.freeimages.com/&quot;&gt;FreeImages.com&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.freeimages.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/freeimages.png&quot; alt=&quot;free images&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;morguefilehttpwwwmorguefilecom&quot;&gt;&lt;a href=&quot;http://www.morguefile.com/&quot;&gt;MorgueFile&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag--blue&quot;&gt;Searchable&lt;/span&gt;
+&lt;a href=&quot;http://www.morguefile.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/morgue.png&quot; alt=&quot;photoin&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;unrestrictedstockcomhttpunrestrictedstockcom&quot;&gt;&lt;a href=&quot;http://unrestrictedstock.com/&quot;&gt;UnRestrictedStock.com&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://unrestrictedstock.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/unstock.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;new-old-stockhttpnostwnsndco&quot;&gt;&lt;a href=&quot;http://nos.twnsnd.co/&quot;&gt;New Old Stock&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag&quot;&gt;Vintage&lt;/span&gt;&lt;span class=&quot;post__tag&quot;&gt;Black and White&lt;/span&gt;
+&lt;a href=&quot;http://nos.twnsnd.co/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/nos.png&quot; alt=&quot;free images&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;jay-mantrihttpjaymantricom&quot;&gt;&lt;a href=&quot;http://jaymantri.com/&quot;&gt;Jay Mantri&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://jaymantri.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/jay.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;public-domain-archivehttppublicdomainarchivecom&quot;&gt;&lt;a href=&quot;http://publicdomainarchive.com/&quot;&gt;Public Domain Archive&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag--blue&quot;&gt;Searchable&lt;/span&gt; &lt;span class=&quot;post__tag&quot;&gt;Variety&lt;/span&gt;
+&lt;a href=&quot;http://publicdomainarchive.com/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/public.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;anamalphotosinfohttpanimalphotosinfoa&quot;&gt;&lt;a href=&quot;http://animalphotos.info/a/&quot;&gt;AnamalPhotos.info&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://animalphotos.info/a/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/anamal.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;post__tag--blue&quot;&gt;Searchable&lt;/span&gt;&lt;span class=&quot;post__tag&quot;&gt;Every type of Animal&lt;/span&gt;
+&lt;a href=&quot;http://animalphotos.info/a/&quot;&gt; &lt;img src=&quot;/F/img/freeImages/anamal.png&quot; alt=&quot;USA&quot; /&gt; &lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 18 Oct 2014 11:00:30 -0500</pubDate>
         <link>http://www.sampedley.com/free-images</link>

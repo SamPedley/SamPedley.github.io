@@ -3,7 +3,7 @@ layout: post
 title:  "The Pragmatic Programer"
 date:   2015-1-12 5:58:58
 categories: 
-published: true
+published: false
 description: The Pragmatic Programer my thoughs and notes. 
 ---
 ##Chapter Title

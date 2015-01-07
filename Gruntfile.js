@@ -72,7 +72,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       css: {
-        files: ["dev/_src/_scss/*.scss","dev/_src/_scss/*.sass","dev/_src/_scss/*.css"],
+        files: ["dev/_src/_scss/**/*.scss",],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       },
       svg: {
