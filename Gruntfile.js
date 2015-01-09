@@ -1,6 +1,7 @@
+  "use strict";
+
 module.exports = function(grunt) {
 
-  "use strict";
 
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
@@ -67,7 +68,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["dev/index.html", "dev/_layouts/*.html", "dev/_posts/*.md",'dev/_posts/*.markdown', "dev/_projects/*.md", "dev/_includes/*.html"],
+        files: ["dev/_layouts/**/*.html",'dev/_posts/*.markdown'],
         tasks: ["shell:jekyllBuild"],
         livereload: true
       },

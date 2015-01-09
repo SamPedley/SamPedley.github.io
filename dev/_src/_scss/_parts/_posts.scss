@@ -21,14 +21,14 @@
         max-width: 90%;
         margin: 10px auto;
 
-        transition: all .2s ease-in-out;
+      //transition: all .2s ease-in-out;
         text-align: center;
-        transform: scale(0.95);
-        &:hover
-        {
-            transition: all .2s ease-in-out;
-            transform: scale(1.1,1.1);
-        }
+      //transform: scale(0.95);
+        // &:hover
+        // {
+        //     transition: all .2s ease-in-out;
+        //     transform: scale(1.1,1.1);
+        // }
     }
     hr
     {
