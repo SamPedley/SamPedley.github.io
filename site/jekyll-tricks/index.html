@@ -87,9 +87,9 @@
 <div class="postContainer">
 
   <article class="post-content" itemprop="articleBody">
-  <p>Jekyll uses <a href="http://docs.shopify.com/themes/liquid-documentation/basics">Liquid</a> and <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> to structure and layout the content in your site. </p>
+  <p>Jekyll uses <a href="http://docs.shopify.com/themes/liquid-documentation/basics">Liquid</a> and <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> to structure and layout the content in your site.</p>
 
-<p>Liquid is a tempting language created by <a href="http://www.shopify.com/">shopify</a> which allows you run conditional statements, for loops and pull in data with YAML  - here’s an awesome <a href="http://cheat.markdunkley.com/">cheat sheet</a>. </p>
+<p>Liquid is a tempting language created by <a href="http://www.shopify.com/">shopify</a> which allows you run conditional statements, for loops and pull in data with YAML  - here’s an awesome <a href="http://cheat.markdunkley.com/">cheat sheet</a>.</p>
 
 <p>YML is short for “YAML Ain’t Markup Language”.  Basically, what YAML does is store information that Jekyll needs to build out your site.  You only have to deal with YAML in two different places: the <code>_config.yml</code> file and in little blocks in the head section of posts.</p>
 
@@ -128,7 +128,7 @@ description: This is a really great description for SEO and stuff.
    &quot;{ % if page.description %}{{ page.description }}
 	{% else %}{{ site.description}}{% endif %}&quot;&gt;</code></pre></div>
 
-<p>I’ve broken it up into three lines but essentially all the liquid code is incased in the <code>&lt;meta content=" "&gt;</code>; it just adds a fallback incase you forget to add a discriptionn.  </p>
+<p>I’ve broken it up into three lines but essentially all the liquid code is incased in the <code>&lt;meta content=" "&gt;</code>; it just adds a fallback incase you forget to add a discriptionn.</p>
 
 <h2 id="adding-a-dynamic-image">Adding a dynamic Image</h2>
 <p>At this point I’m sure you’re catching on,  you can create any kind of <code>.yml</code> tag and call it with liquid.  This is awesome because I come from the world of wordpress and I love being able to call data from pages and posts however I like and the YML and Liquid tags allow me to do something similar. <br />
@@ -140,14 +140,14 @@ title:  &quot;Jekyll Post&quot;
 image: /images/collCat.jpg 
 ---</code></pre></div>
 
-<p>So this is fairly straight forward I just added tag named image and assigned the path to the image file.  Then I call it with this code: </p>
+<p>So this is fairly straight forward I just added tag named image and assigned the path to the image file.  Then I call it with this code:</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts limit:5 %}
        {% if post.image %}
        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{post.image}}&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
        {% endif %}</code></pre></div>
 
-<p>So in this code block I’m calling five posts and from each post i’m checking to see if it has an image and if it does I give the <code>&lt;img&gt;</code> tag the path to the image. Of course we can improve on this as well.  I like to add backups and redundancies to anything that’s dynamic so I’ve also added a image to my <code>_config.yml</code> file the same exact way I would to the top of a post file. </p>
+<p>So in this code block I’m calling five posts and from each post i’m checking to see if it has an image and if it does I give the <code>&lt;img&gt;</code> tag the path to the image. Of course we can improve on this as well.  I like to add backups and redundancies to anything that’s dynamic so I’ve also added a image to my <code>_config.yml</code> file the same exact way I would to the top of a post file.</p>
 
 <div class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts limit:5 %}
 <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{site.url}}</span>
