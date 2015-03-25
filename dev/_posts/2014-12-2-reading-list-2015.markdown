@@ -8,12 +8,11 @@ description: Getting a head start on my reading list for 2015.
 image: /F/img/books/book.jpg
 ---
 
-This is my living reading list for 2015.  In theory, my goal is to read though one major programing book each month. Of course, I'll keep reading little books in-between like [Getting Things Done by David Allen]( http://amzn.com/0142000280) or whatever [Wheel of Time](http://amzn.com/0812511816) book I happen to be on.  The real focus is not to just blow through the books to say that I've read them but to go though slowly and take serious notes so I can look back every few months to quickly remember the tiny details that always seem to slip from my mind. I'll make sure to add my notes every month which will hopefully be useful for other people.  Here's my list:
+This is my living reading list for 2015.  In theory, my goal is to read though one major programing book each month. Of course, I'll keep reading little books in-between like [Getting Things Done by David Allen]( http://amzn.com/0142000280) or whatever [Wheel of Time](http://amzn.com/0812511816) book I happen to be on.  The real focus is not to just blow through the books to say that I've read them but to go though slowly and take serious notes so I can look back every few months to quickly remember the tiny details that always seem to slip from my mind. Here's my list:
 
 ##January
 [The Pragmatic Programmer: From Journeyman to Master](http://amzn.com/020161622X)
 
-Just Finished! Checkout my notes-review [Here.](/the-pragmatic-programer)
 
 ------
 
