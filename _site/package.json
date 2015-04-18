@@ -1,0 +1,29 @@
+{
+  "name": "samJekyll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamPedley/samJekyll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamPedley/samJekyll/issues"
+  },
+  "homepage": "https://github.com/SamPedley/samJekyll",
+  "devDependencies": {
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-contrib-imagemin": "^0.8.1",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.1",
+    "grunt-svgstore": "^0.3.5",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}
