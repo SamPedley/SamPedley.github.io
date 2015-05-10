@@ -5,7 +5,7 @@ date:   2015-4-16 13:58:00
 categories: 
 published: true
 description:  Interviewing is not easy.  Some amazing people interview terribly and some unqualified cannidates have an uncanny knowledge of just what to say but just can’t perform.  Each industry has...
-image: /F/img/terminalThemes/flatland.png
+image: /F/img/juniorDeveloperQuestions/juniorDeveloper.jpg
 ---
 
 Interviewing is not easy.  Some amazing people interview terribly and some unqualified cannidates have an uncanny knowledge of just what to say but just can’t perform.  Each industry has to take into account ways to test possible employees and the best part about development is that we can quickly and easily test our own. 
@@ -20,7 +20,7 @@ Out of the three that I came up with this is by far the most important. Being ab
 
 Out of the three this is thte test I would give the most weight. Taking a set of divs and styling them in a way that flows well between screen sizes is exactly what these developers will be doing on a daily basis and a strong base understanding of these concepts is very important. 
 
-<p data-height="350" data-theme-id="0" data-slug-hash="VYNeOO" data-default-tab="result" data-user="SamPedley" class='codepen'>See the Pen <a href='http://codepen.io/SamPedley/pen/VYNeOO/'>Display Issue: Question</a> by SamPedley (<a href='http://codepen.io/SamPedley'>@SamPedley</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="0" data-slug-hash="VYNeOO" data-default-tab="result" data-user="SamPedley" class='codepen'>See the Pen <a href='http://codepen.io/SamPedley/pen/VYNeOO/'>Display Issue: Question</a> by SamPedley (<a href='http://codepen.io/SamPedley'>@SamPedley</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -32,7 +32,7 @@ jQuery is just about everywhere.  Really, it’s crazy how many projects have a 
 1. Does the developer have basic knowledge of jQuery.
 2. Does the developer know how to use programatic thinking in practice or do they just copy and paste a lot.
 
-<p data-height="350" data-theme-id="0" data-slug-hash="MYRyBP" data-default-tab="result" data-user="SamPedley" class='codepen'>See the Pen <a href='http://codepen.io/SamPedley/pen/MYRyBP/'>jQuery Test: Question</a> by SamPedley (<a href='http://codepen.io/SamPedley'>@SamPedley</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="0" data-slug-hash="MYRyBP" data-default-tab="result" data-user="SamPedley" class='codepen'>See the Pen <a href='http://codepen.io/SamPedley/pen/MYRyBP/'>jQuery Test: Question</a> by SamPedley (<a href='http://codepen.io/SamPedley'>@SamPedley</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -47,7 +47,7 @@ This is the only test that I didn’t come up with myself and for good reason.  
 1. Having the developer have to think critically through the issue.
 2. Show their understanding of basic conditional statements and loops.
 
-<p data-height="350" data-theme-id="0" data-slug-hash="ZYZQPv" data-default-tab="result" data-user="SamPedley" class='codepen'>See the Pen <a href='http://codepen.io/SamPedley/pen/ZYZQPv/'>Fizz Buzz: Question</a> by SamPedley (<a href='http://codepen.io/SamPedley'>@SamPedley</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="0" data-slug-hash="ZYZQPv" data-default-tab="result" data-user="SamPedley" class='codepen'>See the Pen <a href='http://codepen.io/SamPedley/pen/ZYZQPv/'>Fizz Buzz: Question</a> by SamPedley (<a href='http://codepen.io/SamPedley'>@SamPedley</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 ------------
