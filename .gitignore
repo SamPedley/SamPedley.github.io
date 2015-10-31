@@ -3,3 +3,4 @@ node_modules
 .sass-cache/
 dev/F/config.codekit
 site/F/config.codekit
+_site/

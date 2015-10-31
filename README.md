@@ -1,11 +1,9 @@
-https://codeship.com/projects/YOUR_PROJECT_UUID/status?branch=master
-
 Jekyll site 
 ===========
 
 ###This site is:
 
-+ built on [jekyll](http://jekyllrb.com/) 
++ built on [jekyll](http://jekyllrb.com/)
 + run through [Grunt](http://gruntjs.com/) using:
 	+ [Sass](https://github.com/gruntjs/grunt-contrib-sass)
 	+ [Autoprefixer](https://github.com/nDmitry/grunt-autoprefixer)

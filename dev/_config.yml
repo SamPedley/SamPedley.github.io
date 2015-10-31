@@ -13,7 +13,7 @@ keywords: sam pedley chicago web developer
 markdown: kramdown
 destination: ../site
 permalink: /:categories/:title
-highlighter: pygments
+highlighter: rouge 
 
-#Site Variables 
+#Site Variables
 image: /F/img/booger.jpg
