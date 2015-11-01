@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width">
-<meta name="description"  content="Working with the Angular Google Maps directive is super easy... once you make it past the somewhat poor documentation.  Here's a general example of how I set up a multiple marker map.">
-<title>Angular Google Maps</title>
+<meta name="description"  content="Jekyll is a powerful static site generator and as I built my site I learned a lot about how you can leverage all that Jekyll offers.  I'll go over how to pull in images from posts, create dynamic page descriptions and help you set up your grunt or gulp file.">
+<title>Jekyll Tricks</title>
 <link rel="shortcut icon" href="http://www.sampedley.com/favicon.ico" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/F/css/main.css">
@@ -81,49 +81,85 @@
 <div class="articlesMax" itemscope itemtype="http://schema.org/Article">
 
   <header class="post-header">
-    <h1 itemprop="name">Angular Google Maps</h1>
-    <p class="meta" itemprop="datePublished">Mar 7, 2015</p>
+    <h1 itemprop="name">Jekyll Tricks</h1>
+    <p class="meta" itemprop="datePublished">Sep 12, 2014</p>
   </header>
 <div class="postContainer">
 
   <article class="post-content" itemprop="articleBody">
-  <p><a href="http://angular-ui.github.io/angular-google-maps/#!/api">Angular-Google-Maps is awesome!</a>  I’ts a super quick way to get google maps working in angular with very little effort.  There just isn’t a good/basic example of how to get a multi map marker working so I created one.</p>
+  <p>Jekyll uses <a href="http://docs.shopify.com/themes/liquid-documentation/basics">Liquid</a> and <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> to structure and layout the content in your site.</p>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;app&#39;</span><span class="p">,[</span><span class="s1">&#39;uiGmapgoogle-maps&#39;</span><span class="p">]);</span>
+<p>Liquid is a tempting language created by <a href="http://www.shopify.com/">shopify</a> which allows you run conditional statements, for loops and pull in data with YAML  - here’s an awesome <a href="http://cheat.markdunkley.com/">cheat sheet</a>.</p>
 
-  <span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">&#39;MapController&#39;</span><span class="p">,[</span><span class="s1">&#39;$scope&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">){</span>
+<p>YML is short for “YAML Ain’t Markup Language”.  Basically, what YAML does is store information that Jekyll needs to build out your site.  You only have to deal with YAML in two different places: the <code>_config.yml</code> file and in little blocks in the head section of posts.</p>
 
-    <span class="nx">$scope</span><span class="p">.</span><span class="nx">map</span> <span class="o">=</span> <span class="p">{</span> 
-    	<span class="nx">center</span><span class="o">:</span> <span class="p">{</span> <span class="nx">latitude</span><span class="o">:</span> <span class="mf">32.128394</span><span class="p">,</span> <span class="nx">longitude</span><span class="o">:</span> <span class="o">-</span><span class="mf">80.783215</span>  <span class="p">},</span> 
-    	<span class="nx">zoom</span><span class="o">:</span> <span class="mi">17</span><span class="p">,</span>
-    	<span class="nx">markers</span><span class="o">:</span> <span class="p">[</span>
-    		<span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">latitude</span><span class="o">:</span> <span class="mf">32.128394</span><span class="p">,</span> <span class="nx">longitude</span><span class="o">:</span> <span class="o">-</span><span class="mf">80.24243</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Cool house 1&quot;</span><span class="p">,</span> <span class="nx">picture</span><span class="o">:</span> <span class="s2">&quot;http://placehold.it/350x150&quot;</span><span class="p">},</span>
-    		<span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">latitude</span><span class="o">:</span> <span class="mf">32.11212</span><span class="p">,</span> <span class="nx">longitude</span><span class="o">:</span> <span class="o">-</span><span class="mf">80.67456</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Cool house 2&quot;</span><span class="p">,</span> <span class="nx">picture</span><span class="o">:</span> <span class="s2">&quot;http://placehold.it/350x150&quot;</span><span class="p">},</span>
-    		<span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span> <span class="nx">latitude</span><span class="o">:</span> <span class="mf">32.232212</span><span class="p">,</span> <span class="nx">longitude</span><span class="o">:</span> <span class="o">-</span><span class="mf">80.45432</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Cool house 3&quot;</span><span class="p">,</span> <span class="nx">picture</span><span class="o">:</span> <span class="s2">&quot;http://placehold.it/350x150&quot;</span><span class="p">},</span>
-    		<span class="p">{</span> <span class="nx">id</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span> <span class="nx">latitude</span><span class="o">:</span> <span class="mf">32.12312</span><span class="p">,</span> <span class="nx">longitude</span><span class="o">:</span> <span class="o">-</span><span class="mf">80.123123</span><span class="p">,</span> <span class="nx">title</span><span class="o">:</span> <span class="s2">&quot;Cool house 4&quot;</span><span class="p">,</span> <span class="nx">picture</span><span class="o">:</span> <span class="s2">&quot;http://placehold.it/350x150&quot;</span><span class="p">}</span>
-    	<span class="p">]</span>
-    <span class="p">};</span>
+<h2 id="here-is-a-basic-yml-front-matter-block-from-jekyllhttpjekyllrbcomdocsfrontmatter">Here is a basic YML front matter block from <a href="http://jekyllrb.com/docs/frontmatter/">jekyll</a>.</h2>
 
-  <span class="p">}]);</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: post
+permilink: /jekyll_much_cool/
+title:  "Jekyll Post"
+date:   2090-11-10 12:00:00
+categories: cool stuff
+published: true
+tags: cool, awesome, neat
+---</code></pre></figure>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">ng-controller=</span><span class="s">&quot;MapController&quot;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;ui-gmap-google-map</span> <span class="na">map-resize</span> <span class="na">center=</span><span class="s">&#39;map.center&#39;</span> <span class="na">zoom=</span><span class="s">&#39;map.zoom&#39;</span> <span class="nt">&gt;</span>
-	    <span class="nt">&lt;ui-gmap-markers</span> <span class="na">models=</span><span class="s">&quot;map.markers&quot;</span> <span class="na">idKey=</span><span class="s">&quot;&#39;id&#39;&quot;</span> <span class="na">coords=</span><span class="s">&quot;&#39;self&#39;&quot;</span><span class="nt">&gt;</span>
-	        <span class="nt">&lt;ui-gmap-windows</span> <span class="na">show=</span><span class="s">&quot;show&quot;</span><span class="nt">&gt;</span>
-	            <span class="nt">&lt;div</span> <span class="na">ng-non-bindable</span><span class="nt">&gt;</span>
-	                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#/{{ id }}&quot;</span><span class="nt">&gt;</span>
-	                    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{ picture }}&quot;</span><span class="nt">&gt;</span>
-	                <span class="nt">&lt;/a&gt;</span>
-	                <span class="nt">&lt;h4&gt;</span>{{ title }}<span class="nt">&lt;/h4&gt;</span>
-	            <span class="nt">&lt;/div&gt;</span>
-	        <span class="nt">&lt;/ui-gmap-windows&gt;</span>
-	    <span class="nt">&lt;/ui-gmap-markers&gt;</span>
-	<span class="nt">&lt;/ui-gmap-google-map&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<p>Again, these are just the basic settings that Jekyll provides, however you can add your own variables to help make your static pages dynamic-ish.</p>
 
-<p>Following this pattern and the geting <a href="http://angular-ui.github.io/angular-google-maps/#!/api">started documentation</a> will get you something like this:</p>
+<h2 id="adding-a-dynamic-description">Adding a dynamic description</h2>
 
-<p><img src="/F/img/angularMaps/angularMaps.png" alt="" /></p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: post
+title:  "Jekyll Post"
+date:   2090-11-10 12:00:00
+description: This is a really great description for SEO and stuff. 
+---</code></pre></figure>
+
+<p>So essentially I’ve a  variable called description and I’ve assigned it a string.  Now I can access this with the following code.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{ % if page.description %}
+	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"{{ page.description }}"</span><span class="nt">&gt;</span>
+{% endif %}</code></pre></figure>
+
+<p>This is an very useful example of how we can use YML and Liquid to create a dynamic static sight generator.  Of course we can improve on it with this code:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"description"</span> <span class="na">content=</span><span class="err">
+   </span><span class="s">"{ % if page.description %}{{ page.description }}
+	{% else %}{{ site.description}}{% endif %}"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>I’ve broken it up into three lines but essentially all the liquid code is incased in the <code>&lt;meta content=" "&gt;</code>; it just adds a fallback incase you forget to add a discriptionn.</p>
+
+<h2 id="adding-a-dynamic-image">Adding a dynamic Image</h2>
+<p>At this point I’m sure you’re catching on,  you can create any kind of <code>.yml</code> tag and call it with liquid.  This is awesome because I come from the world of wordpress and I love being able to call data from pages and posts however I like and the YML and Liquid tags allow me to do something similar. <br />
+With Jekyll an Liquid you can quickly cycle through all of your posts and display them however you like. Here’s how I structured my YML and Liquid to include and image.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">---
+layout: post
+title:  "Jekyll Post"
+image: /images/collCat.jpg 
+---</code></pre></figure>
+
+<p>So this is fairly straight forward I just added tag named image and assigned the path to the image file.  Then I call it with this code:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> {% for post in site.posts limit:5 %}
+       {% if post.image %}
+       <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{post.image}}"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+       {% endif %} </code></pre></figure>
+
+<p>So in this code block I’m calling five posts and from each post i’m checking to see if it has an image and if it does I give the <code>&lt;img&gt;</code> tag the path to the image. Of course we can improve on this as well.  I like to add backups and redundancies to anything that’s dynamic so I’ve also added a image to my <code>_config.yml</code> file the same exact way I would to the top of a post file.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> {% for post in site.posts limit:5 %}
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{site.url}}
+	{% if post.image %}
+		{{post.image}}
+	{% else %}
+		{{ site.image}}
+	{% endif %}   
+	"</span> 
+	<span class="na">alt=</span><span class="s">"{{post.description}}"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>So, yeah, that’s about it.  I hope this helped a little and feel free to ask any questions.</p>
 
   </article>
 </div>

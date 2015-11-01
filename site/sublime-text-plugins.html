@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width">
-<meta name="description"  content="Jekyll is a powerful static site generator and as I built my site I learned a lot about how you can leverage all that Jekyll offers.  I'll go over how to pull in images from posts, create dynamic page descriptions and help you set up your grunt or gulp file.">
-<title>Jekyll Tricks</title>
+<meta name="description"  content="Sublime Text is one of the most powerful text editors you can use, but with a little extra work you can make it even better.">
+<title>A few Awesome Sublime Text Plugins</title>
 <link rel="shortcut icon" href="http://www.sampedley.com/favicon.ico" />
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/F/css/main.css">
@@ -81,85 +81,92 @@
 <div class="articlesMax" itemscope itemtype="http://schema.org/Article">
 
   <header class="post-header">
-    <h1 itemprop="name">Jekyll Tricks</h1>
-    <p class="meta" itemprop="datePublished">Sep 12, 2014</p>
+    <h1 itemprop="name">A few Awesome Sublime Text Plugins</h1>
+    <p class="meta" itemprop="datePublished">Oct 23, 2014</p>
   </header>
 <div class="postContainer">
 
   <article class="post-content" itemprop="articleBody">
-  <p>Jekyll uses <a href="http://docs.shopify.com/themes/liquid-documentation/basics">Liquid</a> and <a href="http://en.wikipedia.org/wiki/YAML">YAML</a> to structure and layout the content in your site.</p>
+  <p>It’s estimated that there are over <a href="http://www.internetlivestats.com/total-number-of-websites/">one billion websites</a> live, accessible to you, right now. It’s an insane number that human mind <a href="http://spacecollective.org/TheUndying/5970/Big-numbers-and-the-human-mind">struggles to really understand</a>. One of the reasons the internet has evolved into juggernaut it is today simply boils down to the accessibility everyone has to the tools to build a website.  In fact every computer built in the past ten years have had the tools to create a website per-installed.  I’m talking about text editors: Windows has Notepad, OSX has TextEdit and linux has well, Text Editor.</p>
 
-<p>Liquid is a tempting language created by <a href="http://www.shopify.com/">shopify</a> which allows you run conditional statements, for loops and pull in data with YAML  - here’s an awesome <a href="http://cheat.markdunkley.com/">cheat sheet</a>.</p>
+<p>Each of those editors will allow you to write code for even the most complex websites out there.  However using those tools is like choosing to a toy hammer instead of a pneumatic belt feed nail gun.  There are some great cross platform text editors out there : <a href="http://brackets.io/">Brackets</a>, <a href="https://atom.io/">Atom</a> and my favorite/most popular <a href="http://www.sublimetext.com/">Sublime Text</a>.</p>
 
-<p>YML is short for “YAML Ain’t Markup Language”.  Basically, what YAML does is store information that Jekyll needs to build out your site.  You only have to deal with YAML in two different places: the <code>_config.yml</code> file and in little blocks in the head section of posts.</p>
+<p>Brackets, Atom and Sublime all have awesome built in features that make working with code much easier but I want to share my favorite plugins and settings that I use everyday.</p>
 
-<h2 id="here-is-a-basic-yml-front-matter-block-from-jekyllhttpjekyllrbcomdocsfrontmatter">Here is a basic YML front matter block from <a href="http://jekyllrb.com/docs/frontmatter/">jekyll</a>.</h2>
+<h2 id="package-managerhttpssublimewbondnetinstallation"><a href="https://sublime.wbond.net/installation">Package Manager</a></h2>
+<p>Sublime text doesn’t provide a great experince for installing and removing packages right out of the box.  Lucky for us there’s a packagemanager that’ll handle everythign for us.  Just follow the directions <a href="https://sublime.wbond.net/installation">here.</a></p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">---
-layout: post
-permilink: /jekyll_much_cool/
-title:  &quot;Jekyll Post&quot;
-date:   2090-11-10 12:00:00
-categories: cool stuff
-published: true
-tags: cool, awesome, neat
----</code></pre></div>
+<h2 id="emmethttpemmetio"><a href="http://emmet.io/">Emmet</a></h2>
+<p><img src="/F/img/sublime/emmet2.gif" alt="Emmet" />
+Emmet allows you to create elements with half the keystrokes you would normal use.  Typing <code>.div</code> + [tab] creates<code>&lt;div&gt;&lt;/div&gt;</code> I know that doesn’t seem that much quicker than typing but after a few hundred lines that time adds up. To learn how to use this plugin you can check out the <a href="http://emmet.io">emmet.io site</a> or you can jump right in with the <a href="http://docs.emmet.io/cheat-sheet/">emmet cheat sheet</a>.</p>
 
-<p>Again, these are just the basic settings that Jekyll provides, however you can add your own variables to help make your static pages dynamic-ish.</p>
+<p><a href="https://sublime.wbond.net/packages/Emmet">Download Emmet Here</a></p>
 
-<h2 id="adding-a-dynamic-description">Adding a dynamic description</h2>
+<hr />
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">---
-layout: post
-title:  &quot;Jekyll Post&quot;
-date:   2090-11-10 12:00:00
-description: This is a really great description for SEO and stuff. 
----</code></pre></div>
+<h2 id="color-highlighterhttpssublimewbondnetpackagescolor20highlighter"><a href="https://sublime.wbond.net/packages/Color%20Highlighter">Color Highlighter</a></h2>
+<p><img src="/F/img/sublime/color.gif" alt="Color" />
+Did you know rgba(102, 153, 204, 1.0) is a light blue or that #FC0D1B is a bright red? Because I sure as hell didn’t.  Color Highlighter is a super quick way of visualizing any color value, it even works on LESS and SASS varriables.</p>
 
-<p>So essentially I’ve a  variable called description and I’ve assigned it a string.  Now I can access this with the following code.</p>
+<p><a href="https://sublime.wbond.net/packages/Color%20Highlighter">Download Color Highlighter Here</a></p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">{ % if page.description %}
-	<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span><span class="s">&quot;{{ page.description }}&quot;</span><span class="nt">&gt;</span>
-{% endif %}</code></pre></div>
+<hr />
 
-<p>This is an very useful example of how we can use YML and Liquid to create a dynamic static sight generator.  Of course we can improve on it with this code:</p>
+<h2 id="git-gutterhttpssublimewbondnetpackagescolor20highlighter"><a href="https://sublime.wbond.net/packages/Color%20Highlighter">Git Gutter</a></h2>
+<p><img src="/F/img/sublime/gitGutter.gif" alt="GitGutter" />
+The Atom text edditor has the built in ability ot show you the addtions, deletions and changes to your working document against the head and it was just about the only reson I enjoyed Atom.  Thankfuly, that same feautre is available in of Sublime thanks to Git Gutter.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">&quot;description&quot;</span> <span class="na">content=</span>
-   &quot;{ % if page.description %}{{ page.description }}
-	{% else %}{{ site.description}}{% endif %}&quot;&gt;</code></pre></div>
+<p><a href="https://sublime.wbond.net/packages/GitGutter">Download Git Gutter Here</a></p>
 
-<p>I’ve broken it up into three lines but essentially all the liquid code is incased in the <code>&lt;meta content=" "&gt;</code>; it just adds a fallback incase you forget to add a discriptionn.</p>
+<hr />
 
-<h2 id="adding-a-dynamic-image">Adding a dynamic Image</h2>
-<p>At this point I’m sure you’re catching on,  you can create any kind of <code>.yml</code> tag and call it with liquid.  This is awesome because I come from the world of wordpress and I love being able to call data from pages and posts however I like and the YML and Liquid tags allow me to do something similar. <br />
-With Jekyll an Liquid you can quickly cycle through all of your posts and display them however you like. Here’s how I structured my YML and Liquid to include and image.</p>
+<h2 id="sidebar-enhancementshttpsgithubcomtitobouzoutsidebarenhancements"><a href="https://github.com/titoBouzout/SideBarEnhancements">SideBar Enhancements</a></h2>
+<p><img src="/F/img/sublime/sidemenu.gif" alt="Sidemenu" />
+SideBar Enhancements is the plugin that should have come out of the box with Sublime.  SideBar Enhancements allows you to create, edit, duplicate, rename, launch code in browser and more; which makes manipulating files so much easier.</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">---
-layout: post
-title:  &quot;Jekyll Post&quot;
-image: /images/collCat.jpg 
----</code></pre></div>
+<p><a href="https://sublime.wbond.net/packages/GitGutter">Download SideBar Enhancements Here</a></p>
 
-<p>So this is fairly straight forward I just added tag named image and assigned the path to the image file.  Then I call it with this code:</p>
+<hr />
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts limit:5 %}
-       {% if post.image %}
-       <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{post.image}}&quot;</span> <span class="na">alt=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
-       {% endif %}</code></pre></div>
+<h2 id="bracket-highlighterhttpssublimewbondnetpackagesbrackethighlighter"><a href="https://sublime.wbond.net/packages/BracketHighlighter">Bracket Highlighter</a></h2>
+<p><img src="/F/img/sublime/bracket.gif" alt="Brackets" />
+I love this plugin not because it does anything crazy but because it gives me little helping hints when I’m looking through a complex sass file or javascript function.</p>
 
-<p>So in this code block I’m calling five posts and from each post i’m checking to see if it has an image and if it does I give the <code>&lt;img&gt;</code> tag the path to the image. Of course we can improve on this as well.  I like to add backups and redundancies to anything that’s dynamic so I’ve also added a image to my <code>_config.yml</code> file the same exact way I would to the top of a post file.</p>
+<p><a href="https://sublime.wbond.net/packages/BracketHighlighter">Download Bracket Highlighter Here</a></p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.posts limit:5 %}
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{site.url}}</span>
-<span class="s">	{% if post.image %}</span>
-<span class="s">		{{post.image}}</span>
-<span class="s">	{% else %}</span>
-<span class="s">		{{ site.image}}</span>
-<span class="s">	{% endif %}   </span>
-<span class="s">	&quot;</span> 
-	<span class="na">alt=</span><span class="s">&quot;{{post.description}}&quot;</span><span class="nt">&gt;</span></code></pre></div>
+<hr />
 
-<p>So, yeah, that’s about it.  I hope this helped a little and feel free to ask any questions.</p>
+<h2 id="color-and-theme">Color and Theme</h2>
+<p>I’m a little picky when it comes to how things look so when I couldn’t quite find a theme I liked I just combined two.</p>
+
+<h3 id="the-spacegray-themehttpssublimewbondnetpackagestheme20-20spacegray">1) The <a href="https://sublime.wbond.net/packages/Theme%20-%20Spacegray">Spacegray Theme</a></h3>
+
+<h3 id="the-predawn-themehttpssublimewbondnetpackagespredawn">2) The <a href="https://sublime.wbond.net/packages/Predawn">Predawn Theme</a></h3>
+
+<p>Basically, what I did was</p>
+
+<ol>
+  <li>Downloaded the <a href="https://sublime.wbond.net/packages/Theme%20-%20Spacegray">Spacegray Theme</a></li>
+  <li>Downloaded the <a href="https://sublime.wbond.net/packages/Predawn">Predawn Theme</a></li>
+  <li>Opend up my user config file by <code>Prefrences &gt; Settings - User</code></li>
+  <li>Added these settings in a json format.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+	</span><span class="nt">"caret_extra_width"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+	</span><span class="nt">"caret_style"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phase"</span><span class="p">,</span><span class="w">
+	</span><span class="nt">"color_scheme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Packages/Theme - Spacegray/base16-eighties.dark.tmTheme"</span><span class="p">,</span><span class="w">
+	</span><span class="nt">"font_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span><span class="w">
+	</span><span class="nt">"highlight_line"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+	</span><span class="nt">"ignored_packages"</span><span class="p">:</span><span class="w">
+	</span><span class="p">[</span><span class="w">
+		</span><span class="s2">"Vintage"</span><span class="w">
+	</span><span class="p">],</span><span class="w">
+	</span><span class="nt">"tabs_small"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+	</span><span class="nt">"theme"</span><span class="p">:</span><span class="w"> </span><span class="s2">"predawn-DEV.sublime-theme"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>and that’s it.</p>
 
   </article>
 </div>
