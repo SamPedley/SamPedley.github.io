@@ -12,8 +12,8 @@ keywords: sam pedley chicago web developer
 # Build settings
 markdown: kramdown
 destination: ../site
-permalink: /:categories/:title
-highlighter: rouge 
+permalink: /:categories/:title/
+highlighter: rouge
 
 #Site Variables
 image: /F/img/booger.jpg
