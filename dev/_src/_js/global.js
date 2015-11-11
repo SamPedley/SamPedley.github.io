@@ -1,4 +1,4 @@
-console.log('"Say Hello to the Booger the cat."');
+console.log('Say "Hello" to the Booger the cat.');
 console.log('      |\\---/|');
 console.log('      | o_o |');
 console.log('       \\_^_/');

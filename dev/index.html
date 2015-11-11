@@ -7,13 +7,13 @@ description: Hi, I'm a web developer in the Chicago-land aera.  I used a whole b
 <div class="max">
   <div class="hero">
         {% for post in site.posts limit:1 %}
-          
+
     <div class="heroEye">
       <a href="{{ post.url }}">
        <img src="{{site.url}}{% if post.image %}{{post.image}}{% else %}{{ site.image}}{% endif %}" alt="{{post.description}}">
       </a>
     </div>
-          
+
     <div class="heroText">
 
       <h1><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -58,6 +58,6 @@ description: Hi, I'm a web developer in the Chicago-land aera.  I used a whole b
 </div>
 <div class="clearfix"></div>
 <script>
-  ga('create', 'UA-50115253-1', 'auto');
+ga('create', 'UA-50115253-1', 'auto');
 ga('send', 'pageview');
 </script>
