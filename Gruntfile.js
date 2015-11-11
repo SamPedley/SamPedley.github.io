@@ -13,7 +13,8 @@ module.exports = function(grunt) {
           banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */'
         },
         files: {
-          "dev/F/css/main-unprefixed.css": "dev/_src/_scss/main.scss"
+          "dev/F/css/main-unprefixed.css": "dev/_src/_scss/main.scss",
+          "dev/_includes/critical.css": "dev/_src/_scss/critical.scss"
         }
       }
     },
@@ -22,6 +23,10 @@ module.exports = function(grunt) {
       global: {
         src: "dev/F/css/main-unprefixed.css",
         dest: "dev/F/css/main.css"
+      },
+      single_file:{
+        src: "dev/_includes/critical.css",
+        dest: "dev/_includes/critical.css"
       }
     },
 
@@ -37,7 +42,7 @@ module.exports = function(grunt) {
       }
     },
 
-    imagemin: { 
+    imagemin: {
       dynamic: {                         // Another target
         files: [{
           expand: true,                  // Enable dynamic expansion
@@ -47,7 +52,7 @@ module.exports = function(grunt) {
         }]
       }
     },
-    
+
     shell: {
        jekyllServe: {
         command: [
