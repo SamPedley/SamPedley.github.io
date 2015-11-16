@@ -56,14 +56,12 @@ module.exports = function(grunt) {
     shell: {
        jekyllServe: {
         command: [
-                'cd dev',
                 'jekyll serve --baseurl=',
             ].join('&&')
        },
       jekyllBuild: {
 
          command: [
-                'cd dev',
                 'jekyll build --config _config.yml',
             ].join('&&')
       }
