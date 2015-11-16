@@ -5,7 +5,7 @@ date:   2015-02-13 13:21:00
 categories: 
 published: true
 description: I've offically moved from Grunt to Gulp for all of my front-endie build needs but I'll always cherish the time we spent together. So, here's my final Grunt file for old times sake.
-image: /F/img/books/book.jpg
+image: /public/img/books/book.jpg
 ---
 
 Grunt was an awesome tool.  In fact I've used it on just about every project for the past year.  Today's a sad day though, I've started my first major app without my beloved grunt.  I'm moving to Gulp because it seems to be much faster and Gulp is much more code focused rather than config focused like Grunt.  And if we're being honnest it's also because most people in the web community are moving to Gulp and I don't want to get left behind. 

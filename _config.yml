@@ -16,4 +16,4 @@ permalink: /:categories/:title/
 highlighter: rouge
 
 #Site Variables
-image: /F/img/booger.jpg
+image: /public/img/booger.jpg

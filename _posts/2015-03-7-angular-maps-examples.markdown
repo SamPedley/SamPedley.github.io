@@ -5,7 +5,7 @@ date:   2015-03-7 21:01
 categories: 
 published: true
 description: Working with the Angular Google Maps directive is super easy... once you make it past the somewhat poor documentation.  Here's a general example of how I set up a multiple marker map.
-image: /F/img/angularMaps/angularMaps.png
+image: /public/img/angularMaps/angularMaps.png
 ---
 
 [Angular-Google-Maps is awesome!](http://angular-ui.github.io/angular-google-maps/#!/api)  I'ts a super quick way to get google maps working in angular with very little effort.  There just isn't a good/basic example of how to get a multi map marker working so I created one.
@@ -50,4 +50,4 @@ var app = angular.module('app',['uiGmapgoogle-maps']);
 
 Following this pattern and the geting [started documentation](http://angular-ui.github.io/angular-google-maps/#!/api) will get you something like this: 
 
-<img src="/F/img/angularMaps/angularMaps.png" alt="">
+<img src="/public/img/angularMaps/angularMaps.png" alt="">

@@ -5,7 +5,7 @@ date:   2014-6-19
 categories:
 published: true
 description: If you're a front-end web developer, I bet you have a Mac; if you do here are some apps that will make your life even better.
-image: /F/img/ultimateTools/git.png
+image: /public/img/ultimateTools/git.png
 ---
 
 ##[1Password](https://agilebits.com/onepassword)
@@ -17,7 +17,7 @@ Look, passwords matter especially client and server passwords.  Although there a
 ----
 
 ##[Frank Delope](http://www.jumpzero.com/frank/)
-![frankDelope](/F/img/ultimateTools/frankD.gif)
+![frankDelope](/public/img/ultimateTools/frankD.gif)
 Pulling colors for images or videos can be a huge pain and most people have weird roundabout ways of doing it, usually involving photoshop. Frank Delope allows you to pull the exact color your looking at with percussion and then add the hex, rob or rgba value right to your clipboard. Yes, I know it’s a weird name for an app but it’s absolutely worth it.
 
 ----
@@ -31,19 +31,19 @@ If you're anything like me trying to keep track of client requests, notes , idea
 ----
 
 ##[Google Drive](https://drive.google.com)
-![google drive](/F/img/ultimateTools/googleDrive.png)
+![google drive](/public/img/ultimateTools/googleDrive.png)
 There's no reason not to be using a cloud based storage solution these days; and personally I think Google drive is far ahead of the curve.  It’s substantially cheaper than Dropbox, it's reliable and it has awesome little features built in like version control.
 
 ----
 
 ##[Github](https://github.com/)
-![git](/F/img/ultimateTools/git.png)
+![git](/public/img/ultimateTools/git.png)
 Oh github... At first I hated github I thought it was confusing,  complicated and overkill. Now The first thing I do is fire up a github repo.  Here are a few articles that helped me better understand it.
 
 ----
 
 ##[Transmit](http://panic.com/transmit/)
-![transmit](/F/img/ultimateTools/transmit.png)
+![transmit](/public/img/ultimateTools/transmit.png)
 There are a couple free ftp clients for the Mac and I never had a problem using them but once I tried transmit I knew I had spoiled myself and I haven’t looked back. 
 
 ----
@@ -57,5 +57,5 @@ Code kit is one of the best apps ever made for front end developers.  It allows 
 ----
 
 ##[Sublime](Text http://www.sublimetext.com/)
-![spacegray theme](/F/img/sublime/spacegray-eighties.png)
+![spacegray theme](/public/img/sublime/spacegray-eighties.png)
 Out of all the text editors out there, from notepad to vim, Sublime has become my hands down favorite editor and I even wrote about a few of my [favorite plugins]().

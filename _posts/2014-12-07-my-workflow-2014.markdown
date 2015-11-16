@@ -5,7 +5,7 @@ date:   2014-12-7 8:32:12
 categories: 
 published: true
 description: Workflows change every year, here's what I've been using in 2014. 
-image: /F/img/workflow/workflow2014.png
+image: /public/img/workflow/workflow2014.png
 ---
 
 I thought it would be cool to jot down what tools I’m using at the end of each year.

@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 .sass-cache/
-dev/F/config.codekit
-site/F/config.codekit
+dev/public/config.codekit
+site/public/config.codekit
 _site/
 site/

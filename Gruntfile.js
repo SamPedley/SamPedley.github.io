@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */'
         },
         files: {
-          "dev/F/css/main-unprefixed.css": "dev/_src/_scss/main.scss",
+          "dev/public/css/main-unprefixed.css": "dev/_src/_scss/main.scss",
           "dev/_includes/critical.css": "dev/_src/_scss/critical.scss"
         }
       }
@@ -21,8 +21,8 @@ module.exports = function(grunt) {
 
     autoprefixer: {
       global: {
-        src: "dev/F/css/main-unprefixed.css",
-        dest: "dev/F/css/main.css"
+        src: "dev/public/css/main-unprefixed.css",
+        dest: "dev/public/css/main.css"
       },
       single_file:{
         src: "dev/_includes/critical.css",
@@ -36,8 +36,8 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'dev/F/js/global.js': ['dev/_src/_js/global.js'],
-          'dev/F/js/jQuery_fitVids.js': ['dev/_src/_js/jquery.js','dev/_src/_js/fitVids.js']
+          'dev/public/js/global.js': ['dev/_src/_js/global.js'],
+          'dev/public/js/jQuery_fitVids.js': ['dev/_src/_js/jquery.js','dev/_src/_js/fitVids.js']
         }
       }
     },
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
           expand: true,                  // Enable dynamic expansion
           cwd: 'dev/_src/_img/',                   // Src matches are relative to this path
           src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-          dest: 'dev/F/img'                  // Destination path prefix
+          dest: 'dev/public/img'                  // Destination path prefix
         }]
       }
     },

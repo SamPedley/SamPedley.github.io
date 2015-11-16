@@ -5,7 +5,7 @@ date:   2015-01-08
 categories:
 published: false
 description: Thannks unclie bob
-image: /F/img/ultimateTools/git.png
+image: /public/img/ultimateTools/git.png
 ---
 
 ##Single Responsibility Principle 

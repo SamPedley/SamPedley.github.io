@@ -5,7 +5,7 @@ date:   2015-4-16 13:58:00
 categories: 
 published: true
 description:  Interviewing is not easy.  Some amazing people interview terribly and some unqualified cannidates have an uncanny knowledge of just what to say but just can’t perform.  Each industry has...
-image: /F/img/juniorDeveloperQuestions/juniorDeveloper.jpg
+image: /public/img/juniorDeveloperQuestions/juniorDeveloper.jpg
 ---
 
 Interviewing is not easy.  Some amazing people interview terribly and some unqualified cannidates have an uncanny knowledge of just what to say but just can’t perform.  Each industry has to take into account ways to test possible employees and the best part about development is that we can quickly and easily test our own. 

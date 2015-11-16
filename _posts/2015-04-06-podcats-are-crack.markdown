@@ -5,7 +5,7 @@ date:   2015-04-07 20:21:00
 categories: 
 published: true
 description: For some odd reason most people in my life think the newest trends in development are not great “conversation topics” and they like to tell me that I’m a “boring dweeb” whenever I ...
-image: /F/img/podcastsAreDrugs/podcasts.png
+image: /public/img/podcastsAreDrugs/podcasts.png
 ---
 
 For some odd reason most people in my life think the newest trends in development are not great “conversation topics” and they like to tell me that I’m a “boring dweeb” whenever I want to have a little discussion about the newest RFC for php 7. Anyway, In order to get my daily dose of nerd I’m addicted to an ever-growing list of podcasts:

@@ -5,7 +5,7 @@ date:   2015-7-9 13:58:00
 categories:
 published: false
 description:  
-image: /F/img/juniorDeveloperQuestions/juniorDeveloper.jpg
+image: /public/img/juniorDeveloperQuestions/juniorDeveloper.jpg
 ---
 
 In the world of development things change.  A lot.  One of the biggest problems we have to solve as developers is supprisingly not "how do I get this to work?" but instead how "how do I make this easy to change in the future?"
