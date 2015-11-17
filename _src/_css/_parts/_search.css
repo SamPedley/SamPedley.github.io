@@ -1,0 +1,105 @@
+.searchResults
+{
+    @include tile(2% 0 0 2%);
+    @include mainShadow;
+    article
+    {
+        margin: 30px 2%;
+        img
+        {
+            @include imgResult;
+        }
+    }
+}
+
+.backHome
+{
+    @include tile(2% 0 0 2%);
+    @include mainShadow;
+    a
+    {
+        margin: 10px 10px 10px 2%;
+    }
+}
+
+.searchBar
+{
+    padding: 1% 2%;
+
+    border-top: 5px solid $homeNavC;
+
+    @include tile(2% 0 0 2%);
+    @include mainShadow;
+}
+
+input.gsc-search-button
+{
+    transition: background-color .4s ease-in-out;
+
+    border-color: $white !important;
+    background-color: $aLinkBlue !important;
+    &:hover
+    {
+        transition: background-color .4s ease-in-out;
+
+        background-color: $aLinkHover !important;
+    }
+}
+
+#gs_tti50
+{
+    background: none !important;
+    input
+    {
+        background: none !important;
+    }
+}
+
+@keyframes crazy
+{
+    0%
+    {
+        color: $titleColor;
+        background-color: $white;
+    }
+
+    20%
+    {
+        color: $white;
+        background-color: $aboutNavC;
+    }
+
+    40%
+    {
+        color: $white;
+        background-color: $homeNavC;
+    }
+
+    60%
+    {
+        color: $white;
+        background-color: $blogNavC;
+    }
+
+    80%
+    {
+        color: $white;
+        background-color: $aLinkHover;
+    }
+    100%
+    {
+        color: $titleColor;
+        background-color: $white;
+    }
+}
+
+
+.four04
+{
+    transition: all .2s ease-in-out;
+    animation: crazy 25s infinite;
+    animation-delay: 5s;
+
+    @include tile(2% 0 0 2%);
+    @include mainShadow;
+}

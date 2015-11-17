@@ -1,0 +1,84 @@
+footer
+{
+    width: 96%;
+    height: 50px;
+    margin: 2%;
+
+    background-color: $white;
+}
+
+.copyright{
+  float:left;
+  color: $backgroundColor;
+  padding-left: 5px;
+  transition: color .2s ease-in-out;
+  margin:1%;
+
+  &:hover{
+    color:$aboutNavC;
+    transition: color .2s ease-in-out;
+  }
+}
+
+.icon
+{
+    float: right;
+
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+
+    background-color: $white;
+}
+ /*-------- Social Icons --------*/
+.github
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $github;
+    }
+}
+
+.behance
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $behance;
+    }
+}
+
+.linkedin
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $linkedin;
+    }
+}
+
+.rss
+{
+    transition: fill .2s ease-in-out;
+
+    fill: $socialIcons;
+    &:hover
+    {
+        transition: fill .2s ease-in-out;
+
+        fill: $rss;
+    }
+}

@@ -1,0 +1,33 @@
+@define-mixin tile $point
+{
+    float: left;
+
+    width: 92%;
+    height: auto;
+    margin: $point;
+    padding: 2%;
+
+    background-color: $white;
+}
+
+@define-mixin mainShadow
+{
+    box-shadow: 0 0 3px rgba(45, 45, 45, .1);
+}
+
+@define-mixin imgResult
+{
+    max-width: 100%;
+    padding-bottom: 15px;
+
+    border-bottom: 3px solid $backgroundColor;
+}
+
+@define-mixin topColor $color
+{
+    height: 10px;
+    margin: 0;
+    padding: 0;
+
+    background-color: lighten($color,15%);
+}

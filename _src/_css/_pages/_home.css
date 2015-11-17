@@ -1,0 +1,120 @@
+/*--------------------- hero ---------------------*/
+
+.hero
+{
+    width: 96%;
+    height: auto;
+    margin: 2% 2% 0;
+
+    background-color: $white;
+
+    @include mainShadow;
+    .heroEye
+    {
+        float: left;
+
+        width: 60%;
+        height: auto;
+        margin: 25px;
+        img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            margin: 0 auto;
+            transition: all .2s ease-in-out;
+
+            &:hover
+        {
+            transition: all .2s ease-in-out;
+            transform: scale(1.05,1.05);
+        }
+        }
+        @media all and (max-width: 825px)
+        {
+            width: 80%;
+            margin: 25px 10% 15px;
+        }
+        @media all and (max-width: 525px)
+        {
+            width: 96%;
+            margin: 2% 2% 0;
+        }
+    }
+    .heroText
+    {
+        float: left;
+
+        width: calc(40% - 100px);
+        margin: 25px;
+        h1
+        {
+            line-height: 1.2;
+        }
+        @media all and (max-width: 825px)
+        {
+            width: 80%;
+            margin: 0 10% 15px;
+            h1
+            {
+                margin-top: 10px;
+            }
+        }
+        @media all and (max-width: 525px)
+        {
+            width: 96%;
+            margin: 0 2% 15px;
+        }
+    }
+}
+
+/*--------------------- main content ---------------------*/
+
+.mainContent
+{
+    float: left;
+
+    width: calc(94% - 320px);
+    height: auto;
+    margin-top: 2%;
+    margin-left: 2%;
+
+    transition: background-color .1s ease-in-out;
+
+    background-color: $lightBackground;
+
+    @include mainShadow;
+    &:hover
+    {
+        transition: background-color .1s ease-in-out;
+
+        background-color: $white;
+        .homeTitle
+        {
+            transition: color .5s ease-in-out;
+            transition: background-color .4s ease-in-out;
+
+            color: $white;
+            background-color: $homeNavC;
+        }
+    }
+    .homeTitle
+    {
+        margin-top: 0;
+        padding: 1% 2% 1%;
+
+        transition: color .5s ease-in-out;
+        transition: background-color .4s ease-in-out;
+
+        color: $titleColor;
+        border-bottom: 5px solid $homeNavC;
+        background-color: $lightBackground;
+    }
+    article
+    {
+        margin: 1% 2% 2%;
+        img
+        {
+            @include imgResult;
+        }
+    }
+}

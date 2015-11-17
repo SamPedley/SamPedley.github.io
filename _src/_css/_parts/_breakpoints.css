@@ -1,0 +1,51 @@
+
+/*--------------------- Break Points ---------------------*/
+.topHome
+{
+    @include topColor ($homeNavC);
+}
+.topAbout
+{
+    @include topColor ($aboutNavC);
+}
+.topBlog
+{
+    @include topColor ($blogNavC);
+}
+
+/*--------------------- Break Points ---------------------*/
+@media all and (max-width: 825px)
+{
+    .mainContent
+    {
+        width: 96%;
+    }
+    .homeAside
+    {
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px)
+{
+    .desktopNav
+    {
+        display: none;
+    }
+    header
+    {
+        h2
+        {
+            font-size: 32px;
+            padding-top: 5px;
+           a{ margin-left: -25px; }
+        }
+    }
+}
+@media all and (min-width: 600px)
+{
+    .mobileNav
+    {
+        display: none;
+    }
+}

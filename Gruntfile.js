@@ -13,20 +13,20 @@ module.exports = function(grunt) {
           banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */'
         },
         files: {
-          "dev/public/css/main-unprefixed.css": "dev/_src/_scss/main.scss",
-          "dev/_includes/critical.css": "dev/_src/_scss/critical.scss"
+          "public/css/main-unprefixed.css": "_src/_scss/main.scss",
+          "_includes/critical.css": "_src/_scss/critical.scss"
         }
       }
     },
 
     autoprefixer: {
       global: {
-        src: "dev/public/css/main-unprefixed.css",
-        dest: "dev/public/css/main.css"
+        src: "public/css/main-unprefixed.css",
+        dest: "public/css/main.css"
       },
       single_file:{
-        src: "dev/_includes/critical.css",
-        dest: "dev/_includes/critical.css"
+        src: "_includes/critical.css",
+        dest: "_includes/critical.css"
       }
     },
 
@@ -36,8 +36,8 @@ module.exports = function(grunt) {
       },
       my_target: {
         files: {
-          'dev/public/js/global.js': ['dev/_src/_js/global.js'],
-          'dev/public/js/jQuery_fitVids.js': ['dev/_src/_js/jquery.js','dev/_src/_js/fitVids.js']
+          'public/js/global.js': ['_src/_js/global.js'],
+          'public/js/jQuery_fitVids.js': ['_src/_js/jquery.js','_src/_js/fitVids.js']
         }
       }
     },
@@ -46,9 +46,9 @@ module.exports = function(grunt) {
       dynamic: {                         // Another target
         files: [{
           expand: true,                  // Enable dynamic expansion
-          cwd: 'dev/_src/_img/',                   // Src matches are relative to this path
+          cwd: '_src/_img/',                   // Src matches are relative to this path
           src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-          dest: 'dev/public/img'                  // Destination path prefix
+          dest: 'public/img'                  // Destination path prefix
         }]
       }
     },
@@ -71,20 +71,20 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["dev/_layouts/**/*.html",'dev/_posts/*.markdown'],
+        files: ["_layouts/**/*.html",'_posts/*.markdown'],
         tasks: ["shell:jekyllBuild"],
         livereload: true
       },
       css: {
-        files: ["dev/_src/_scss/**/*.scss",],
+        files: ["_src/_scss/**/*.scss",],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       },
       svg: {
-        files: ["dev/_src/_svg/*.svg"],
+        files: ["_src/_svg/*.svg"],
         tasks: ["svgstore", "shell:jekyllBuild"]
       },
       js: {
-        files: ["dev/_src/_js/*.js"],
+        files: ["_src/_js/*.js"],
         tasks: ["uglify", "shell:jekyllBuild"]
       }
     },
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
       },
       default: {
         files: {
-          "dev/_includes/svg-defs.svg": ["dev/_src/_svg/*.svg"]
+          "_includes/svg-defs.svg": ["_src/_svg/*.svg"]
         }
       }
     }
