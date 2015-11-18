@@ -34,7 +34,7 @@ gulp.task('minImages', () => {
 gulp.task('css', function () {
 
     return gulp.src('_src/_scss/main.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -45,7 +45,7 @@ gulp.task('css', function () {
 
 gulp.task('css:critical', function () {
     return gulp.src('_src/_scss/critical.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
