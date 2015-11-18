@@ -5,7 +5,9 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const precss = require('precss');
 const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer')
+const autoprefixer = require('gulp-autoprefixer')
+const nano = require('gulp-cssnano')
+const sass = require('gulp-sass')
 var rename = require("gulp-rename")
 
 
@@ -30,23 +32,24 @@ gulp.task('minImages', () => {
 
 
 gulp.task('css', function () {
-    var processors = [
-        autoprefixer({browsers: ['last 2 version']}),
-				precss()
-    ];
-    return gulp.src('_src/_css/main.css')
-        .pipe(postcss(processors))
+
+    return gulp.src('_src/_scss/main.scss')
+        .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(rename("main.css"))
         .pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('css:critical', function () {
-    var processors = [
-        autoprefixer({browsers: ['last 2 version']}),
-				precss()
-    ];
-    return gulp.src('_src/_css/critical.css')
-        .pipe(postcss(processors))
+    return gulp.src('_src/_scss/critical.scss')
+        .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(rename("critical.css"))
         .pipe(gulp.dest('./_includes'));
 });

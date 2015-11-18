@@ -3,7 +3,7 @@
 {
     border-bottom: 10px solid linear-gradient( 45deg, blue, red );
 }
-/*--------------------- Nav Bar ---------------------*/
+//--------------------- Nav Bar ---------------------
 nav
 {
     display: inline;
@@ -37,10 +37,10 @@ nav
         #aboutNav:hover { border-bottom: 2px solid $aboutNavC; }
         #blogNav:hover { border-bottom: 2px solid $blogNavC; }
 
-    }
+    }//end desktop nav
     .mobileNav
     {
-        font-size: 16px;
+        font-size: 16px;//end nav icon m
 
         width: 100px;
         .navIconM
@@ -108,7 +108,7 @@ nav
             display: none;
             &:checked ~ .drop
             {
-                height: 180px;
+                height: 180px;//height of box when clicked
 
                 transition: height .5s ease-in-out;
             }
@@ -130,7 +130,7 @@ nav
 
             height: 0;
 
-            transition: height .3s ease-in-out;
+            transition: height .3s ease-in-out;//trainsation
             ul
             {
                 height: 100%;
@@ -163,7 +163,7 @@ nav
 
                         background: darken($backgroundColor, 14%);
                     }
-                }
+                }//end li
                 #homeNavM:hover
                 {
                     color: $white;
@@ -179,9 +179,9 @@ nav
                     color: $white;
                     background: $blogNavC;
                 }
-            }
-        }
-    }
+            }//end ul
+        }//end .drop
+    }//end mobile nav
     .search
     {
         div
@@ -195,7 +195,7 @@ nav
             background-color: rgba(226, 226, 226, 1.0);
         }
     }
-}
+}//end nav
 #homeNav:hover ~ .topHome {
     background-color: red !important;
 }

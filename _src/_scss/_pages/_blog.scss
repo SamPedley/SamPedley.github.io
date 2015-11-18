@@ -10,6 +10,7 @@
         color: $aboutNavC;
     }
 }
+// extend not working as expected
 .post__tag--blue{
     background-color: $homeNavC;
     color: $white;
@@ -23,6 +24,7 @@
     }
 }
 
+//////////////////////////
 
 
 .blogContent
@@ -81,5 +83,5 @@
 
             color: $lightText;
         }
-    }
-}
+    }//end article 
+}//end .main content

@@ -1,5 +1,5 @@
 
-/*--------------------- Break Points ---------------------*/
+//--------------------- Break Points ---------------------
 .topHome
 {
     @include topColor ($homeNavC);
@@ -13,7 +13,7 @@
     @include topColor ($blogNavC);
 }
 
-/*--------------------- Break Points ---------------------*/
+//--------------------- Break Points ---------------------
 @media all and (max-width: 825px)
 {
     .mainContent
@@ -22,6 +22,10 @@
     }
     .homeAside
     {
+        // width: 96%;
+        // height: 100%;
+        // margin-top: 2%;
+        // margin-bottom: 0;
         display: none;
     }
 }
@@ -34,6 +38,7 @@
     }
     header
     {
+        //margin-bottom: 2%;
         h2
         {
             font-size: 32px;

@@ -1,4 +1,4 @@
-/*--------------------- hero ---------------------*/
+//--------------------- hero ---------------------
 
 .hero
 {
@@ -39,7 +39,7 @@
             width: 96%;
             margin: 2% 2% 0;
         }
-    }
+    }//end heroEye
     .heroText
     {
         float: left;
@@ -64,10 +64,10 @@
             width: 96%;
             margin: 0 2% 15px;
         }
-    }
-}
+    }//end heroText
+}// end hero 
 
-/*--------------------- main content ---------------------*/
+//--------------------- main content ---------------------
 
 .mainContent
 {
@@ -116,5 +116,5 @@
         {
             @include imgResult;
         }
-    }
-}
+    }//end article 
+}//end .main content

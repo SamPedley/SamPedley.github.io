@@ -1,0 +1,13 @@
+//--------------------- imports ---------------------
+@import '_helpers/_mixins.scss';
+@import '_helpers/_variables.scss';
+
+@import '_libs/_pygment.scss';
+
+@import '_parts/_footer.scss';
+@import '_parts/_posts.scss';
+@import '_parts/_search.scss';
+
+
+@import '_pages/_blog.scss';
+@import '_pages/_about.scss';
