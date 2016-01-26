@@ -10,7 +10,8 @@ image: /public/img/blog/lookwhaticando.gif
 
 Here's a running list of technologies and frameworks that I have used on a project in the past.  It's a little ridiculous but it helps keep things fresh.
 
-<img src="/public/img/blog/lookwhaticando.gif" alt="Mad tv was awesome">
+<img src="/public/img/blog/lookwhaticando.gif" alt="Mad tv was awesome"/>
+
 <div class="list list-green">
 	<h3 class="rf">Front-end stuff I know:</h3>
 	<ul class="col">
