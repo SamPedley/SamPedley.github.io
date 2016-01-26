@@ -26,19 +26,23 @@ Here's a running list of technologies and frameworks that I have used on a proje
 	</ul>
 	<ul class="col">
 		<li>jQuery</li>
-		<li>Angular.js</li>
+		<li>Angular.js 1&2</li>
 		<li>Ember.js</li>
 		<li>D3.js</li>
 		<li>Mustache.js</li>
 		<li>Lodash.js</li>
 		<li>React.js</li>
+		<li>Vue.js</li>
 	</ul>
 	<ul class="col">
+		<li>Flux</li>
 		<li>Npm</li>
 		<li>Bower</li>
 		<li>Yeoman</li>
 		<li>Grunt</li>
 		<li>Gulp</li>
+		<li>Browserify</li>
+		<li>Webpack</li>
 	</ul>
 </div>
 <div class="clearfix"></div>
@@ -48,6 +52,7 @@ Here's a running list of technologies and frameworks that I have used on a proje
 	<ul class="col">
 		<li>MySQL</li>
 		<li>MongoDB</li>
+		<li>CouchDB</li>
 		<li>Microsoft Sql</li>
 		<li>Sql Light</li>
 	</ul>
@@ -55,7 +60,6 @@ Here's a running list of technologies and frameworks that I have used on a proje
 		<li>PHP</li>
 		<li>Larvel</li>
 		<li>Symphony</li>
-		<li>Cake.php</li>
 		<li>Wordpress</li>
 		<li>Composer</li>
 		<li>PHP Unit</li>
