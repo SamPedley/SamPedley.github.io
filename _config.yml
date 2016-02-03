@@ -10,10 +10,10 @@ include: ['.htaccess']
 keywords: sam pedley chicago web developer
 
 # Build settings
-markdown: kramdown
+markdown: rouge 
 # destination: /site
 permalink: /:categories/:title/
-highlighter: pygments 
+highlighter: pygments
 
 #Site Variables
 image: /public/img/booger.jpg

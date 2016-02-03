@@ -59,3 +59,4 @@ gulp.task('css:watch', function () {
 })
 
 gulp.task('default', ['css','css:critical','css:watch', 'jekyllBuild', 'serve']);
+gulp.task('build',['css','css:critical', 'jekyllBuild' ])

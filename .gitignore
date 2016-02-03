@@ -5,3 +5,4 @@ dev/public/config.codekit
 site/public/config.codekit
 _site/
 site/
+.jekyll-metadata
