@@ -12,7 +12,7 @@ image: /public/img/2016/chiagoSkyline.jpeg
 
 ## 2. Read 48 Books
 * [Tripwire](http://amzn.com/0425264394) [1/25/2016 - 2/10/2016]
-* [](http://amzn.com/1449344763)[2/10/2016 - ?]
+* [High Performance Browser Networking](http://amzn.com/1449344763)[2/10/2016 - ?]
 
 ## 3. Build 6 apps in different frameworks and languages
 
@@ -21,4 +21,4 @@ image: /public/img/2016/chiagoSkyline.jpeg
 ## 5. Learn more:
 * [API Design with Node.js using Express](https://frontendmasters.com/courses/api-design-nodejs/) [2/12/2016 - ?]
 
-## 6. Write more: 
+## 6. Write more:
