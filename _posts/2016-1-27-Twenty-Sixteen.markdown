@@ -11,8 +11,8 @@ image: /public/img/2016/chiagoSkyline.jpeg
 ## 1. Be a rockstar at work
 
 ## 2. Read 48 Books
-* [Tripwire](http://amzn.com/0425264394) [1/25/2016 - 2/10/2016]
-* [High Performance Browser Networking](http://amzn.com/1449344763)[2/10/2016 - ?]
+1. [Tripwire](http://amzn.com/0425264394) [1/25/2016 - 2/10/2016]
+2. [High Performance Browser Networking](http://amzn.com/1449344763) [2/10/2016 - ?]
 
 ## 3. Build 6 apps in different frameworks and languages
 
