@@ -22,6 +22,6 @@ image: /public/img/2016/chiagoSkyline.jpeg
 
 ## 5. Learn more:
 1. [API Design with Node.js using Express](https://frontendmasters.com/courses/api-design-nodejs/) <span class="post__tag--blue">2/12</span><span class="post__tag">2/22</span>
-2. [Building Modern Web Apps (with React, Ampersand, ES6 and Webpack)](https://frontendmasters.com/courses/modern-web-apps/) <span class="post__tag--blue">3/6</span><span class="post__tag">?</span>
+2. [Functional Js Lite](https://frontendmasters.com/courses/functional-js-lite/) <span class="post__tag--blue">3/8</span><span class="post__tag">3/10</span>
 
 ## 6. Write more:
