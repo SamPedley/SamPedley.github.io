@@ -1,6 +1,14 @@
 Jekyll site
 ===========
 
-###This site is:
+This is just my personal little blog/slice of the internet. I don't write much but when I do it's really boring, full of typos and uploaded to this site for some dumb reason.
+
+###Stuff to know:
 built on [jekyll](http://jekyllrb.com/)
-The end
+hosted on [Github Pages](https://pages.github.com/)
+
+
+###Todo
+- [ ] Fix slow jekyll build times in dev.
+- [ ] Fix markdown typos in old posts.
+- [ ] Write more you idiot.

@@ -3,10 +3,7 @@ const shell = require('gulp-shell');
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
-const precss = require('precss');
-const postcss = require('gulp-postcss');
 const autoprefixer = require('gulp-autoprefixer')
-const nano = require('gulp-cssnano')
 const sass = require('gulp-sass')
 var rename = require("gulp-rename")
 
