@@ -13,7 +13,7 @@ Liquid is a tempting language created by [shopify](http://www.shopify.com/) whic
 
 YML is short for “YAML Ain't Markup Language”.  Basically, what YAML does is store information that Jekyll needs to build out your site.  You only have to deal with YAML in two different places: the ```_config.yml``` file and in little blocks in the head section of posts.
 
-##Here is a basic YML front matter block from [jekyll](http://jekyllrb.com/docs/frontmatter/).
+## Here is a basic YML front matter block from [jekyll](http://jekyllrb.com/docs/frontmatter/).
 
 {% highlight html %}
 ---
@@ -29,7 +29,7 @@ tags: cool, awesome, neat
 
 Again, these are just the basic settings that Jekyll provides, however you can add your own variables to help make your static pages dynamic-ish.
 
-##Adding a dynamic description
+## Adding a dynamic description
 
 {% highlight html %}
 ---
@@ -62,7 +62,7 @@ This is an very useful example of how we can use YML and Liquid to create a dyna
 {% endhighlight %}
 I've broken it up into three lines but essentially all the liquid code is incased in the ``` <meta content=" "> ```; it just adds a fallback incase you forget to add a discriptionn.  
 
-##Adding a dynamic Image
+## Adding a dynamic Image
 At this point I’m sure you're catching on,  you can create any kind of ```.yml``` tag and call it with liquid.  This is awesome because I come from the world of wordpress and I love being able to call data from pages and posts however I like and the YML and Liquid tags allow me to do something similar.   
 With Jekyll an Liquid you can quickly cycle through all of your posts and display them however you like. Here’s how I structured my YML and Liquid to include and image.
 

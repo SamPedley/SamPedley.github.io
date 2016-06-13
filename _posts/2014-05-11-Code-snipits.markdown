@@ -3,7 +3,7 @@ layout: post
 title:  "Code Snipits"
 date:   2014-05-11 20:58:58
 categories: 
-published: true
+published: false
 description: If you're anyting like me you keep re-using little snipits of code on just about every project, so I've compiled some of my favorites here so I don't forget. 
 ---
 

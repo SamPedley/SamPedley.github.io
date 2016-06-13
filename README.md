@@ -12,3 +12,11 @@ hosted on [Github Pages](https://pages.github.com/)
 - [ ] Fix slow jekyll build times in dev.
 - [ ] Fix markdown typos in old posts.
 - [ ] Write more you idiot.
+
+
+The goal of this site is:
+
+remind me of things I should know
+share knowledge with others
+showcase past work.
+

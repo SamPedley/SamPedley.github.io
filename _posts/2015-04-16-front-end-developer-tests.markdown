@@ -11,7 +11,7 @@ image: /public/img/juniorDeveloperQuestions/juniorDeveloper.jpg
 Interviewing is not easy.  Some amazing people interview terribly and some unqualified cannidates have an uncanny knowledge of just what to say but just can’t perform.  Each industry has to take into account ways to test possible employees and the best part about development is that we can quickly and easily test our own. 
 
 
-##Responsive test
+## Responsive test
 
 Out of the three that I came up with this is by far the most important. Being able to take some markup and twist it’s arm into submission is 95% of the job, so any candidate worth their salt should be able to take three existing divs and:
 1. Align them in a column of three for the desktop view.
@@ -26,7 +26,7 @@ Out of the three this is thte test I would give the most weight. Taking a set of
 
 ------------
 
-##Practical test
+## Practical test
 
 jQuery is just about everywhere.  Really, it’s crazy how many projects have a dependency on it and some people wind up learning how to use jQuery long before they ever dive into vanilla Javascript. The following test is just meant to test and see:
 1. Does the developer have basic knowledge of jQuery.
@@ -41,7 +41,7 @@ jQuery is just about everywhere.  Really, it’s crazy how many projects have a 
 
 ------------
 
-##Programatic test
+## Programatic test
 
 This is the only test that I didn’t come up with myself and for good reason.  The Fizz Buzz test has become one of the most basic programatic katas and does a fantastic job of:
 1. Having the developer have to think critically through the issue.

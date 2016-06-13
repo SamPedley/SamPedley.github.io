@@ -8,7 +8,7 @@ description: Thannks unclie bob
 image: /public/img/ultimateTools/git.png
 ---
 
-##Single Responsibility Principle 
+## Single Responsibility Principle 
 A class should have one, and only one reason to change. or A Class should have one job.
 
 ###Wrong

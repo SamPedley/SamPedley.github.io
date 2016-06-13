@@ -3,7 +3,7 @@ layout: post
 title:  "My Reading List for 2015"
 date:   2014-12-22 9:11:00
 categories: 
-published: true
+published: false
 description: Getting a head start on my reading list for 2015. 
 image: /public/img/books/book.jpg
 ---

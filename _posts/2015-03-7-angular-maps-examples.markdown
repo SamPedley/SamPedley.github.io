@@ -3,7 +3,7 @@ layout: post
 title:  "Angular Google Maps"
 date:   2015-03-7 21:01
 categories: 
-published: true
+published: false
 description: Working with the Angular Google Maps directive is super easy... once you make it past the somewhat poor documentation.  Here's a general example of how I set up a multiple marker map.
 image: /public/img/angularMaps/angularMaps.png
 ---

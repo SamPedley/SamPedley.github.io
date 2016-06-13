@@ -3,7 +3,7 @@ layout: post
 title:  "Look what I can do"
 date:   2014-05-28 13:58:00
 categories:
-published: true
+published: false
 description:  Here's a running list of technologies and frameworks that I have used on a project in the past.  It's a little ridiculous but it helps keep things fresh.
 image: /public/img/blog/lookwhaticando.gif
 ---
