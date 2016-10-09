@@ -1,12 +1,10 @@
 @mixin tile($point)
 {
     float: left;
-
     width: 92%;
     height: auto;
     margin: $point;
     padding: 2%;
-
     background-color: $white;
 }
 
@@ -19,7 +17,6 @@
 {
     max-width: 100%;
     padding-bottom: 15px;
-
     border-bottom: 3px solid $backgroundColor;
 }
 
@@ -28,6 +25,15 @@
     height: 10px;
     margin: 0;
     padding: 0;
-
     background-color: lighten($color,15%);
+}
+
+@mixin break($size)
+{
+    @media screen and (max-width: $size) { @content; }
+}
+
+@mixin rbreak($size)
+{
+    @media screen and (min-width: $size) { @content; }
 }

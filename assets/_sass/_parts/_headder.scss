@@ -1,62 +1,136 @@
 //--------------------- Headder ---------------------
 
-header
-{
-    // width: 100%;
-    // height: auto;
-
-    // background-color: $white;
-    // h2
-    // {
-    //     font-size: 45px;
-    //     font-weight: normal;
-
-    //     margin: 0 2%;
-    //     padding: 5px 0 2px 0;
-    //     a
-    //     {
-    //         float: left;
-    //        // margin-left: -18px;
-    //         text-decoration: none;
-
-    //         color: $titleColor;
-    //         &:hover
-    //         {
-    //             color: $aLinkBlue;
-    //         }
-    //     }
-    // }
-}
-
-.mainHeader
+.SiteHeader
 {
   display: flex;
   background: $white;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
-.samLogo{
-    float: left;
-    width: 60px;
-    max-height: 70px;
-    padding: 5px 0;
 
-    @media all and (max-width: 600px){
-        max-height: 50px;
-        width: 90px;
-    }
-
-}
-.svgTitle{
-  height: 60px;
-  margin-left: 4%;
-  float: left;
-  padding: 5px 0 2px 0;
-  width: 60px;
-
-  @media all and (max-width: 600px){
-      height: 50px;
-      width: 50px;
+.header_logo
+{
+  margin-left: 1rem;  
+  padding: 0.3rem 0;  
+  display: inherit;
+  svg 
+  {
+    height: 50px;
+    width: 50px;
   }
 }
+
+nav
+{
+  width: 50%;
+  text-align: right;
+  a 
+  {
+    font-size: 20px;
+    color: $titleColor;
+    margin: 0 1rem 0 0;
+  }
+
+    #homeNav:hover { background: $white; color: $homeNavC; }
+    #aboutNav:hover { background: $white; color: $aboutNavC; }
+    #blogNav:hover { background: $white; color: $blogNavC; }
+
+  @include break(600px)
+  {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: $white;
+    border-top: 10px solid $backgroundColor;
+    z-index: 100;
+    @include mainShadow;
+
+    a
+    {
+      display: block;
+      margin: 0;
+      padding: 0.5rem;
+      text-align: center;
+      &:hover
+      {
+        color: $white;
+        background: $gray;
+      }
+    }
+    #homeNav:hover { background: $homeNavC; color: $white; }
+    #aboutNav:hover { background: $aboutNavC; color: $white; }
+    #blogNav:hover { background: $blogNavC; color: $white; }
+  }
+
+}
+
+
+
+  .hamburger_icon
+  {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 4%;
+      span
+      {
+          position: relative;
+          top: 10px;
+          margin: 0 auto;
+      }
+      span:before, span:after
+      {
+          position: absolute;
+          content: '';
+          transition: .2s ease;
+      }
+      span, span:before, span:after
+      {
+          display: block;
+          width: 30px;
+          height: 4px;
+          background-color: $titleColor;
+      }
+      span:before
+      {
+          margin-top: -12px;
+      }
+      span:after
+      {
+          margin-top: 12px;
+      }
+  }
+  .hamburger_input
+  {
+      display: none;
+      &:checked ~ .hamburger_label
+      {
+        .hamburger_icon span:before, .hamburger_icon span:after
+        {
+          margin-top: 0;
+        }
+      }
+
+      &:checked ~ nav
+      {
+        display: block;
+      }
+  }
+
+    .hamburger_label
+  {
+      font-size: 24px;
+      cursor: pointer;
+      margin: 16px 1rem 0 0;
+      display: none;
+
+      @include break(600px)
+      {
+        display: block;
+      }
+  }
+    

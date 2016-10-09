@@ -23,8 +23,9 @@ description: Hi, I'm a nerd.  Yep.  That's about it.
     <div class="clearfix"></div>
   </div>
   <aside class="homeAside">
+    <h3>More Stuff</h3>
     <div class="asidePosts">
-      <ul> More Stuff:
+      <ul> 
       {% for post in site.posts offset: 6 limit: 10 %}
        <a href="{{ site.prefix }}{{ post.url }}"> <li>{{ post.title }}</li></a>
       {% endfor %}

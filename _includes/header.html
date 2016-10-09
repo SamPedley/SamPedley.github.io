@@ -1,20 +1,22 @@
-<header class="mainHeader">
+<header class="SiteHeader">
 
-  <a href="{{ site.baseurl }}/">
-    <svg class="svgTitle">
+  <a href="{{ site.baseurl }}/" class="header_logo">
+    <svg>
       <use xlink:href="#shape-samPedley"/>
     </svg>
   </a>
 
-    <div class="mobile_hamburger">
-      <input id="menuM" name="mblmenu" type="checkbox" />
-      <label for="menuM"><div class="navIconM"><span></span> </div></label>
+  <input id="mobile_menu" name="Mobile Menu" type="checkbox" class="hamburger_input"/>
+  <label for="mobile_menu" class="hamburger_label">
+    <div class="hamburger_icon">
+      <span></span>
     </div>
+  </label>
 
-      <nav>
-          <a id="homeNav"  href="{{ site.baseurl }}/">Home</a>
-          <a id="aboutNav" href="{{ site.baseurl }}/about/">About</a>
-          <a id="blogNav" href="{{ site.baseurl }}/articles/">Articles</a>
-      </nav>
+  <nav>
+    <a id="homeNav"  href="{{ site.baseurl }}/">Home</a>
+    <a id="aboutNav" href="{{ site.baseurl }}/about/">About</a>
+    <a id="blogNav" href="{{ site.baseurl }}/articles/">Articles</a>
+  </nav>
 
 </header>
