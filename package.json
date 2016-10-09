@@ -1,33 +1,18 @@
 {
   "private": true,
-  "name": "sam_pedleys_blog",
-  "version": "1.3.0",
+  "name": "sams_site",
+  "version": "1.5.0",
   "description": "Personal Blog",
   "main": "index.html",
   "scripts": {
-    "start": "gulp"
+    "start": "jekyll serve --watch --incremental",
+    "build": "jekyll build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SamPedley/SamPedley.github.io.git"
+    "url": "https://github.com/SamPedley/SamPedley.github.io"
   },
   "author": "Sam Pedley",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SamPedley/SamPedley.github.io/issues"
-  },
-  "homepage": "https://github.com/SamPedley/SamPedley.github.io#readme",
-  "devDependencies": {
-    "babel": "^6.1.18",
-    "babel-core": "^6.1.21",
-    "browser-sync": "^2.10.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-imagemin": "^3.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0",
-    "gulp-shell": "^0.5.1",
-    "gulp-util": "^3.0.7",
-    "imagemin-pngquant": "^5.0.0"
-  }
+  "devDependencies": {}
 }

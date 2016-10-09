@@ -17,3 +17,6 @@ highlighter: rouge
 
 #Site Variables
 image: /public/img/booger.jpg
+sass:
+  sass_dir: assets/_sass
+  style: compressed

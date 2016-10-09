@@ -1,0 +1,62 @@
+//--------------------- Headder ---------------------
+
+header
+{
+    // width: 100%;
+    // height: auto;
+
+    // background-color: $white;
+    // h2
+    // {
+    //     font-size: 45px;
+    //     font-weight: normal;
+
+    //     margin: 0 2%;
+    //     padding: 5px 0 2px 0;
+    //     a
+    //     {
+    //         float: left;
+    //        // margin-left: -18px;
+    //         text-decoration: none;
+
+    //         color: $titleColor;
+    //         &:hover
+    //         {
+    //             color: $aLinkBlue;
+    //         }
+    //     }
+    // }
+}
+
+.mainHeader
+{
+  display: flex;
+  background: $white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.samLogo{
+    float: left;
+    width: 60px;
+    max-height: 70px;
+    padding: 5px 0;
+
+    @media all and (max-width: 600px){
+        max-height: 50px;
+        width: 90px;
+    }
+
+}
+.svgTitle{
+  height: 60px;
+  margin-left: 4%;
+  float: left;
+  padding: 5px 0 2px 0;
+  width: 60px;
+
+  @media all and (max-width: 600px){
+      height: 50px;
+      width: 50px;
+  }
+}

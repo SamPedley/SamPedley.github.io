@@ -1,28 +1,20 @@
 <header class="mainHeader">
+
   <a href="{{ site.baseurl }}/">
     <svg class="svgTitle">
       <use xlink:href="#shape-samPedley"/>
     </svg>
   </a>
-  <nav>
-      <div class="desktopNav">
-          <div id="homeNav"><a href="{{ site.baseurl }}/">Home</a></div>
-          <div id="aboutNav"><a href="{{ site.baseurl }}/about/">About</a></div>
-          <div id="blogNav"><a href="{{ site.baseurl }}/blog/">Blog</a></div>
-      </div>
-      <div class="mobileNav">
-      <div>
-          <input id="menuM" name="mblmenu" type="checkbox" />
-          <label for="menuM"><div class="navIconM"><span></span> </div></label>
-          <div class="drop">
-            <ul class="caps">
-              <a href="{{ site.baseurl }}/"><li id="homeNavM">Home</li></a>
-              <a href="{{ site.baseurl }}/about/"><li id="aboutNavM">About</li></a>
-              <a href="{{ site.baseurl }}/blog/"><li id="blogNavM">Blog</li></a>
-             </ul>
-          </div>
-       </div>
-      </div>
-  </nav>
-  <div class="clearfix"></div>
+
+    <div class="mobile_hamburger">
+      <input id="menuM" name="mblmenu" type="checkbox" />
+      <label for="menuM"><div class="navIconM"><span></span> </div></label>
+    </div>
+
+      <nav>
+          <a id="homeNav"  href="{{ site.baseurl }}/">Home</a>
+          <a id="aboutNav" href="{{ site.baseurl }}/about/">About</a>
+          <a id="blogNav" href="{{ site.baseurl }}/articles/">Articles</a>
+      </nav>
+
 </header>

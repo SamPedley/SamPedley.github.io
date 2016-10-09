@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sam's Blog Page
-permalink: /blog/
+permalink: /articles/
 description: My setup, thougts, code snipits, themes and anything else development related all right here.
 ---
 <style>
@@ -10,7 +10,7 @@ description: My setup, thougts, code snipits, themes and anything else developme
 </style>
 <div class="topBlog"></div>
 <div class="max">
-      {% for post in site.posts limit: 20 %}
+      {% for post in site.posts limit: 100 %}
       <div class="blogContent" itemscope itemtype="http://schema.org/Article">
         <a href="{{ site.prefix }}{{ post.url }}"itemprop="url" ><h2 class="blogTitle" itemprop="name">{{ post.title }}</h2></a>
       <article>

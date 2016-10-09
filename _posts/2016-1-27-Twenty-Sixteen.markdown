@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Twenty Sixteen"
+title:  "Twenty Sixteenz"
 date:   2016-01-27
 categories:
 published: true
