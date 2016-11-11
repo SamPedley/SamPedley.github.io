@@ -1,19 +1,58 @@
 //--------------------- Colors ---------------------
-$backgroundColor: 		rgba(226, 226, 226, 1.0);
-$lightBackground: 		rgba(250, 250, 250, 1.0);
-$white: 				rgba(255, 255, 255, 1.0);
-$titleColor: 			rgba(43, 43, 43, 1.0);
-$lightText: 			rgba(129, 129, 129, 1.0);
-$homeNavC: 				rgba(69, 131, 178, 1.0);
-$aboutNavC: 			rgba(238, 85, 85, 1.0);
-$blogNavC: 				rgba(82, 187, 178, 1.0);
-$aLinkBlue: 			rgba(69, 131, 179, 1.0);
-$aLinkHover: 			rgba(0, 155, 255, 1.0);
-$gray: 					rgba(68, 67, 68, 1.0);
+$color-mercuryWhite:       rgba(226, 226, 226, 1.0); // #e2e2e2
+$color-alabasterWhite:     rgba(250, 250, 250, 1.0); // #fafafa
+$color-white:              rgba(255, 255, 255, 1.0); // #ffffff
+$color-shaftBlack:         rgba(43, 43, 43, 1.0);    // #2b2b2b
+$color-gray:               rgba(129, 129, 129, 1.0); // #818181
+$color-steelBlue:          rgba(69, 131, 178, 1.0);  // #4583b2
+$color-siennaRed:          rgba(238, 85, 85, 1.0);   // #ee5555
+$color-fountainGreen:      rgba(82, 187, 178, 1.0);  // #52bbb2
+$color-azureBlue:          rgba(0, 155, 255, 1.0);   // #009bff
+$color-fuscousGray:        rgba(68, 67, 68, 1.0);    // #444443
 
-//Social Icons
-$socialIcons: 		rgba(226, 226, 226, 1.0);
-$github: 			rgba(108, 198, 68, 1.0);
-$behance: 			rgba(23, 105, 255, 1.0);
-$linkedin: 			rgba(9, 117, 179, 1.0);
-$rss: 				rgba(238, 81, 63, 1.0);
+
+// Main color
+$theme-home:               $color-steelBlue;
+$theme-about:              $color-siennaRed;
+$theme-blog:               $color-fountainGreen;
+
+// Theme Colors
+$aLinkBlue:           $color-steelBlue;
+$aLinkHover:          $color-azureBlue;
+$backgroundColor:     $color-mercuryWhite;
+$lightBackground:     $color-alabasterWhite;
+$titleColor:          $color-shaftBlack;
+$lightText:           $color-gray;
+
+// Social Icons
+$socialIcons:         $color-mercuryWhite;
+$github:              rgba(108, 198, 68, 1.0);  // #6cc644
+$behance:             rgba(23, 105, 255, 1.0);  // #1769ff
+$linkedin:            rgba(9, 117, 179, 1.0);   // #0975b3
+$rss:                 rgba(238, 81, 63, 1.0);   // #ee513f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$backgroundColor:     rgba(226, 226, 226, 1.0); // #e2e2e2
+$lightBackground:     rgba(250, 250, 250, 1.0); // #fafafa
+$white:               rgba(255, 255, 255, 1.0); // #ffffff
+$titleColor:          rgba(43, 43, 43, 1.0);    // #2b2b2b
+$lightText:           rgba(129, 129, 129, 1.0); // #818181
+$theme-home:            rgba(69, 131, 178, 1.0);  // #4583b2
+$theme-about:           rgba(238, 85, 85, 1.0);   // #ee5555
+$theme-blog:            rgba(82, 187, 178, 1.0);  // #52bbb2
+$aLinkBlue:           rgba(69, 131, 179, 1.0);  // #4583b3
+$aLinkHover:          rgba(0, 155, 255, 1.0);   // #009bff
+$gray:                rgba(68, 67, 68, 1.0);    // #444443

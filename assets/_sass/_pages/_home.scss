@@ -94,7 +94,7 @@
             transition: background-color .4s ease-in-out;
 
             color: $white;
-            background-color: $homeNavC;
+            background-color: $theme-home;
         }
     }
     .homeTitle
@@ -106,7 +106,7 @@
         transition: background-color .4s ease-in-out;
 
         color: $titleColor;
-        border-bottom: 5px solid $homeNavC;
+        border-bottom: 5px solid $theme-home;
         background-color: $lightBackground;
     }
     article

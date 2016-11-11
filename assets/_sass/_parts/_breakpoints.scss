@@ -2,15 +2,15 @@
 //--------------------- Break Points ---------------------
 .topHome
 {
-    @include topColor ($homeNavC);
+    @include topColor ($theme-home);
 }
 .topAbout
 {
-    @include topColor ($aboutNavC);
+    @include topColor ($theme-about);
 }
 .topBlog
 {
-    @include topColor ($blogNavC);
+    @include topColor ($theme-blog);
 }
 
 //--------------------- Break Points ---------------------

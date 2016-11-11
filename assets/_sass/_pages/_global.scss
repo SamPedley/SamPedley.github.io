@@ -2,37 +2,22 @@
 body
 {
     font-family: Open Sans, helvetica,  sans-serif;
-    font-weight: light;
     line-height: 1.6;
 
     background-color: $backgroundColor;
-    p
-    {
-        font-size: 18px;
-    }
+
 }
 
-h1
-{
-    font-weight: 600;
-}
+h1 { font-weight: 600; }
 
 a
 {
     transition: all .3s ease-in-out;
-
     color: $aLinkBlue;
-    &:hover
-    {
-
-        color: $aLinkHover;
-    }
+    &:hover { color: $aLinkHover; }
 }
 
-table
-{
-    border-color: $backgroundColor;
-}
+table { border-color: $backgroundColor; }
 
 .max
 {

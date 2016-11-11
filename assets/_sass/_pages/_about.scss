@@ -1,41 +1,49 @@
 .aboutHeader
 {
-    background-color: $aboutNavC !important;
+    background-color: $theme-about !important;
 }
 
 .list
 {
-    &:hover h3
-    {
-        transition: color .5s ease-in-out;
-        transition: background-color .4s ease-in-out;
 
-        color: $white;
-        background-color: $aboutNavC;
-    }
     h3
     {
         margin-bottom: -5px;
         padding-left: 2%;
-
         transition: color .5s ease-in-out;
         transition: background-color .4s ease-in-out;
-
-        border-bottom: 5px solid $aboutNavC;
+        border-bottom: 5px solid $theme-about;
     }
+
+    &:hover h3
+    {
+        color: $white;
+        background-color: $theme-about;
+    }
+
 }
 
-.list-green
+.bullet-group
 {
-  &:hover h3
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li
   {
-    background-color: $blogNavC;
+    width: 100%;
   }
-  h3
+  &.threeColumn li
   {
-    border-bottom: 5px solid $blogNavC;
+    width: 30%;
+    @include break(560px) { width: 50%;}
+  }
+  &.twoColumn li
+  {
+    width: 50%;
+    @include break(500px) { width: 100%;}
   }
 }
+
 
 
 

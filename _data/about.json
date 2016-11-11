@@ -1,0 +1,20 @@
+{
+  "likes": [
+    {"name": "PHP", "url": false},
+    {"name": "Javascript", "url": false},
+    {"name": "C++", "url": false},
+    {"name": "Go", "url": false},
+    {"name": "Laravel", "url": false},
+    {"name": "Angular 1 & 2", "url": false},
+    {"name": "Vue", "url": false},
+    {"name": "VIM", "url": false},
+    {"name": "Arduino", "url": false},
+    {"name": "IOT", "url": false},
+  ],
+  "contact": [
+    {"name": "Email", "url": "mailto:sam@sampedley.com"},
+    {"name": "Twitter", "url": "https://twitter.com/sam_pedley"},
+    {"name": "Linkedin", "url": "https://www.linkedin.com/in/sampedley"},
+    {"name": "Smoke Signals", "url": false},
+  ],
+}

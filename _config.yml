@@ -2,8 +2,8 @@
 title: Sam Pedley
 email: sam@sampedley.com
 description: "Hi, I'm a web developer in Chicago."
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://sampedley.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://sampedley.com"
 twitter_username: mrpeds
 github_username:  sampedley
 include: ['.htaccess']
@@ -11,12 +11,20 @@ keywords: sam pedley chicago web developer
 
 # Build settings
 markdown: kramdown
-# destination: /site
-permalink: /:categories/:title/
-highlighter: rouge 
-
-#Site Variables
-image: /public/img/booger.jpg
+permalink: /:title/
+highlighter: rouge
 sass:
   sass_dir: assets/_sass
   style: compressed
+
+#Site Variables
+image: /public/img/booger.jpg
+
+# Nav Bar Data
+nav:
+- name: Home
+  url: /
+- name: About
+  url: /about
+- name: Articles
+  url: /articles

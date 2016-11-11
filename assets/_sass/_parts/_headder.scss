@@ -1,41 +1,86 @@
 //--------------------- Headder ---------------------
 
-.SiteHeader
+.siteHeader
 {
   display: flex;
   background: $white;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  padding: 0 2rem;
+  border-bottom: 10px solid black;
+
+  &.home, &.default
+  {
+    border-color: lighten($theme-home,15%);
+    .sLogoMain{ fill: $theme-home;}
+    .sLogoSecondary{ fill: lighten($theme-home,15%);}
+  }
+  &.articles, &.post
+  {
+    border-color:lighten($theme-blog,15%);
+    .sLogoMain{ fill: $theme-blog;}
+    .sLogoSecondary{ fill: lighten($theme-blog,15%);}
+  }
+  &.about
+  {
+    border-color: lighten($theme-about,15%);
+    .sLogoMain{ fill: $theme-about;}
+    .sLogoSecondary{ fill: lighten($theme-about,15%);}
+  }
+
 }
+
+
+
 
 
 .header_logo
 {
-  margin-left: 1rem;  
-  padding: 0.3rem 0;  
+  // margin-left: 1rem;
+  padding: 0.3rem 0;
   display: inherit;
-  svg 
+  svg
   {
     height: 50px;
     width: 50px;
   }
+  &:hover
+  {
+      .sLogoMain {animation: FancyLogo 5s infinite;}
+      .sLogoSecondary {animation: FancyLogoSecondary 5s infinite;}
+  }
+}
+
+@keyframes FancyLogo {
+  15%   { fill: $theme-home; }
+  40%   { fill: $theme-about; }
+  60%   { fill: $theme-blog;}
+  15%   { fill: $theme-home; }
+}
+
+@keyframes FancyLogoSecondary {
+  15%   { fill: lighten($theme-home,15%); }
+  40%   { fill: lighten($theme-about,15%); }
+  60%   { fill: lighten($theme-blog,15%);}
+  15%   { fill: lighten($theme-home,15%); }
 }
 
 nav
 {
   width: 50%;
   text-align: right;
-  a 
+  a
   {
     font-size: 20px;
     color: $titleColor;
-    margin: 0 1rem 0 0;
+    margin: 0 0 0 1rem;
+    border-bottom: 2px solid $color-white;
   }
 
-    #homeNav:hover { background: $white; color: $homeNavC; }
-    #aboutNav:hover { background: $white; color: $aboutNavC; }
-    #blogNav:hover { background: $white; color: $blogNavC; }
+    #navlink_Home:hover { background: $white; color: $theme-home; border-bottom-color: $theme-home; }
+    #navlink_About:hover { background: $white; color: $theme-about; border-bottom-color: $theme-about; }
+    #navlink_Articles:hover { background: $white; color: $theme-blog; border-bottom-color: $theme-blog; }
 
   @include break(600px)
   {
@@ -54,83 +99,83 @@ nav
       margin: 0;
       padding: 0.5rem;
       text-align: center;
+      border-bottom: none;
       &:hover
       {
         color: $white;
         background: $gray;
       }
     }
-    #homeNav:hover { background: $homeNavC; color: $white; }
-    #aboutNav:hover { background: $aboutNavC; color: $white; }
-    #blogNav:hover { background: $blogNavC; color: $white; }
+    #navlink_Home:hover { background: $theme-home; color: $white; }
+    #navlink_About:hover { background: $theme-about; color: $white; }
+    #navlink_Articles:hover { background: $theme-blog; color: $white; }
   }
 
 }
 
 
 
-  .hamburger_icon
-  {
-      position: relative;
-      display: inline-block;
-      width: 30px;
-      height: 30px;
-      margin-right: 4%;
-      span
-      {
-          position: relative;
-          top: 10px;
-          margin: 0 auto;
-      }
-      span:before, span:after
-      {
-          position: absolute;
-          content: '';
-          transition: .2s ease;
-      }
-      span, span:before, span:after
-      {
-          display: block;
-          width: 30px;
-          height: 4px;
-          background-color: $titleColor;
-      }
-      span:before
-      {
-          margin-top: -12px;
-      }
-      span:after
-      {
-          margin-top: 12px;
-      }
-  }
-  .hamburger_input
-  {
-      display: none;
-      &:checked ~ .hamburger_label
-      {
-        .hamburger_icon span:before, .hamburger_icon span:after
-        {
-          margin-top: 0;
-        }
-      }
-
-      &:checked ~ nav
-      {
+.hamburger_icon
+{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 4%;
+    span
+    {
+        position: relative;
+        top: 10px;
+        margin: 0 auto;
+    }
+    span:before, span:after
+    {
+        position: absolute;
+        content: '';
+        transition: .2s ease;
+    }
+    span, span:before, span:after
+    {
         display: block;
-      }
-  }
-
-    .hamburger_label
-  {
-      font-size: 24px;
-      cursor: pointer;
-      margin: 16px 1rem 0 0;
-      display: none;
-
-      @include break(600px)
+        width: 30px;
+        height: 4px;
+        background-color: $titleColor;
+    }
+    span:before
+    {
+        margin-top: -12px;
+    }
+    span:after
+    {
+        margin-top: 12px;
+    }
+}
+.hamburger_input
+{
+    display: none;
+    &:checked ~ .hamburger_label
+    {
+      .hamburger_icon span:before, .hamburger_icon span:after
       {
-        display: block;
+        margin-top: 0;
       }
-  }
-    
+    }
+
+    &:checked ~ nav
+    {
+      display: block;
+    }
+}
+
+  .hamburger_label
+{
+    font-size: 24px;
+    cursor: pointer;
+    margin: 16px 1rem 0 0;
+    display: none;
+
+    @include break(600px)
+    {
+      display: block;
+    }
+}

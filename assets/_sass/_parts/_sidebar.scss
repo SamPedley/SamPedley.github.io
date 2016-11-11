@@ -3,7 +3,6 @@
 .homeAside
 {
     float: right;
-    // border-top: 5px solid $homeNavC;
     width: 320px;
     height: 400px;
     margin: 2%;
@@ -11,43 +10,31 @@
     background-color: $white;
     @include mainShadow;
 
-    h3 
+    h3
     {
-        background-color: $homeNavC;
+        background-color: $theme-home;
         color: $white;
         padding: 0.5rem 1rem;
         margin: 0;
     }
 }
 
-.gsc-input,
-.gsc-search-button
-{
-    padding: 10px;
-}
 
 .asidePosts
 {
-
-    ul
-    {
-        margin: 0;
-        list-style-type: none;
-        padding: 12px;
-        background-color: $white;
-        @media screen and (max-width: 82px){
-    display: none;
-}
-    }
-    a
-    {
-        color: $gray;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 2;
-        &:hover
-        {
-            color: $aLinkBlue;
-        }
-    }
+  ul
+  {
+    margin: 0;
+    list-style-type: none;
+    padding: 12px;
+    background-color: $white;
+  }
+  a
+  {
+    color: $gray;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    &:hover { color: $aLinkBlue; }
+  }
 }

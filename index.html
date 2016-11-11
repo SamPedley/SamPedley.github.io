@@ -1,16 +1,16 @@
 ---
 layout: default
 title: Sam Pedley
-description: Hi, I'm a nerd.  Yep.  That's about it. 
+description: Hi, I'm a nerd.  Yep.  That's about it.
+theme: home
 ---
-<div class="topHome navHover"></div>
 <div class="max">
   <div class="hero">
         {% for post in site.posts limit:1 %}
 
     <div class="heroEye">
       <a href="{{ post.url }}">
-       <img src="{{site.url}}{% if post.image %}{{post.image}}{% else %}{{ site.image}}{% endif %}" alt="{{post.description}}">
+       <img src="{% if post.image %}{{post.image}}{% else %}{{ site.image}}{% endif %}" alt="{{post.description}}">
       </a>
     </div>
 
@@ -25,7 +25,7 @@ description: Hi, I'm a nerd.  Yep.  That's about it.
   <aside class="homeAside">
     <h3>More Stuff</h3>
     <div class="asidePosts">
-      <ul> 
+      <ul>
       {% for post in site.posts offset: 6 limit: 10 %}
        <a href="{{ site.prefix }}{{ post.url }}"> <li>{{ post.title }}</li></a>
       {% endfor %}

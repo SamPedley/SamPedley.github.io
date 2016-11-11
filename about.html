@@ -4,70 +4,60 @@ title: About
 permalink: /about/
 description: My name is Sam and I love LAMP and I like web development.
 image: /public/img/booger.jpg
-
+theme: about
 ---
-<style>.sLogoMain{ fill: rgba(238, 85, 85, 1.0);}.sLogoSecondary{ fill: rgba(245, 155, 155, 1.0);}</style>
-<div class="topAbout"></div>
-
 <header class="post-header aboutHeader">
-   	<h1>About</h1>
-  </header>
+  <h1>About</h1>
+</header>
 
-<div class="postContainer" itemscope itemtype="http://schema.org/Person">
+<section class="postContainer" itemscope itemtype="http://schema.org/Person">
 
-<h2>I’m <span itemprop="name">Sam Pedley</span>, a <span itemprop="jobTitle">software developer</span> in the <span itemprop="workLocation">Chicago-land</span> area.</h2>
+  <h2>I’m <span itemprop="name">Sam Pedley</span>, a <span itemprop="jobTitle">software developer</span> in the <span itemprop="workLocation">Chicago-land</span> area. Hiring?  Take a look at my <a href="/resume">Resume!</a></h2>
 
-<img src="/assets/images/profilePic.jpg" alt="My Wife and I a few years ago." class="profilePic">
-<div class="aboutText">
+  <img src="/assets/images/profilePic.jpg" alt="My Wife and I a few years ago." class="profilePic">
 
-	<div class="list" itemprop="brand">
-		<h3 class="rf">Random Facts:</h3>
-		<ul>
-			<li>I married another web developer who is way out of my league.</li>
-			<li>I have a cat named <a href="{{ site.baseurl }}/assets/images/booger.jpg">booger</a> and two dogs:  <a href="{{ site.baseurl }}/assets/images/ruby.jpg">Ruby</a> and <a href="{{ site.baseurl }}/assets/images/buba.jpg">Buba</a>.</li>
-			<li>My favorite book is the <a href="http://www.amazon.com/gp/product/0345391802/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0345391802&amp;linkCode=as2&amp;tag=sampedleycom-20&amp;linkId=7H77BKVNFCQ6PJQW">Hitchhikers Guide to the Galaxy</a>.</li>
-			<li>I really like the LAMP and MEAN stacks and I really dislike the .NET stack.</li>
-			<li>I learned C++ and Java in high school.</li>
-			<li>I didn’t enjoy writing this page.</li>
-		</ul>
-	</div>
-	<div class="list">
-		<h3 class="rf">Random nerd stuff I really like:</h3>
-		<ul class="col">
-			<li>PHP</li>
-      	<li>Node</li>
-			<li>Javascript</li>
-			<li>Python</li>
-		</ul>
-		<ul class="col">
-      <li>Laravel</li>
-      <li>Ember.js</li>
-			<li>React.js</li>
-			<li>Angular.js 2.0</li>
-		</ul>
-		<ul class="col">
-			<li>VIM</li>
-			<li>IOT things</li>
-		</ul>
-	</div>
-	<div class="clearfix"></div>
+  <div class="aboutText">
 
-	<div class="clearfix"></div>
-	<div class="list">
-		<h3 class="rf">Random ways to get in touch:</h3>
-		<ul class="col-half">
-      <li><a href="mailto:sam@sampedley.com">Email</a></li>
-      <li><a href="https://twitter.com/sam_pedley">Twitter</a></li>
-		</ul>
-    <ul class="col-half">
-      <li><a href="https://www.linkedin.com/in/sampedley">linkedIn</a></li>
-      <li>Smoke Signals</li>
-    </ul>
-	</div>
+    <div class="list" itemprop="brand">
+      <h3>Random Facts:</h3>
+      <ul>
+        <li>I married another web developer who is way out of my league.</li>
+        <li>I have a cat named <a href="{{ site.baseurl }}/assets/images/booger.jpg">booger</a> and two dogs:  <a href="{{ site.baseurl }}/assets/images/ruby.jpg">Ruby</a> and <a href="{{ site.baseurl }}/assets/images/buba.jpg">Buba</a>.</li>
+        <li>My favorite book is the <a href="http://www.amazon.com/gp/product/0345391802/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0345391802&amp;linkCode=as2&amp;tag=sampedleycom-20&amp;linkId=7H77BKVNFCQ6PJQW">Hitchhikers Guide to the Galaxy</a>.</li>
+        <li>I really like the LAMP and MEAN stacks and I really dislike the .NET stack.</li>
+        <li>I learned C++ and Java in high school.</li>
+        <li>I didn’t enjoy writing this page.</li>
+      </ul>
+    </div>
 
-</div>
-<div class="clearfix"></div>
-<p class="pre">This site is built on <a href="http://jekyllrb.com/">jekyll</a>, tracked on <a href="http://github.com/">GitHub</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+    <div class="list">
+      <h3>Random nerd stuff I really like:</h3>
+      <ul class="bullet-group threeColumn">
+        {% for like in site.data.about.likes %}
+        <li>
+          {% if like.url %} <a href="{{like.url}}">{{like.name}}</a>
+          {% else %} {{like.name}}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
+    <div class="list">
+      <h3>Random ways to get in touch:</h3>
+      <ul class="bullet-group twoColumn">
+        {% for item in site.data.about.contact %}
+        <li>
+          {% if item.url %} <a href="{{like.url}}">{{item.name}}</a>
+          {% else %} {{item.name}}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 
-</div>
+  </div>
+  <div class="clearfix"></div>
+  <p class="pre">This site is built on <a href="http://jekyllrb.com/">jekyll</a>, tracked on <a href="http://github.com/">GitHub</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+
+</section>

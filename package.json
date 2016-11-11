@@ -5,7 +5,7 @@
   "description": "Personal Blog",
   "main": "index.html",
   "scripts": {
-    "start": "jekyll serve --watch --incremental",
+    "dev": "bundle exec jekyll serve",
     "build": "jekyll build"
   },
   "repository": {

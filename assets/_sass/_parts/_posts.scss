@@ -46,20 +46,12 @@
 .post-header
 {
     padding: 2% 2% 1% 2%;
-
     @include tile(2% 2% 0 2%);
     @include mainShadow;
-
     color: white;
-    background-color: $blogNavC;
-    h1
-    {
-        margin: 0;
-    }
-    p
-    {
-        margin: 0;
-    }
+    background-color: $theme-blog;
+    h1 { margin: 0; }
+    p { margin: 0; }
 }
 
 .comments
@@ -75,5 +67,6 @@
 }
 .post-content
 {
-  ol li a { font-size: 1.3rem; }
+  line-height: 1.8;
+  // ol li a { font-size: 1.3rem; }
 }
