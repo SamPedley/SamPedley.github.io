@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Name that Color - CSS, Colors and Names"
-date:   2014-10-18 16:00:30
+date:   2016-4-18 16:00:30
 categories: CSS
 published: true
 description:  In the past I've had a miserable time naming and communicating those buggers.  Imagine A designer comes to you a the beginning of a project with a color, let’s say#ff0047, and notes that color should be used for the headers background while the footer should use a background color of#ec5659.
