@@ -10,6 +10,7 @@
     {
         margin-bottom: -5px;
         padding-left: 2%;
+        padding-right: 2%;
         transition: color .5s ease-in-out;
         transition: background-color .4s ease-in-out;
         border-bottom: 5px solid $theme-about;
@@ -19,6 +20,8 @@
     {
         color: $white;
         background-color: $theme-about;
+
+        a { color: $white; text-decoration: underline;}
     }
 
 }

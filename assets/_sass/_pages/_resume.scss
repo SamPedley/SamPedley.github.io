@@ -1,0 +1,164 @@
+.resumeHeader
+{
+  background-color: $color-riverBed !important;
+  .icon svg
+  {
+    float: left;
+    width: 110px;
+    height: auto;
+  }
+
+  .info
+  {
+    float: left;
+    margin-left: 10px;
+    p a { color: $color-white; &:hover{ color: $color-white; text-decoration: underline;}}
+  }
+}
+
+.resume_heading
+{
+  text-align: center;
+  width: 100%;
+
+}
+
+.post-header
+{
+  h3 { margin: 0; padding: 0;}
+}
+
+.work_container
+{
+  .list
+  {
+    h3 { border-bottom: 5px solid $color-steelBlue; }
+    &:hover h3{ background-color: $color-steelBlue; }
+  }
+}
+
+.work_container, .tech_container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+
+  .list
+  {
+    width: 48%;
+
+    .subtext
+    {
+      margin: 0 2%;
+      font-style: italic;
+    }
+
+    h3
+    {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .date{font-size: 14px;}
+
+    }
+
+  @include break(900px)
+  {
+    width: 100%;
+  }
+  }
+
+}
+.tech_container
+{
+  .list
+  {
+    &.javascript { width: 100%;}
+    .subtext
+    {
+      margin: 0.6rem 2% 0.3rem 2%;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .bullet-group{ margin-top: 0; }
+  }
+}
+
+
+.resume_print
+{
+  width: 60%;
+  margin: auto 20%;
+  background: $color-white;
+  border: 2px solid $color-fountainGreen;
+  transition: all 0.3s ease-in-out;
+
+  &:hover
+  {
+    color: $color-white;
+    background: $color-fountainGreen;
+  }
+
+}
+@media print
+{
+  .print_hide,.siteHeader,footer{ display: none;}
+
+  .post-header
+  {
+
+    background: $color-white;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    box-shadow: none;
+    .icon svg
+    {
+      float: left;
+      width: 65px;
+      height: auto;
+    }
+
+    .info
+    {
+      h1 { color: $color-steelBlue; font-size: 16px;}
+      h3 { color: $color-shaftBlack; font-size: 14px; }
+      float: left;
+      margin-left: 10px;
+      p a {  color: $color-shaftBlack; font-size: 10px; }
+    }
+  }
+
+  .postContainer
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    border: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .work_container .list { width: 100%; }
+  .work_container .list, .tech_container .list
+    {
+      ul {  padding-left: 4%;}
+      h3
+      {
+        margin-top: 0;
+        font-size: 14px;
+        border-bottom: 2px solid $color-siennaRed;
+        margin-bottom: -5px;
+        .date{ font-size: 8px;}
+      }
+
+    }
+  .tech_container .list h3{ border-color: $color-fountainGreen; }
+
+}

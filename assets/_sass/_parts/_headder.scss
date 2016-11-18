@@ -28,6 +28,12 @@
     .sLogoMain{ fill: $theme-about;}
     .sLogoSecondary{ fill: lighten($theme-about,15%);}
   }
+  &.resume
+  {
+    border-color: lighten($color-riverBed,15%);
+    .sLogoMain{ fill: $color-riverBed;}
+    .sLogoSecondary{ fill: lighten($color-riverBed,15%);}
+  }
 
 }
 
