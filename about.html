@@ -48,7 +48,7 @@ theme: about
       <ul class="bullet-group twoColumn">
         {% for item in site.data.about.contact %}
         <li>
-          {% if item.url %} <a href="{{like.url}}">{{item.name}}</a>
+          {% if item.url %} <a href="{{item.url}}">{{item.name}}</a>
           {% else %} {{item.name}}
           {% endif %}
         </li>
