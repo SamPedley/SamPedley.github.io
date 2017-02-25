@@ -5,9 +5,8 @@ description: Hi, I'm a nerd.  Yep.  That's about it.
 theme: home
 ---
 <div class="max">
-  <div class="hero">
-        {% for post in site.posts limit:1 %}
-
+  <main class="hero">
+    {% for post in site.posts limit:1 %}
     <div class="heroEye">
       <a href="{{ post.url }}">
        <img src="{% if post.image %}{{post.image}}{% else %}{{ site.image}}{% endif %}" alt="{{post.description}}">
@@ -15,13 +14,13 @@ theme: home
     </div>
 
     <div class="heroText">
-
       <h1><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h1>
       <p>{{ post.description }} <br><a href="{{ post.url }}">Read more...</a></p>
       {% endfor %}
     </div>
     <div class="clearfix"></div>
-  </div>
+  </main>
+
   <aside class="homeAside">
     <h3>More Stuff</h3>
     <div class="asidePosts">
@@ -32,6 +31,7 @@ theme: home
       </ul>
     </div>
   </aside>
+  
   {% for post in site.posts offset: 1 limit: 5 %}
   <div class="mainContent" itemscope itemtype="http://schema.org/Article">
     <a href="{{ site.prefix }}{{ post.url }}" itemprop="url"><h2 class="homeTitle" itemprop="name">{{ post.title }}</h2></a>
@@ -42,4 +42,5 @@ theme: home
   </div>
   {% endfor %}
 </div>
+
 <div class="clearfix"></div>
