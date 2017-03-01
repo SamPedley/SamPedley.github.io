@@ -1,9 +1,8 @@
 {
   "private": true,
   "name": "sams_site",
-  "version": "1.5.0",
-  "description": "Personal Blog",
-  "main": "index.html",
+  "version": "1.6.0",
+  "description": "My personal Blog",
   "scripts": {
     "dev": "bundle exec jekyll serve",
     "build": "jekyll build"
@@ -12,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/SamPedley/SamPedley.github.io"
   },
-  "author": "Sam",
+  "author": "Sam Pedley",
   "license": "MIT",
   "devDependencies": {}
 }

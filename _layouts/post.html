@@ -1,24 +1,7 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="articlesMax" itemscope itemtype="http://schema.org/Article">
-
-  <header class="post-header">
-    <h1 itemprop="name">{{ page.title }}</h1>
-    <p class="meta" itemprop="datePublished">
-      {{ page.date | date: "%b %-d, %Y" }}
-      {% if page.author %} • {{ page.author }}{% endif %}
-      {% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-<div class="postContainer">
-
-  <article class="post-content" itemprop="articleBody">
+<div class="post_content">
   {{ content }}
-  </article>
-</div>
-<div class="comments" itemprop="Comment">
-	{% include comments.html %}
-</div>
-
 </div>

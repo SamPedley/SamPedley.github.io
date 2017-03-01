@@ -1,0 +1,36 @@
+.page_container
+{
+  @include primaryContainerSize;
+  box-shadow: $containerShaddow;
+  background-color: $color-white;
+}
+
+.page_header
+{
+  padding: 1rem 1rem 0.5rem 1rem;
+  box-shadow: $containerShaddow;
+  color: white;
+  background-color: $theme-blog;
+  h1 { margin: 0; }
+  p { margin: 0; }
+
+  &.home, &.default { background-color: $theme-home; }
+  &.articles, &.post { background-color: $theme-blog; }
+  &.about { background-color: $theme-about; }
+}
+
+.page_content
+{
+  padding: 0 $horzPad $horzPad;
+  margin-top: $horzPad;
+}
+
+
+.comments
+{
+  @include primaryContainerSize;
+  box-shadow: $containerShaddow;
+  padding: 2%;
+  box-sizing: border-box;
+  background-color: $color-white;
+}

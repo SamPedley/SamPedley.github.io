@@ -1,58 +1,6 @@
-.blogContent
+.blogpageContainer { @include primaryContainerSize; }
+.blogpageContainer .postBlurb
 {
-    float: left;
-
-    width: 96%;
-    height: auto;
-    margin-top: 2%;
-    margin-left: 2%;
-
-    transition: background-color .1s ease-in-out;
-
-    background-color: $lightBackground;
-
-    @include mainShadow;
-    &:hover
-    {
-        transition: background-color .1s ease-in-out;
-
-        background-color: $white;
-        .blogTitle
-        {
-            transition: color .5s ease-in-out;
-            transition: background-color .4s ease-in-out;
-
-            color: $white;
-            background-color: $theme-blog;
-        }
-    }
-    .blogTitle
-    {
-        margin-top: 0;
-        padding: 2% 2% 1%;
-
-        transition: color .5s ease-in-out;
-        transition: background-color .4s ease-in-out;
-
-        color: $titleColor;
-        border-bottom: 5px solid $theme-blog;
-    }
-    article
-    {
-        margin: 1% 2% 2%;
-        img
-        {
-            @include imgResult;
-        }
-        h2
-        {
-            margin-bottom: 0;
-        }
-        .meta
-        {
-            margin-top: -10px;
-
-            color: $lightText;
-        }
-    }//end article
-}//end .main content
+  h2 { border-color: $theme-blog; }
+  &:hover h2 a { background-color: $theme-blog; }
+}

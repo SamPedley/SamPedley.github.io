@@ -1,19 +1,22 @@
 ---
 ---
-@import '_helpers/_mixins.scss';
-@import '_helpers/_variables.scss';
+// - - - - - Helpers - - - - - -
+@import '_helpers/variables';
+@import '_helpers/mixins';
 
-@import '_libs/_pygment.scss';
-@import '_libs/_normalize.scss';
+// - - - - - 3rd Party - - - - - -
+@import '_libs/pygment';
+@import '_libs/normalize';
 
-@import '_pages/_global.scss';
-@import '_parts/_headder.scss';
-@import '_parts/_sidebar.scss';
-@import '_parts/_footer.scss';
-@import '_parts/_posts.scss';
+// - - - - - Pages - - - - - -
+@import '_pages/home';
+@import '_pages/blog';
+@import '_pages/about';
 
-@import '_pages/_home.scss';
-@import '_pages/_blog.scss';
-@import '_pages/_about.scss';
-@import '_pages/resume';
-@import '_parts/_breakpoints.scss';
+@import '_pages/global';
+// - - - - - Parts - - - - - -
+@import '_parts/headder';
+@import '_parts/footer';
+@import '_parts/posts';
+@import '_parts/postBlurb';
+@import '_parts/page';

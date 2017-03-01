@@ -1,0 +1,38 @@
+.postBlurb
+{
+  background-color: $color-white;
+  box-shadow: $containerShaddow;
+  margin-bottom: 1rem;
+
+  &:hover h2 a
+  {
+    background-color: $theme-home;
+    color: $color-white;
+  }
+}
+
+.postBlurb h2
+{
+  margin: 0;
+  border-bottom: 3px solid $theme-home;
+  a
+  {
+    display: block;
+    padding: 7px $horzPad 3px $horzPad;
+    color: $titleColor;
+  }
+}
+
+.postBlurb time
+{
+  margin: 0;
+  padding: 7px $horzPad 0px $horzPad;
+  color: $lightText;
+  display: inline-block;
+}
+
+.postBlurb p
+{
+  margin: 0;
+  padding: 0px $horzPad $horzPad;
+}

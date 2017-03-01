@@ -4,43 +4,56 @@ title: Sam Pedley
 description: Hi, I'm a nerd.  Yep.  That's about it.
 theme: home
 ---
-<div class="max">
-  <main class="hero">
-    {% for post in site.posts limit:1 %}
-    <div class="heroEye">
-      <a href="{{ post.url }}">
-       <img src="{% if post.image %}{{post.image}}{% else %}{{ site.image}}{% endif %}" alt="{{post.description}}">
-      </a>
-    </div>
 
-    <div class="heroText">
-      <h1><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h1>
-      <p>{{ post.description }} <br><a href="{{ post.url }}">Read more...</a></p>
-      {% endfor %}
-    </div>
-    <div class="clearfix"></div>
-  </main>
+{% for post in site.posts limit:1 %}
+<main class="hero">
 
-  <aside class="homeAside">
-    <h3>More Stuff</h3>
-    <div class="asidePosts">
-      <ul>
-      {% for post in site.posts offset: 6 limit: 10 %}
-       <a href="{{ site.prefix }}{{ post.url }}"> <li>{{ post.title }}</li></a>
-      {% endfor %}
-      </ul>
-    </div>
-  </aside>
-  
-  {% for post in site.posts offset: 1 limit: 5 %}
-  <div class="mainContent" itemscope itemtype="http://schema.org/Article">
-    <a href="{{ site.prefix }}{{ post.url }}" itemprop="url"><h2 class="homeTitle" itemprop="name">{{ post.title }}</h2></a>
-    <article>
-      <p itemprop="description">{{ post.description }}</p>
-      <a href="{{ post.url }}" itemprop="url">Read more...</a>
+  <a href="{{ post.url }}"
+    class="heroEye"
+    style="background-image: url('{% if post.image %}{{post.image}}{% else %}{{ site.image}}{% endif %}');">
+  </a>
+
+  <article class="heroText">
+    <h1><a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a></h1>
+    <p>{{ post.description }} <br><a href="{{ post.url }}">Read more...</a></p>
+  </article>
+
+</main>
+{% endfor %}
+
+<div class="homepageContainer">
+
+  <section>
+    {% for post in site.posts offset: 0 limit: 5 %}
+    <article class="postBlurb" itemscope itemtype="http://schema.org/Article">
+      <h2 itemprop="name">
+        <a href="{{ site.prefix }}{{ post.url }}" itemprop="url">{{ post.title }}</a>
+      </h2>
+      <time itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <p itemprop="description">
+        {{ post.description }}<a href="{{ post.url }}" itemprop="url">... Read more</a>
+      </p>
     </article>
-  </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </section>
 
-<div class="clearfix"></div>
+
+  <aside class="homepageAside">
+    <h3>More Stuff</h3>
+    <ul class="asidePosts">
+      <li>
+        <a href="https://github.com/SamPedley">Github</a>
+      </li>
+      <li>
+        <a href="{{ site.prefix }}/articles">All Posts</a>
+      </li>
+
+    {% for post in site.posts offset: 6 limit: 10 %}
+      <li>
+        <a href="{{ site.prefix }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </aside>
+
+</div>

@@ -1,11 +1,29 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
+
+{% assign theme = 'default' %}
+{% if page.theme %}
+  {% assign theme = page.theme %}
+{% elsif page.layout %}
+  {% assign theme = page.layout %}
+{% endif %}
+
+<main class="page_container">
+
+  <header class="page_header {{ theme }}">
     <h1>{{ page.title }}</h1>
+    <time class="meta" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
   </header>
-  <article class="post-content">
-  {{ content }}
+
+  <article class="page_content">
+    {{ content }}
   </article>
-</div>
+
+</main>
+
+{% if page.hideComments != true %}
+<section class="comments" itemprop="Comment">
+  {% include comments.html %}
+</section>
+{% endif %}

@@ -1,39 +1,23 @@
-@mixin tile($point)
-{
-    float: left;
-    width: 92%;
-    height: auto;
-    margin: $point;
-    padding: 2%;
-    background-color: $white;
-}
-
-@mixin mainShadow
-{
-    box-shadow: 0 0 3px rgba(45, 45, 45, .1);
-}
-
-@mixin imgResult
-{
-    max-width: 100%;
-    padding-bottom: 15px;
-    border-bottom: 3px solid $backgroundColor;
-}
-
-@mixin topColor($color)
-{
-    height: 10px;
-    margin: 0;
-    padding: 0;
-    background-color: lighten($color,15%);
-}
-
 @mixin break($size)
 {
-    @media screen and (max-width: $size) { @content; }
+  @media screen and (max-width: $size) { @content; }
 }
 
-@mixin rbreak($size)
+@mixin setLogoHeaderColors($color)
 {
-    @media screen and (min-width: $size) { @content; }
+  border-color: lighten($color,15%);
+  .sLogoMain{ fill: $color;}
+  .sLogoSecondary{ fill: lighten($color,15%);}
+}
+
+@mixin primaryContainerSize()
+{
+  width: 96%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  @include break(500px)
+  {
+    width: 98%;
+  }
 }

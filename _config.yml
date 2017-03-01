@@ -4,7 +4,7 @@ email: sam@sampedley.com
 description: "Hi, I'm a web developer in Chicago."
 baseurl: ""
 url: "http://sampedley.com"
-twitter_username: mrpeds
+twitter_username: sam_pedley
 github_username:  sampedley
 include: ['.htaccess']
 keywords: sam pedley chicago web developer
@@ -18,7 +18,7 @@ sass:
   style: compressed
 
 #Site Variables
-image: /public/img/booger.jpg
+image: /assets/images/booger.jpg
 
 # Nav Bar Data
 nav:

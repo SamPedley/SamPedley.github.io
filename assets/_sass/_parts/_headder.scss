@@ -3,43 +3,17 @@
 .siteHeader
 {
   display: flex;
-  background: $white;
+  background: $color-white;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 0 2rem;
-  border-bottom: 10px solid black;
+  padding: 0 2%;
+  border-bottom: 5px solid black;
 
-  &.home, &.default
-  {
-    border-color: lighten($theme-home,15%);
-    .sLogoMain{ fill: $theme-home;}
-    .sLogoSecondary{ fill: lighten($theme-home,15%);}
-  }
-  &.articles, &.post
-  {
-    border-color:lighten($theme-blog,15%);
-    .sLogoMain{ fill: $theme-blog;}
-    .sLogoSecondary{ fill: lighten($theme-blog,15%);}
-  }
-  &.about
-  {
-    border-color: lighten($theme-about,15%);
-    .sLogoMain{ fill: $theme-about;}
-    .sLogoSecondary{ fill: lighten($theme-about,15%);}
-  }
-  &.resume
-  {
-    border-color: lighten($color-riverBed,15%);
-    .sLogoMain{ fill: $color-riverBed;}
-    .sLogoSecondary{ fill: lighten($color-riverBed,15%);}
-  }
-
+  &.home, &.default { @include setLogoHeaderColors($theme-home); }
+  &.articles, &.post { @include setLogoHeaderColors($theme-blog); }
+  &.about { @include setLogoHeaderColors($theme-about); }
 }
-
-
-
-
 
 .header_logo
 {
@@ -53,8 +27,8 @@
   }
   &:hover
   {
-      .sLogoMain {animation: FancyLogo 5s infinite;}
-      .sLogoSecondary {animation: FancyLogoSecondary 5s infinite;}
+    .sLogoMain {animation: FancyLogo 5s infinite;}
+    .sLogoSecondary {animation: FancyLogoSecondary 5s infinite;}
   }
 }
 
@@ -84,9 +58,9 @@ nav
     border-bottom: 2px solid $color-white;
   }
 
-    #navlink_Home:hover { background: $white; color: $theme-home; border-bottom-color: $theme-home; }
-    #navlink_About:hover { background: $white; color: $theme-about; border-bottom-color: $theme-about; }
-    #navlink_Articles:hover { background: $white; color: $theme-blog; border-bottom-color: $theme-blog; }
+  #navlink_Home:hover { background: $color-white; color: $theme-home; border-bottom-color: $theme-home; }
+  #navlink_About:hover { background: $color-white; color: $theme-about; border-bottom-color: $theme-about; }
+  #navlink_Articles:hover { background: $color-white; color: $theme-blog; border-bottom-color: $theme-blog; }
 
   @include break(600px)
   {
@@ -94,10 +68,10 @@ nav
     position: absolute;
     right: 0;
     top: 100%;
-    background: $white;
+    background: $color-white;
     border-top: 10px solid $backgroundColor;
     z-index: 100;
-    @include mainShadow;
+    box-shadow: $containerShaddow;
 
     a
     {
@@ -108,13 +82,13 @@ nav
       border-bottom: none;
       &:hover
       {
-        color: $white;
-        background: $gray;
+        color: $color-white;
+        background: $color-grey;
       }
     }
-    #navlink_Home:hover { background: $theme-home; color: $white; }
-    #navlink_About:hover { background: $theme-about; color: $white; }
-    #navlink_Articles:hover { background: $theme-blog; color: $white; }
+    #navlink_Home:hover { background: $theme-home; color: $color-white; }
+    #navlink_About:hover { background: $theme-about; color: $color-white; }
+    #navlink_Articles:hover { background: $theme-blog; color: $color-white; }
   }
 
 }
@@ -123,65 +97,65 @@ nav
 
 .hamburger_icon
 {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 4%;
+  span
+  {
     position: relative;
-    display: inline-block;
+    top: 10px;
+    margin: 0 auto;
+  }
+  span:before, span:after
+  {
+    position: absolute;
+    content: '';
+    transition: .2s ease;
+  }
+  span, span:before, span:after
+  {
+    display: block;
     width: 30px;
-    height: 30px;
-    margin-right: 4%;
-    span
-    {
-        position: relative;
-        top: 10px;
-        margin: 0 auto;
-    }
-    span:before, span:after
-    {
-        position: absolute;
-        content: '';
-        transition: .2s ease;
-    }
-    span, span:before, span:after
-    {
-        display: block;
-        width: 30px;
-        height: 4px;
-        background-color: $titleColor;
-    }
-    span:before
-    {
-        margin-top: -12px;
-    }
-    span:after
-    {
-        margin-top: 12px;
-    }
+    height: 4px;
+    background-color: $titleColor;
+  }
+  span:before
+  {
+    margin-top: -12px;
+  }
+  span:after
+  {
+    margin-top: 12px;
+  }
 }
 .hamburger_input
 {
-    display: none;
-    &:checked ~ .hamburger_label
+  display: none;
+  &:checked ~ .hamburger_label
+  {
+    .hamburger_icon span:before, .hamburger_icon span:after
     {
-      .hamburger_icon span:before, .hamburger_icon span:after
-      {
-        margin-top: 0;
-      }
+      margin-top: 0;
     }
+  }
 
-    &:checked ~ nav
-    {
-      display: block;
-    }
+  &:checked ~ nav
+  {
+    display: block;
+  }
 }
 
-  .hamburger_label
+.hamburger_label
 {
-    font-size: 24px;
-    cursor: pointer;
-    margin: 16px 1rem 0 0;
-    display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 16px 1rem 0 0;
+  display: none;
 
-    @include break(600px)
-    {
-      display: block;
-    }
+  @include break(600px)
+  {
+    display: block;
+  }
 }
