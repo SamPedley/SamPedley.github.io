@@ -2,7 +2,7 @@
   "private": true,
   "name": "sams_site",
   "version": "1.6.0",
-  "description": "My personal Blog",
+  "description": "My personal blog thing.",
   "scripts": {
     "dev": "bundle exec jekyll serve",
     "build": "jekyll build"
