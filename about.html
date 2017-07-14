@@ -34,11 +34,7 @@ hideComments: true
       <h3>Random nerd stuff I really like:</h3>
       <ul class="bullet-group threeColumn">
         {% for like in site.data.about.likes %}
-        <li>
-          {% if like.url %} <a href="{{like.url}}">{{like.name}}</a>
-          {% else %} {{like.name}}
-          {% endif %}
-        </li>
+        <li>{{like}}</li>
         {% endfor %}
       </ul>
     </div>

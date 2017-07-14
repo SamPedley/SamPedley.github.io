@@ -1,0 +1,31 @@
+experience:
+- title: Software Engineer
+  company: Guaranteed Rate
+  company-url: https://rate.com
+  start-date: December 2016
+  end-date: Now
+  about:
+  - Worked with an awesome team.
+- title: Full Stack Engineer
+  company: Colorjar
+  company-url: http://colorjar.com
+  start-date: April 2015
+  end-date: October 2016
+  about:
+  - Used Laravel and React.js to build many responsive and performant applications.
+  - Helped standardize and update development build steps and processes.
+  - Used with PHP and Python to build internal apps to solve diverse issues.
+  - Helped rebuild poorly written legacy projects in PHP.
+  - Worked closely with other developers to standardize the development process.
+- title: Full Stack Developer
+  company: AIM
+  company-url: http://www.automotiveinternetmedia.com
+  start-date: April 2014
+  end-date: May 2015
+  about:
+  - Used Laravel and Angular.js to build a proprietary rental ad management system.
+  - Refactored the companies dealership platform written in C# to be more performant and maintainable.
+  - Rebuilt the companies dealership platform front-end with a vastly improved UI/UX experience.
+  - Created and launched many custom responsive and performant Wordpress sites.
+  - Maintained and improved on many legacy projects in both linux and Microsoft server environments.
+  - Improved development process by implementing standards and best practices.
