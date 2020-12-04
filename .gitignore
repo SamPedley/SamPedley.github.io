@@ -6,5 +6,4 @@ site/public/config.codekit
 _site/
 site/
 .jekyll-metadata
-Gemfile.lock
 .npm-debug.log
