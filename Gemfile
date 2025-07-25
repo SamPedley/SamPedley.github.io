@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '3.1.1'
-gem 'rouge', '1.10.1'
+gem 'jekyll', '4.4.1'
+gem 'rouge', '4.5.2'
